@@ -30,6 +30,7 @@
   padding: 1em;
   margin: 50px 0;
 
+
   h1 {
     background-image: url("../images/Arrow.png");
     background-repeat: no-repeat;
@@ -40,10 +41,27 @@
     text-align: center;
     padding-bottom: 4.5em;
     margin-bottom: .5em;
+
+      @include mq(small) {
+        font-size: em(66px);
+        margin-top: em(7px);
+      }
+
+      @include mq(medium) {
+        font-size: em(86px);
+      }
+
+      @include mq(large) {
+        font-size: em(96px);
+      }
   }
 
   p {
       font-size: em(24px);
+
+      @include mq(small) {
+        font-size: em(30px);
+      }
   }
 }
 
@@ -52,6 +70,10 @@
   letter-spacing: .5px;
   text-align: center;
   margin-top: 6.2em;
+
+  @include mq(medium) {
+    margin-top: 7.5em;
+  }
 }
 
 

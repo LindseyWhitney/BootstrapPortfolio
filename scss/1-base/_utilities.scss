@@ -4,7 +4,7 @@
   @return ($target / $context) *1em;
 }
 
-@mixin debug ($hue) {
+@mixin debug ($hue: red) {
     border-color: $hue;
     border-width: 1px;
     border-style: solid;
