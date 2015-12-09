@@ -1,6 +1,6 @@
 body {
   font-size: 15px;
-  line-height: 1.66667;
+  line-height: 1.33333;
   font-family: "abril-titling", "Garamond", serif;
   font-weight: 400; }
 
@@ -11,19 +11,29 @@ h1, h2, h3, p, a, li {
   font-style: normal; }
 
 h2 {
-  margin-bottom: 0;
-  font-size: 1.6em; }
+  margin-bottom: 0.33333em;
+  font-size: 1.6em;
+  text-align: center; }
 
-ul {
-  margin-top: 35px; }
+h3,
+.btn {
+  font-size: 1.26667em;
+  letter-spacing: 2px; }
 
-.container,
+p {
+  margin-bottom: 1.33333em; }
+
+button {
+  margin-top: 2em;
+  background-color: #29b093;
+  color: #fff; }
+
 .row {
   padding: 0; }
 
 .col-xs-6,
 .col-md-4 {
-  padding: 0; }
+  padding: 0.13333em; }
 
 .navbar-brand,
 .navbar-nav li a {
@@ -41,8 +51,8 @@ ul {
 
 .jumbotron {
   background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
-  padding: 1em;
-  margin: 50px 0; }
+  padding: 90px 1em;
+  margin-bottom: 0; }
   .jumbotron h1 {
     background-image: url("../images/Arrow.png");
     background-repeat: no-repeat;
@@ -79,15 +89,14 @@ ul {
       margin-top: 7.5em; } }
 
 .portfolio {
-  margin-top: 4em;
-  padding: 1em; }
+  padding: 90px 1em; }
   .portfolio h2, .portfolio li {
     color: #29b093;
     list-style: none; }
   .portfolio p {
-    color: #808285; }
-  .portfolio ul {
-    padding: 0 13px 170px 13px; }
+    color: #808285;
+    text-align: center;
+    padding: 0.33333em 1em 0 1em; }
   .portfolio li a img {
     width: 100%;
     height: auto; }
@@ -95,18 +104,43 @@ ul {
       opacity: .2; }
 
 #services {
-  background-image: url("../images/Silk_Texture_Repeatable.jpg"); }
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  padding: 90px 1em;
+  text-align: center;
+  color: #fff; }
   #services h2, #services p {
-    color: #fff; }
+    padding: 0.33333em 1em 0 1em; }
+  #services ul {
+    list-style: none;
+    margin-left: -2.75em; }
 
-#about h2 {
-  color: #29b093; }
-#about p {
-  color: #808285; }
+.emphasis {
+  font-style: italic;
+  font-size: 1.13333em; }
 
-#contact h2 {
-  color: #29b093; }
-#contact p {
-  color: #808285; }
+#about {
+  padding: 90px 1em; }
+  #about h2 {
+    color: #29b093; }
+  #about p {
+    color: #808285; }
+
+.aboutpic {
+  display: block;
+  width: 212px;
+  margin: 0 auto 20px; }
+
+#contact {
+  background-color: #f1f2f2;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  #contact h2 {
+    color: #29b093; }
+  #contact p {
+    color: #808285; }
+
+.form-control:focus {
+  box-shadow: 0 0 3px #29b093;
+  border: 1px solid #29b093; }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,7 +17,7 @@
 }
 
 .icon-bar {
-    background-color: $color-primary;
+  background-color: $color-primary;
 }
 
 
@@ -27,8 +27,8 @@
 
 .jumbotron {
   background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
-  padding: 1em;
-  margin: 50px 0;
+  padding: 90px 1em;
+  margin-bottom: 0;
 
 
   h1 {
@@ -42,18 +42,18 @@
     padding-bottom: 4.5em;
     margin-bottom: .5em;
 
-      @include mq(small) {
-        font-size: em(66px);
-        margin-top: em(7px);
-      }
+    @include mq(small) {
+      font-size: em(66px);
+      margin-top: em(7px);
+    }
 
-      @include mq(medium) {
-        font-size: em(86px);
-      }
+    @include mq(medium) {
+      font-size: em(86px);
+    }
 
-      @include mq(large) {
-        font-size: em(96px);
-      }
+    @include mq(large) {
+      font-size: em(96px);
+    }
   }
 
   p {
@@ -82,31 +82,27 @@
 // ========================================
 
 .portfolio {
-  margin-top: em(60px);
-  padding: 1em;
+  padding: 90px 1em;
+
   h2, li {
     color: $color-primary;
     list-style: none;
   }
+
   p {
     color: $color-secondary;
+    text-align: center;
+    padding: em(5px) em(15px) 0 em(15px);
   }
-  ul {
-    padding: 0 13px 170px 13px;
-  }
-  li a {
 
-    img {
-    width: 100%;
-    height: auto;
+  li a img {
+  width: 100%;
+  height: auto;
 
-      &:hover {
-        opacity: .2;
-      }
+    &:hover {
+      opacity: .2;
     }
   }
-
-
 }
 
 
@@ -115,10 +111,25 @@
 // ========================================
 
 #services {
-  background-image: url("../images/Silk_Texture_Repeatable.jpg");
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  padding: 90px 1em;
+  text-align: center;
+  color: $color-reverse;
+
+
   h2, p {
-    color: $color-reverse;
+    padding: em(5px) em(15px) 0 em(15px);
   }
+
+  ul {
+    list-style: none;
+    margin-left: -2.75em;
+  }
+}
+
+.emphasis {
+  font-style: $font-style--secondary;
+  font-size: em(17px);
 }
 
 // ========================================
@@ -126,6 +137,7 @@
 // ========================================
 
 #about {
+  padding: 90px 1em;
   h2 {
     color: $color-primary;
   }
@@ -134,15 +146,30 @@
   }
 }
 
+.aboutpic {
+  display: block;
+  width: 212px;
+  margin: 0 auto 20px;
+}
+
 // ========================================
 // Contact
 // ========================================
 
 #contact {
+  background-color: #f1f2f2;
+  padding-top: 90px;
+  padding-bottom: 90px;
   h2 {
     color: $color-primary;
   }
   p {
     color: $color-secondary;
   }
+}
+
+.form-control:focus {
+  box-shadow: 0 0 3px $color-primary;
+
+  border: 1px solid $color-primary;
 }

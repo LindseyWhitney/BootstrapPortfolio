@@ -12,7 +12,6 @@ body {
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--primary;
   font-weight: $font-weight--medium;
-
 }
 
 nav {
@@ -25,10 +24,23 @@ h1, h2, h3, p, a, li {
 }
 
 h2 {
-  margin-bottom: 0;
+  margin-bottom: em(5px);
   font-size: em(24px);
+  text-align: center;
 }
 
-ul {
-  margin-top: 35px;
+h3,
+.btn {
+  font-size: em(19px);
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: em(20px);
+}
+
+button {
+  margin-top: em(30px);
+  background-color: $color-primary;
+  color: $color-reverse;
 }
