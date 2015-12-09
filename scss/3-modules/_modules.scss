@@ -26,21 +26,20 @@
 // ========================================
 
 #jumbotron {
-  padding: 90px 1em;
+  height: em(500px);
+  padding: 0 1em;
   margin-bottom: 0;
 }
 
 .cd-bg-1 {
   h1 {
-    background-image: url("../images/Arrow.png");
+
     background-repeat: no-repeat;
     background-position: center bottom;
     font-size: em(56px);
     color: $color-reverse;
     letter-spacing: 2px;
     text-align: center;
-    padding-bottom: 4.5em;
-    margin-bottom: .5em;
 
     @include mq(small) {
       font-size: em(66px);
@@ -58,7 +57,7 @@
 
   p {
       font-size: em(24px);
-
+      padding-top: em(120px);
       @include mq(small) {
         font-size: em(30px);
       }
@@ -69,11 +68,6 @@
   color: $color-reverse;
   letter-spacing: .5px;
   text-align: center;
-  margin-top: 6.2em;
-
-  @include mq(medium) {
-    margin-top: 7.5em;
-  }
 }
 
 

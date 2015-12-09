@@ -12,15 +12,15 @@ body {
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--primary;
   font-weight: $font-weight--medium;
+  font-style: $font-style--base;
 }
 
 nav {
   background-color: white;
 }
 
-h1, h2, h3, p, a, li {
+i {
   font-style: $font-style--base;
-
 }
 
 h2 {
