@@ -35,6 +35,21 @@ button {
 .col-md-4 {
   padding: 0.13333em; }
 
+.cd-fixed-bg {
+  min-height: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed; }
+
+.cd-fixed-bg.cd-bg-1,
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg"); }
+
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../images/IconPattern_Repeatable.png"); }
+
+.cd-scrolling-bg {
+  min-height: 100%; }
+
 .navbar-brand,
 .navbar-nav li a {
   color: #29b093;
@@ -49,35 +64,35 @@ button {
 .icon-bar {
   background-color: #29b093; }
 
-.jumbotron {
-  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+#jumbotron {
   padding: 90px 1em;
   margin-bottom: 0; }
-  .jumbotron h1 {
-    background-image: url("../images/Arrow.png");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    font-size: 3.73333em;
-    color: #fff;
-    letter-spacing: 2px;
-    text-align: center;
-    padding-bottom: 4.5em;
-    margin-bottom: .5em; }
-    @media (min-width: 768px) {
-      .jumbotron h1 {
-        font-size: 4.4em;
-        margin-top: 0.46667em; } }
-    @media (min-width: 992px) {
-      .jumbotron h1 {
-        font-size: 5.73333em; } }
-    @media (min-width: 1200px) {
-      .jumbotron h1 {
-        font-size: 6.4em; } }
-  .jumbotron p {
-    font-size: 1.6em; }
-    @media (min-width: 768px) {
-      .jumbotron p {
-        font-size: 2em; } }
+
+.cd-bg-1 h1 {
+  background-image: url("../images/Arrow.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  font-size: 3.73333em;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 4.5em;
+  margin-bottom: .5em; }
+  @media (min-width: 768px) {
+    .cd-bg-1 h1 {
+      font-size: 4.4em;
+      margin-top: 0.46667em; } }
+  @media (min-width: 992px) {
+    .cd-bg-1 h1 {
+      font-size: 5.73333em; } }
+  @media (min-width: 1200px) {
+    .cd-bg-1 h1 {
+      font-size: 6.4em; } }
+.cd-bg-1 p {
+  font-size: 1.6em; }
+  @media (min-width: 768px) {
+    .cd-bg-1 p {
+      font-size: 2em; } }
 
 .lead {
   color: #fff;

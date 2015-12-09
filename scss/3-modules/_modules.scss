@@ -25,12 +25,12 @@
 // Jumbotron
 // ========================================
 
-.jumbotron {
-  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+#jumbotron {
   padding: 90px 1em;
   margin-bottom: 0;
+}
 
-
+.cd-bg-1 {
   h1 {
     background-image: url("../images/Arrow.png");
     background-repeat: no-repeat;
@@ -170,6 +170,5 @@
 
 .form-control:focus {
   box-shadow: 0 0 3px $color-primary;
-
   border: 1px solid $color-primary;
 }

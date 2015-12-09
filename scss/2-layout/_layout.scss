@@ -1,3 +1,7 @@
+// ========================================
+// Bootstrap
+// ========================================
+
 .row {
   padding: 0;
 }
@@ -5,4 +9,27 @@
 .col-xs-6,
 .col-md-4 {
   padding: em(2px);
+}
+
+// ========================================
+// Alternate Fixed and Scrolling
+// ========================================
+.cd-fixed-bg {
+	min-height: 100%;
+
+  background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.cd-fixed-bg.cd-bg-1,
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+}
+
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../images/IconPattern_Repeatable.png");
+}
+
+.cd-scrolling-bg {
+	min-height: 100%;
 }
