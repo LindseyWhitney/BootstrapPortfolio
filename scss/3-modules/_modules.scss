@@ -1,0 +1,126 @@
+// ========================================
+// Nav
+// ========================================
+
+.navbar-brand,
+.navbar-nav li a {
+  color: $color-primary;
+  padding: .7em 1em;
+}
+
+.navbar-brand {
+  font-size: em(23px);
+}
+
+.navbar-nav li a {
+  font-size: em(22px);
+}
+
+.icon-bar {
+    background-color: $color-primary;
+}
+
+
+// ========================================
+// Jumbotron
+// ========================================
+
+.jumbotron {
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  padding: 1em;
+  margin: 50px 0;
+
+  h1 {
+    background-image: url("../images/Arrow.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-size: em(56px);
+    color: $color-reverse;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 4.5em;
+    margin-bottom: .5em;
+  }
+
+  p {
+      font-size: em(24px);
+  }
+}
+
+.lead {
+  color: $color-reverse;
+  letter-spacing: .5px;
+  text-align: center;
+  margin-top: 6.2em;
+}
+
+
+// ========================================
+// Portfolio
+// ========================================
+
+.portfolio {
+  margin-top: em(60px);
+  padding: 1em;
+  h2, li {
+    color: $color-primary;
+    list-style: none;
+  }
+  p {
+    color: $color-secondary;
+  }
+  ul {
+    padding: 0 13px 170px 13px;
+  }
+  li a {
+
+    img {
+    width: 100%;
+    height: auto;
+
+      &:hover {
+        opacity: .2;
+      }
+    }
+  }
+
+
+}
+
+
+// ========================================
+// Services
+// ========================================
+
+#services {
+  background-image: url("../images/Silk_Texture_Repeatable.jpg");
+  h2, p {
+    color: $color-reverse;
+  }
+}
+
+// ========================================
+// About
+// ========================================
+
+#about {
+  h2 {
+    color: $color-primary;
+  }
+  p {
+    color: $color-secondary;
+  }
+}
+
+// ========================================
+// Contact
+// ========================================
+
+#contact {
+  h2 {
+    color: $color-primary;
+  }
+  p {
+    color: $color-secondary;
+  }
+}

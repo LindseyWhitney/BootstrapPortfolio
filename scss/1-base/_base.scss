@@ -1,0 +1,34 @@
+@import "_config.scss";
+@import "_utilities.scss";
+
+
+// ========================================
+// Base Styles
+// ========================================
+
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--medium;
+
+}
+
+nav {
+  background-color: white;
+}
+
+h1, h2, h3, p, a, li {
+  font-style: $font-style--base;
+
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: em(24px);
+}
+
+ul {
+  margin-top: 35px;
+}

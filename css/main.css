@@ -1,3 +1,96 @@
-h1, h2, h3 {
-  font-family: "abril-titling";
-}
+body {
+  font-size: 15px;
+  line-height: 1.66667;
+  font-family: "abril-titling", "Garamond", serif;
+  font-weight: 400; }
+
+nav {
+  background-color: white; }
+
+h1, h2, h3, p, a, li {
+  font-style: normal; }
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.6em; }
+
+ul {
+  margin-top: 35px; }
+
+.container,
+.row {
+  padding: 0; }
+
+.col-xs-6,
+.col-md-4 {
+  padding: 0; }
+
+.navbar-brand,
+.navbar-nav li a {
+  color: #29b093;
+  padding: .7em 1em; }
+
+.navbar-brand {
+  font-size: 1.53333em; }
+
+.navbar-nav li a {
+  font-size: 1.46667em; }
+
+.icon-bar {
+  background-color: #29b093; }
+
+.jumbotron {
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  padding: 1em;
+  margin: 50px 0; }
+  .jumbotron h1 {
+    background-image: url("../images/Arrow.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-size: 3.73333em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 4.5em;
+    margin-bottom: .5em; }
+  .jumbotron p {
+    font-size: 1.6em; }
+
+.lead {
+  color: #fff;
+  letter-spacing: .5px;
+  text-align: center;
+  margin-top: 6.2em; }
+
+.portfolio {
+  margin-top: 4em;
+  padding: 1em; }
+  .portfolio h2, .portfolio li {
+    color: #29b093;
+    list-style: none; }
+  .portfolio p {
+    color: #808285; }
+  .portfolio ul {
+    padding: 0 13px 170px 13px; }
+  .portfolio li a img {
+    width: 100%;
+    height: auto; }
+    .portfolio li a img:hover {
+      opacity: .2; }
+
+#services {
+  background-image: url("../images/Silk_Texture_Repeatable.jpg"); }
+  #services h2, #services p {
+    color: #fff; }
+
+#about h2 {
+  color: #29b093; }
+#about p {
+  color: #808285; }
+
+#contact h2 {
+  color: #29b093; }
+#contact p {
+  color: #808285; }
+
+/*# sourceMappingURL=main.css.map */
