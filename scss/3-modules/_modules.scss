@@ -128,6 +128,33 @@
   font-size: em(17px);
 }
 
+.icons {
+  fill: none;
+  stroke: $color-reverse;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-miterlimit:10;
+}
+
+.svgcontainer {
+  height: 145px;
+
+  .lightbulb {
+    width: 94px;
+    padding-top: 30px;
+  }
+
+  .eyeball {
+    width: 145px;
+    padding-top: 45px;
+  }
+
+  .laptop {
+    width: 150px;
+    padding-top: 40px;
+  }
+}
+
 // ========================================
 // About
 // ========================================

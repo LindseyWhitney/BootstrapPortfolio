@@ -19,7 +19,8 @@ h2 {
 h3,
 .btn {
   font-size: 1.26667em;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 p {
   margin-bottom: 1.33333em; }
@@ -132,6 +133,25 @@ button {
 .emphasis {
   font-style: italic;
   font-size: 1.13333em; }
+
+.icons {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10; }
+
+.svgcontainer {
+  height: 145px; }
+  .svgcontainer .lightbulb {
+    width: 94px;
+    padding-top: 30px; }
+  .svgcontainer .eyeball {
+    width: 145px;
+    padding-top: 45px; }
+  .svgcontainer .laptop {
+    width: 150px;
+    padding-top: 40px; }
 
 #about {
   padding: 90px 1em; }
