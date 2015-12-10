@@ -26,32 +26,37 @@
 // ========================================
 
 #jumbotron {
-  height: em(500px);
-  padding: 0 1em;
+  height: em(700px);
+  padding: em(90px) 1em;
   margin-bottom: 0;
+
+  @include mq(small) {
+    height: em(800px);
+  }
+
+
 }
 
 .cd-bg-1 {
-  h1 {
+    h1 {
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      font-size: em(56px);
+      color: $color-reverse;
+      letter-spacing: 2px;
+      text-align: center;
 
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    font-size: em(56px);
-    color: $color-reverse;
-    letter-spacing: 2px;
-    text-align: center;
+      @include mq(small) {
+        font-size: em(66px);
 
-    @include mq(small) {
-      font-size: em(66px);
-      margin-top: em(7px);
-    }
+      }
 
-    @include mq(medium) {
-      font-size: em(86px);
-    }
+      @include mq(medium) {
+        font-size: em(86px);
+      }
 
-    @include mq(large) {
-      font-size: em(96px);
+      @include mq(large) {
+        font-size: em(96px);
     }
   }
 
@@ -59,7 +64,7 @@
       font-size: em(24px);
       padding-top: em(120px);
       @include mq(small) {
-        font-size: em(30px);
+      font-size: em(30px);
       }
   }
 }
@@ -76,7 +81,7 @@
 // ========================================
 
 .portfolio {
-  padding: 90px 1em;
+  padding: 90px 1em 130px;
 
   h2, li {
     color: $color-primary;
@@ -93,9 +98,7 @@
   width: 100%;
   height: auto;
 
-    &:hover {
-      opacity: .2;
-    }
+
   }
 }
 

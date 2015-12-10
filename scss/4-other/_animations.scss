@@ -1,8 +1,7 @@
-/* --------------------------------
+// ========================================
+// Jumbotron Headline Animation: xtype
+// ========================================
 
-xtype
-
--------------------------------- */
 .cd-headline.type .cd-words-wrapper {
   font-style: $font-family--primary;
   vertical-align: top;
@@ -106,4 +105,61 @@ xtype
     transform: translateY(-50%) scale(0);
     opacity: 0;
   }
+}
+
+
+
+// ========================================
+// Portfolio | Direction-Aware Hover
+// ========================================
+
+.da-thumbs {
+	position: relative;
+}
+
+.da-thumbs li {
+	background: #fff;
+	position: relative;
+
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+}
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: rgba(10,179,137,0.9);
+	width: 100%;
+	height: 100%;
+  text-align: center;
+}
+.da-thumbs li a div span {
+	display: block;
+  padding: 5% 0;
+  margin: 20% 20px 20px 20px;
+  font-size: em(15px);
+
+
+
+  @include mq(medium) {
+    padding: 6% 0;
+    margin: 65px 20px 20px 20px;
+    font-size: em(17px);
+  }
+
+  @include mq(large) {
+    padding: 7% 0;
+    margin: 80px 20px 20px 20px;
+    font-size: em(20px);
+  }
+
+	text-transform: uppercase;
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }

@@ -66,9 +66,12 @@ button {
   background-color: #29b093; }
 
 #jumbotron {
-  height: 33.33333em;
-  padding: 0 1em;
+  height: 46.66667em;
+  padding: 6em 1em;
   margin-bottom: 0; }
+  @media (min-width: 768px) {
+    #jumbotron {
+      height: 53.33333em; } }
 
 .cd-bg-1 h1 {
   background-repeat: no-repeat;
@@ -79,8 +82,7 @@ button {
   text-align: center; }
   @media (min-width: 768px) {
     .cd-bg-1 h1 {
-      font-size: 4.4em;
-      margin-top: 0.46667em; } }
+      font-size: 4.4em; } }
   @media (min-width: 992px) {
     .cd-bg-1 h1 {
       font-size: 5.73333em; } }
@@ -100,7 +102,7 @@ button {
   text-align: center; }
 
 .portfolio {
-  padding: 90px 1em; }
+  padding: 90px 1em 130px; }
   .portfolio h2, .portfolio li {
     color: #29b093;
     list-style: none; }
@@ -111,8 +113,6 @@ button {
   .portfolio li a img {
     width: 100%;
     height: auto; }
-    .portfolio li a img:hover {
-      opacity: .2; }
 
 #services {
   background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
@@ -154,11 +154,6 @@ button {
   box-shadow: 0 0 3px #29b093;
   border: 1px solid #29b093; }
 
-/* --------------------------------
-
-xtype
-
--------------------------------- */
 .cd-headline.type .cd-words-wrapper {
   font-style: "abril-titling", "Garamond", serif;
   vertical-align: top;
@@ -250,5 +245,47 @@ xtype
     -o-transform: translateY(-50%) scale(0);
     transform: translateY(-50%) scale(0);
     opacity: 0; } }
+.da-thumbs {
+  position: relative; }
+
+.da-thumbs li {
+  background: #fff;
+  position: relative; }
+
+.da-thumbs li a,
+.da-thumbs li a img {
+  display: block;
+  position: relative; }
+
+.da-thumbs li a {
+  overflow: hidden; }
+
+.da-thumbs li a div {
+  position: absolute;
+  background: rgba(10, 179, 137, 0.9);
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.da-thumbs li a div span {
+  display: block;
+  padding: 5% 0;
+  margin: 20% 20px 20px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3); }
+  @media (min-width: 992px) {
+    .da-thumbs li a div span {
+      padding: 6% 0;
+      margin: 65px 20px 20px 20px;
+      font-size: 1.13333em; } }
+  @media (min-width: 1200px) {
+    .da-thumbs li a div span {
+      padding: 7% 0;
+      margin: 80px 20px 20px 20px;
+      font-size: 1.33333em; } }
 
 /*# sourceMappingURL=main.css.map */
