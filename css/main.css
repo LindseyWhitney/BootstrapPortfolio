@@ -148,10 +148,18 @@ button {
     padding-top: 30px; }
   .svgcontainer .eyeball {
     width: 145px;
-    padding-top: 45px; }
+    padding-top: 62px; }
+    .svgcontainer .eyeball .visible {
+      display: inline; }
+    @media (min-width: 768px) {
+      .svgcontainer .eyeball {
+        padding-top: 45px; } }
   .svgcontainer .laptop {
     width: 150px;
-    padding-top: 40px; }
+    padding-top: 48px; }
+    @media (min-width: 768px) {
+      .svgcontainer .laptop {
+        padding-top: 40px; } }
 
 #about {
   padding: 90px 1em; }
@@ -205,13 +213,13 @@ button {
   animation: cd-pulse 1s infinite; }
 
 .cd-headline.type .cd-words-wrapper.selected {
-  background-color: #35bab0; }
+  background-color: #fff; }
 
 .cd-headline.type .cd-words-wrapper.selected::after {
   visibility: hidden; }
 
 .cd-headline.type .cd-words-wrapper.selected b {
-  color: #fff; }
+  color: #29b093; }
 
 .cd-headline.type b {
   visibility: hidden; }

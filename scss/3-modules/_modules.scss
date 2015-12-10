@@ -146,12 +146,24 @@
 
   .eyeball {
     width: 145px;
-    padding-top: 45px;
+    padding-top: 62px;
+
+    .visible {
+      display:inline;
+    }
+
+    @include mq(small) {
+      padding-top: 45px;
+    }
   }
 
   .laptop {
     width: 150px;
-    padding-top: 40px;
+    padding-top: 48px;
+
+    @include mq(small) {
+      padding-top: 40px;
+    }
   }
 }
 

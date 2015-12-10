@@ -8,7 +8,6 @@
  * Copyright 2012, Codrops
  * http://www.codrops.com
  */
- console.log ("this is running");
 ;( function( $, window, undefined ) {
 
 	'use strict';
