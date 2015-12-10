@@ -172,7 +172,7 @@ function singleLetters($words) {
 
 
 // JavaScript for Icon Animation on Scroll -------------------------
-
+// Reference: http://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
 
 var animateEye = new Vivus('draweye');
 var animateBulb = new Vivus('drawbulb');
@@ -222,3 +222,52 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+
+
+// My JavaScript for Tabs ------------------------
+
+
+
+$('#tab1top').click(function ( event ) {
+	event.preventDefault();
+	$('#tab-1').removeClass("hidden");
+	$('#tab-1').addClass('current');
+	console.log('error free');
+	//$('#tab-1').parent().after("<div class="arrow-down"></div>");
+
+
+	if (($('#tab-2').hasClass("hidden")) === false) {
+		$('#tab-2').addClass("hidden");
+	}
+
+	if (($('#tab-3').hasClass("hidden")) === false) {
+		$('#tab-3').addClass("hidden");
+	}
+});
+
+$('#tab2top').click(function ( event ) {
+	event.preventDefault();
+	$('#tab-2').removeClass("hidden");
+
+	if (($('#tab-1').hasClass("hidden")) === false) {
+		$('#tab-1').addClass("hidden");
+	}
+
+	if (($('#tab-3').hasClass("hidden")) === false) {
+		$('#tab-3').addClass("hidden");
+	}
+});
+
+$('#tab3top').click(function ( event ) {
+	event.preventDefault();
+	$('#tab-3').removeClass("hidden");
+
+	if (($('#tab-2').hasClass("hidden")) === false) {
+		$('#tab-2').addClass("hidden");
+	}
+
+	if (($('#tab-1').hasClass("hidden")) === false) {
+		$('#tab-1').addClass("hidden");
+	}
+});
