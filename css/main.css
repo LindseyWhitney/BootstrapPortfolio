@@ -36,6 +36,10 @@ button {
 .col-md-4 {
   padding: 0.13333em; }
 
+.intro {
+  padding-left: 10%;
+  padding-right: 10%; }
+
 .cd-fixed-bg {
   min-height: 100%;
   background-repeat: repeat;
