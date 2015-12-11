@@ -30,16 +30,23 @@ button {
   background-color: #29b093;
   color: #fff; }
 
+form {
+  margin-bottom: 50px; }
+
 .row {
   padding: 0; }
 
 .col-xs-6,
-.col-md-4 {
+.col-md-4,
+.col-xs-6,
+.col-md-3,
+.col-md-6 {
   padding: 0.13333em; }
 
 .intro {
   padding-left: 10%;
-  padding-right: 10%; }
+  padding-right: 10%;
+  text-align: center; }
 
 .cd-fixed-bg {
   min-height: 100%;
@@ -124,6 +131,8 @@ button {
   padding: 90px 1em;
   text-align: center;
   color: #fff; }
+  #services .container {
+    max-width: 800px; }
   #services h2, #services p {
     padding: 0.33333em 1em 0 1em; }
   #services ul {
@@ -163,61 +172,41 @@ button {
 
 #about {
   padding: 90px 1em; }
+  #about .container {
+    max-width: 800px;
+    padding: 0; }
+  #about .content {
+    max-width: 780px;
+    margin: 0 auto; }
   #about h2 {
-    color: #29b093; }
+    color: #29b093;
+    padding: 0; }
   #about p {
-    color: #808285; }
+    color: #808285;
+    padding: 0;
+    text-align: center; }
 
 .aboutpic {
   display: block;
   width: 212px;
   margin: 0 auto 20px; }
 
-.tabs {
-  text-align: center;
-  height: 280px; }
-  .tabs .tabheaders li {
-    list-style: none; }
-    .tabs .tabheaders li a {
-      color: #29b093;
-      font-size: 1.13333em;
-      text-transform: uppercase;
-      text-decoration: none;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      /* future proofing */
-      -khtml-border-radius: 5px;
-      /* for old Konqueror browsers */ }
-      .tabs .tabheaders li a:hover {
-        color: #fff;
-        background-color: #29b093; }
-      .tabs .tabheaders li a:active {
-        color: #808285;
-        background-color: #29b093; }
-  .tabs .content li {
-    list-style: none;
-    color: #808285; }
-
-.hidden {
-  display: none; }
-
-.current {
-  color: #fff;
-  background-color: #29b093; }
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #29b093;
-  margin: 0 auto; }
+.content h3 {
+  font-size: 1.13333em;
+  letter-spacing: normal;
+  color: #29b093; }
+.content ul, .content li {
+  padding: 0;
+  list-style: none;
+  color: #808285;
+  font-style: italic; }
 
 #contact {
   background-color: #f1f2f2;
   padding-top: 90px;
   padding-bottom: 90px; }
+  #contact .container {
+    max-width: 900px; }
   #contact h2 {
     color: #29b093; }
   #contact p {
@@ -226,6 +215,35 @@ button {
 .form-control:focus {
   box-shadow: 0 0 3px #29b093;
   border: 1px solid #29b093; }
+
+.social {
+  height: 100px;
+  padding-top: 30px;
+  background-color: #29b093;
+  position: relative; }
+
+.size {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px; }
+
+.group {
+  width: 350px; }
+
+#twitter,
+#linkedin,
+#behance,
+#github,
+#codepen {
+  fill: #fff; }
+  #twitter:hover,
+  #linkedin:hover,
+  #behance:hover,
+  #github:hover,
+  #codepen:hover {
+    fill: #808285; }
 
 .cd-headline.type .cd-words-wrapper {
   font-style: "abril-titling", "Garamond", serif;

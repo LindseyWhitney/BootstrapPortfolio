@@ -112,6 +112,10 @@
   text-align: center;
   color: $color-reverse;
 
+  .container {
+    max-width: 800px;
+  }
+
 
   h2, p {
     padding: em(5px) em(15px) 0 em(15px);
@@ -173,11 +177,25 @@
 
 #about {
   padding: 90px 1em;
+
+  .container {
+    max-width: 800px;
+    padding: 0;
+  }
+
+  .content {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
   h2 {
     color: $color-primary;
+    padding: 0;
   }
   p {
     color: $color-secondary;
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -187,60 +205,23 @@
   margin: 0 auto 20px;
 }
 
-.tabs {
-  text-align: center;
-  height: 280px;
+.content {
 
-.tabheaders {
-  li {
-    list-style: none;
-
-    a {
-      color: $color-primary;
-      font-size: em(17px);
-      text-transform: uppercase;
-      text-decoration: none;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px; /* future proofing */
-      -khtml-border-radius: 5px; /* for old Konqueror browsers */
-
-      &:hover {
-        color: $color-reverse;
-        background-color: $color-primary;
-      }
-
-      &:active {
-        color: $color-secondary;
-        background-color: $color-primary;
-      }
-
-    }
+  h3 {
+    font-size: em(17px);
+    letter-spacing: normal;
+    color: $color-primary;
   }
-}
-  .content li {
+  ul, li {
+    padding: 0;
     list-style: none;
     color: $color-secondary;
+    font-style: $font-style--secondary;
   }
 }
 
-.hidden {
-  display: none;
-}
 
-.current {
-  color: $color-reverse;
-  background-color: $color-primary;
-}
 
-.arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid $color-primary;
-  margin: 0 auto;
-}
 // ========================================
 // Contact
 // ========================================
@@ -249,6 +230,11 @@
   background-color: #f1f2f2;
   padding-top: 90px;
   padding-bottom: 90px;
+
+  .container {
+    max-width: 900px;
+  }
+
   h2 {
     color: $color-primary;
   }
@@ -260,4 +246,39 @@
 .form-control:focus {
   box-shadow: 0 0 3px $color-primary;
   border: 1px solid $color-primary;
+}
+
+
+// ========================================
+// Footer
+// ========================================
+.social {
+  height: 100px;
+  padding-top: 30px;
+  background-color: $color-primary;
+  position: relative;
+}
+
+.size {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.group {
+  width: 350px;
+}
+
+#twitter,
+#linkedin,
+#behance,
+#github,
+#codepen {
+  fill: $color-reverse;
+
+  &:hover {
+    fill: $color-secondary;
+  }
 }
