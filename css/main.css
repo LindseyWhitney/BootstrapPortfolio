@@ -37,10 +37,10 @@ form {
   padding: 0; }
 
 .col-xs-6,
-.col-md-4,
-.col-xs-6,
 .col-md-3,
-.col-md-6 {
+.col-md-4,
+.col-md-6,
+.col-md-8 {
   padding: 0.13333em; }
 
 .intro {
@@ -206,7 +206,7 @@ form {
   padding-top: 90px;
   padding-bottom: 90px; }
   #contact .container {
-    max-width: 900px; }
+    max-width: 9  00px; }
   #contact h2 {
     color: #29b093; }
   #contact p {
@@ -244,6 +244,51 @@ form {
   #github:hover,
   #codepen:hover {
     fill: #808285; }
+
+.portfolio__page {
+  margin-top: 1.33333em; }
+  @media (min-width: 768px) {
+    .portfolio__page {
+      margin-top: 4em; } }
+
+.portfolio__text {
+  color: #808285;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .portfolio__text {
+      text-align: left; } }
+
+.portfolio__title {
+  margin-bottom: 0.33333em;
+  font-size: 1.6em; }
+
+.portfolio__type {
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .portfolio__type {
+      text-align: left; } }
+
+.portfolio__client {
+  font-style: italic;
+  margin-top: 1em;
+  padding: 0.66667em 0;
+  border-top: 1px solid rgba(128, 130, 133, 0.2);
+  border-bottom: 1px solid rgba(128, 130, 133, 0.2); }
+
+.is-hidden {
+  display: none; }
+  @media (min-width: 768px) {
+    .is-hidden {
+      display: block; } }
+
+main img {
+  max-width: 100%; }
+
+.portfolio__image--primary {
+  margin-top: 0.66667em; }
+  @media (min-width: 768px) {
+    .portfolio__image--primary {
+      margin-top: 1.86667em; } }
 
 .cd-headline.type .cd-words-wrapper {
   font-style: "abril-titling", "Garamond", serif;
