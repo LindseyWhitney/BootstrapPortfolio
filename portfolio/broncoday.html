@@ -22,7 +22,7 @@
 
   <body>
     <!-- Navbar -->
-       <nav class="navbar navbar-fixed-top">
+       <nav class="navbar navbar-fixed-top nav-up">
          <div class="container">
              <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,15 +31,15 @@
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#">Whitney Creative, LLC</a>
+               <a class="navbar-brand" href="../index.html">Whitney Creative, LLC</a>
              </div> <!--/.navbar-header -->
 
            <div id="navbar" class="collapse navbar-collapse">
              <ul class="nav navbar-nav navbar-right">
-               <li><a href="#work">Work</a></li>
-               <li><a href="#services">Services</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#contact">Contact</a></li>
+               <li><a href="../index.html#work">Work</a></li>
+               <li><a href="../index.html#services">Services</a></li>
+               <li><a href="../index.html#about">About</a></li>
+               <li><a href="../index.html#contact">Contact</a></li>
              </ul>
            </div> <!--/.nav-collapse -->
          </div> <!--/.container -->
@@ -76,6 +76,7 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/dist/js/animsition.min.js"></script>
+    <script src="../js/scroll.js"></script>
     <script>
     $(document).ready(function() {
       $(".animsition").animsition({
@@ -101,6 +102,7 @@
         transition: function(url){ window.location.href = url; }
       });
     });
+
   </script>
   </body>
 </html>

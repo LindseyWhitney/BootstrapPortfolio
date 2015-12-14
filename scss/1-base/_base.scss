@@ -13,10 +13,14 @@ body {
   font-family: $font-family--primary;
   font-weight: $font-weight--medium;
   font-style: $font-style--base;
+
 }
+
 
 nav {
   background-color: white;
+  height: 51.7px;
+  transition: top 0.2s ease-in-out;
 }
 
 i {

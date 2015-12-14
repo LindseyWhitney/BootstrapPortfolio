@@ -6,7 +6,9 @@ body {
   font-style: normal; }
 
 nav {
-  background-color: white; }
+  background-color: white;
+  height: 51.7px;
+  transition: top 0.2s ease-in-out; }
 
 i {
   font-style: normal; }
@@ -65,7 +67,7 @@ form {
 
 .navbar-brand,
 .navbar-nav li a {
-  color: #29b093;
+  color: #808285;
   padding: .7em 1em; }
 
 .navbar-brand {
@@ -76,6 +78,9 @@ form {
 
 .icon-bar {
   background-color: #29b093; }
+
+.nav-up {
+  top: -51.7px; }
 
 #jumbotron {
   height: 46.66667em;
