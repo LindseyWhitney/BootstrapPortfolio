@@ -252,9 +252,10 @@ form {
   .sidebar {
     position: fixed;
     z-index: 1000;
-    max-width: 19em;
+    max-width: 18em;
     display: block;
-    padding-right: 3em; } }
+    padding-right: 3em;
+    margin-left: 1em; } }
 @media (min-width: 992px) {
   .sidebar {
     max-width: 21.33333em; } }

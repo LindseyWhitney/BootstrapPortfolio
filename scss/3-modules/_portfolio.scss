@@ -10,9 +10,10 @@
   @include mq (small) {
     position: fixed;
     z-index: 1000;
-    max-width: em(285px);
+    max-width: em(270px);
     display: block;
     padding-right: 3em;
+    margin-left: 1em;
   }
   @include mq (medium) {
     max-width: em(320px);

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lindsey Whitney Design</title>
-
+    <link rel="stylesheet" href="../js/dist/css/animsition.min.css">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
 
@@ -21,8 +21,35 @@
   </head>
 
   <body>
+    <!-- Navbar -->
+       <nav class="navbar navbar-fixed-top">
+         <div class="container">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Whitney Creative, LLC</a>
+             </div> <!--/.navbar-header -->
+
+           <div id="navbar" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav navbar-right">
+               <li><a href="#work">Work</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+             </ul>
+           </div> <!--/.nav-collapse -->
+         </div> <!--/.container -->
+       </nav>
+
+    <div class="animsition">
+
     <div class="container">
       <div class="row portfolio__page">
+
         <section class="portfolio__text col-sm-4 sidebar">
           <header>
             <h1 class="portfolio__title">Bronco Day</h1>
@@ -37,15 +64,43 @@
           <img class="portfolio__image--primary" src="../images/portfolio/BroncoDay__ShirtBack--780at72.jpg" srcset="../images/portfolio/BroncoDay__ShirtBack--780at150.jpg 2x" alt="T-shirt mockup of back of design.">
           <img class="portfolio__image--primary" src="../images/portfolio/BroncoDay__Graphic--780at72.png" srcset="../images/portfolio/BroncoDay__Graphic--780at150.png 2x" alt="Closeup of Bronco Day graphic.">
         </main>
-      </div> <!--/.row -->
+
+      </div> <!--/.row .portfolio__page -->
     </div> <!--/.container -->
 
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/my.js"></script>
+    <script src="../js/dist/js/animsition.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in-right',
+        outClass: 'fade-out-left',
+        inDuration: 1000,
+        outDuration: 1000,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
+  </script>
   </body>
 </html>
