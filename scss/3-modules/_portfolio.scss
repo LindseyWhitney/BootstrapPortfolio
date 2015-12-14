@@ -6,12 +6,29 @@
   }
 }
 
+.sidebar {
+  @include mq (small) {
+    position: fixed;
+    z-index: 1000;
+    max-width: em(285px);
+    display: block;
+    padding-right: 3em;
+  }
+  @include mq (medium) {
+    max-width: em(320px);
+  }
+  @include mq (large) {
+    max-width: em(390px);
+  }
+}
+
 .portfolio__text {
     color: $color-secondary;
     text-align: center;
 
     @include mq(small) {
       text-align: left;
+
     }
 }
 
@@ -36,13 +53,7 @@
   border-bottom: 1px solid $color-subtle;
 }
 
-.is-hidden {
-  display: none;
 
-  @include mq(small) {
-    display:block;
-  }
-}
 
 main img {
   max-width: 100%;

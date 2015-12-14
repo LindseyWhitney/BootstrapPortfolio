@@ -112,11 +112,6 @@
   text-align: center;
   color: $color-reverse;
 
-  .container {
-    max-width: 800px;
-  }
-
-
   h2, p {
     padding: em(5px) em(15px) 0 em(15px);
   }
@@ -129,7 +124,7 @@
 
 .emphasis {
   font-style: $font-style--secondary;
-  font-size: em(17px);
+  font-size: em(20px);
 }
 
 .icons {
@@ -176,17 +171,7 @@
 // ========================================
 
 #about {
-  padding: 90px 1em;
-
-  .container {
-    max-width: 800px;
-    padding: 0;
-  }
-
-  .content {
-    max-width: 780px;
-    margin: 0 auto;
-  }
+  padding: 90px 0;
 
   h2 {
     color: $color-primary;
@@ -206,11 +191,18 @@
 }
 
 .content {
+  text-align: center;
+
+  @include mq(medium) {
+    text-align: left;
+  }
 
   h3 {
     font-size: em(17px);
     letter-spacing: normal;
     color: $color-primary;
+
+
   }
   ul, li {
     padding: 0;

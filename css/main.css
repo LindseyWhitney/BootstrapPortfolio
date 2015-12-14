@@ -131,8 +131,6 @@ form {
   padding: 90px 1em;
   text-align: center;
   color: #fff; }
-  #services .container {
-    max-width: 800px; }
   #services h2, #services p {
     padding: 0.33333em 1em 0 1em; }
   #services ul {
@@ -141,7 +139,7 @@ form {
 
 .emphasis {
   font-style: italic;
-  font-size: 1.13333em; }
+  font-size: 1.33333em; }
 
 .icons {
   fill: none;
@@ -171,13 +169,7 @@ form {
         padding-top: 40px; } }
 
 #about {
-  padding: 90px 1em; }
-  #about .container {
-    max-width: 800px;
-    padding: 0; }
-  #about .content {
-    max-width: 780px;
-    margin: 0 auto; }
+  padding: 90px 0; }
   #about h2 {
     color: #29b093;
     padding: 0; }
@@ -191,15 +183,20 @@ form {
   width: 212px;
   margin: 0 auto 20px; }
 
-.content h3 {
-  font-size: 1.13333em;
-  letter-spacing: normal;
-  color: #29b093; }
-.content ul, .content li {
-  padding: 0;
-  list-style: none;
-  color: #808285;
-  font-style: italic; }
+.content {
+  text-align: center; }
+  @media (min-width: 992px) {
+    .content {
+      text-align: left; } }
+  .content h3 {
+    font-size: 1.13333em;
+    letter-spacing: normal;
+    color: #29b093; }
+  .content ul, .content li {
+    padding: 0;
+    list-style: none;
+    color: #808285;
+    font-style: italic; }
 
 #contact {
   background-color: #f1f2f2;
@@ -251,6 +248,20 @@ form {
     .portfolio__page {
       margin-top: 4em; } }
 
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    max-width: 19em;
+    display: block;
+    padding-right: 3em; } }
+@media (min-width: 992px) {
+  .sidebar {
+    max-width: 21.33333em; } }
+@media (min-width: 1200px) {
+  .sidebar {
+    max-width: 26em; } }
+
 .portfolio__text {
   color: #808285;
   text-align: center; }
@@ -274,12 +285,6 @@ form {
   padding: 0.66667em 0;
   border-top: 1px solid rgba(128, 130, 133, 0.2);
   border-bottom: 1px solid rgba(128, 130, 133, 0.2); }
-
-.is-hidden {
-  display: none; }
-  @media (min-width: 768px) {
-    .is-hidden {
-      display: block; } }
 
 main img {
   max-width: 100%; }
