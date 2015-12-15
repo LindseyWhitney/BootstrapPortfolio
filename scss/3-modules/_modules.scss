@@ -6,18 +6,36 @@
 .navbar-nav li a {
   color: $color-secondary;
   padding: .7em 1em;
+
+  &:hover {
+    color: $color-primary;
+    background-color: inherit;
+  }
+}
+
+.navbar-nav li a {
+  margin: 0;
+  font-size: em(22px);
+}
+
+.navbar-collapse {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+#navbar ul {
+  margin: 0;
 }
 
 .navbar-brand {
   font-size: em(23px);
 }
 
-.navbar-nav li a {
-  font-size: em(22px);
+.icon-bar {
+  background-color: $color-secondary;
 }
 
-.icon-bar {
-  background-color: $color-primary;
+.navbar-toggle:hover {
+  background-color: $color-subtle;
 }
 
 .nav-up {
@@ -30,12 +48,12 @@
 // ========================================
 
 #jumbotron {
-  height: em(700px);
-  padding: em(90px) 1em;
+  //height: em(700px);
+
   margin-bottom: 0;
 
   @include mq(small) {
-    height: em(800px);
+    //height: em(800px);
   }
 
 
@@ -43,12 +61,11 @@
 
 .cd-bg-1 {
     h1 {
-      background-repeat: no-repeat;
-      background-position: center bottom;
       font-size: em(56px);
       color: $color-reverse;
       letter-spacing: 2px;
       text-align: center;
+
 
       @include mq(small) {
         font-size: em(66px);

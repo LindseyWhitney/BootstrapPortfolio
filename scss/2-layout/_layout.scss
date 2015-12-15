@@ -23,6 +23,18 @@
 // ========================================
 // Alternate Fixed and Scrolling
 // ========================================
+.cd-fixed-bgtop {
+  min-height: 100%;
+  background-size: cover;
+	background-attachment: fixed;
+}
+
+.pattern {
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
 .cd-fixed-bg {
 	min-height: 100%;
   background-repeat: repeat;

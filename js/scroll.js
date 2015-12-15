@@ -1,4 +1,5 @@
 // Nav Hide/Reveal on Scroll -------------------------
+// Reference: https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.q84aykb9s
 
 var lastScrollTop = 0;
 var delta = 5;

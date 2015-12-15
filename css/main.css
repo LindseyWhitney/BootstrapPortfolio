@@ -1,3 +1,6 @@
+body, html, .animsition, .pattern {
+  height: 100%; }
+
 body {
   font-size: 15px;
   line-height: 1.33333;
@@ -50,6 +53,16 @@ form {
   padding-right: 10%;
   text-align: center; }
 
+.cd-fixed-bgtop {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.pattern {
+  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  background-attachment: fixed;
+  min-height: 100%; }
+
 .cd-fixed-bg {
   min-height: 100%;
   background-repeat: repeat;
@@ -69,30 +82,37 @@ form {
 .navbar-nav li a {
   color: #808285;
   padding: .7em 1em; }
+  .navbar-brand:hover,
+  .navbar-nav li a:hover {
+    color: #29b093;
+    background-color: inherit; }
+
+.navbar-nav li a {
+  margin: 0;
+  font-size: 1.46667em; }
+
+.navbar-collapse {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+#navbar ul {
+  margin: 0; }
 
 .navbar-brand {
   font-size: 1.53333em; }
 
-.navbar-nav li a {
-  font-size: 1.46667em; }
-
 .icon-bar {
-  background-color: #29b093; }
+  background-color: #808285; }
+
+.navbar-toggle:hover {
+  background-color: rgba(128, 130, 133, 0.2); }
 
 .nav-up {
   top: -51.7px; }
 
 #jumbotron {
-  height: 46.66667em;
-  padding: 6em 1em;
   margin-bottom: 0; }
-  @media (min-width: 768px) {
-    #jumbotron {
-      height: 53.33333em; } }
 
 .cd-bg-1 h1 {
-  background-repeat: no-repeat;
-  background-position: center bottom;
   font-size: 3.73333em;
   color: #fff;
   letter-spacing: 2px;

@@ -7,6 +7,10 @@
 // ========================================
 
 
+body, html, .animsition, .pattern {
+  height: 100%;
+}
+
 body {
   font-size: $base__font-size;
   line-height: ($base__line/$base__font-size);
