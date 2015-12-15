@@ -5,7 +5,11 @@
 .navbar-brand,
 .navbar-nav li a {
   color: $color-secondary;
-  padding: .7em 1em;
+  padding: .7em .5em;
+
+  @include mq(medium) {
+    padding: .7em 1em;
+  }
 
   &:hover {
     color: $color-primary;
@@ -47,16 +51,11 @@
 // Jumbotron
 // ========================================
 
+
+
 #jumbotron {
-  //height: em(700px);
-
-  margin-bottom: 0;
-
-  @include mq(small) {
-    //height: em(800px);
-  }
-
-
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .cd-bg-1 {
@@ -65,6 +64,7 @@
       color: $color-reverse;
       letter-spacing: 2px;
       text-align: center;
+      height: em(29px);
 
 
       @include mq(small) {
@@ -82,7 +82,6 @@
 
   p {
       font-size: em(24px);
-      padding-top: em(120px);
       @include mq(small) {
       font-size: em(30px);
       }
@@ -101,27 +100,24 @@
 // ========================================
 
 .portfolio {
-  padding: 90px 1em 130px;
+  padding-top: 18%;
+  padding-bottom: 17%;
 
-  h2, li {
+  @include mq(medium) {
+    padding-top: 9%;
+    padding-bottom: 8%;
+  }
+
+  li {
     color: $color-primary;
     list-style: none;
   }
 
-  p {
-    color: $color-secondary;
-    text-align: center;
-    padding: em(5px) em(15px) 0 em(15px);
-  }
-
   li a img {
-  width: 100%;
-  height: auto;
-
-
+    width: 100%;
+    height: auto;
   }
 }
-
 
 // ========================================
 // Services
@@ -129,9 +125,15 @@
 
 #services {
   background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
-  padding: 90px 1em;
   text-align: center;
   color: $color-reverse;
+  padding-top: 19%;
+  padding-bottom: 23%;
+
+  @include mq(medium) {
+    padding-top: em(150px);
+    padding-bottom: em(150px);
+  }
 
   h2, p {
     padding: em(5px) em(15px) 0 em(15px);
@@ -192,7 +194,13 @@
 // ========================================
 
 #about {
-  padding: 90px 0;
+  padding-top: 19%;
+  padding-bottom: 23%;
+
+  @include mq(medium) {
+    padding-top: em(150px);
+    padding-bottom: em(150px);
+  }
 
   h2 {
     color: $color-primary;
@@ -241,12 +249,14 @@
 
 #contact {
   background-color: #f1f2f2;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: em(120px);
+  padding-bottom: em(100px);
 
-  .container {
-    max-width: 9  00px;
+  @include mq(medium) {
+    padding-top: em(150px);
+    padding-bottom: em(150px);
   }
+
 
   h2 {
     color: $color-primary;
@@ -259,6 +269,10 @@
 .form-control:focus {
   box-shadow: 0 0 3px $color-primary;
   border: 1px solid $color-primary;
+}
+
+.btn:hover {
+  color: $color-secondary;
 }
 
 

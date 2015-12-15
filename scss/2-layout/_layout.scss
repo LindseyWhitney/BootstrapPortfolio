@@ -14,10 +14,23 @@
   padding: em(2px);
 }
 
+// ========================================
+// Styles
+// ========================================
+
 .intro {
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: center;
+  text-align: left;
+}
+
+// Centering Content Vertically
+
+.table {
+  display: table;
+}
+
+.tablecell {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 // ========================================

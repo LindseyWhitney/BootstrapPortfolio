@@ -9,6 +9,7 @@
 }
 .cd-headline.type .cd-words-wrapper::after {
   /* vertical bar */
+
   content: '';
   position: absolute;
   right: 0;
@@ -19,9 +20,9 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 90%;
+  height: 90px;
   width: 1px;
-  background-color: #fff;
+
 }
 .cd-headline.type .cd-words-wrapper.waiting::after {
   -webkit-animation: cd-pulse 1s infinite;
