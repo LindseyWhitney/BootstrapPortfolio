@@ -1,8 +1,10 @@
 .portfolio__page {
   margin-top: em(20px);
 
+
   @include mq(small) {
     margin-top: em(60px);
+    margin-bottom: em(30px);
   }
 }
 
@@ -41,6 +43,11 @@
 .portfolio__title {
   margin-bottom: em(5px);
   font-size: em(25px);
+  padding-top: em(30px);
+
+  @include mq(small) {
+    padding-top: em(5px);
+  }
 }
 
 .portfolio__type {
@@ -54,10 +61,14 @@
 
 .portfolio__client {
   font-style: $font-style--secondary;
-  margin-top: em(15px);
   padding: em(10px) 0;
   border-top: 1px solid $color-subtle;
   border-bottom: 1px solid $color-subtle;
+  margin: em(22px) auto em(8px);
+
+  @include mq(small) {
+    margin: em(18px) auto;
+  }
 }
 
 // ========================================
@@ -97,12 +108,27 @@ main img {
     color: $color-secondary;
     padding-top: em(10px);
 
+    &:hover {
+      color: $color-primary;
+    }
+
     @include mq(small) {
       display: none;
     }
   }
 }
 
-svg {
+.subnav {
   height: 100%;
+  fill: none;
+  stroke: #BCBEC0;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit:10;
+
+  &:hover {
+    stroke: $color-primary;
+  }
+
 }

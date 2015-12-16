@@ -297,7 +297,8 @@ form {
   margin-top: 1.33333em; }
   @media (min-width: 768px) {
     .portfolio__page {
-      margin-top: 4em; } }
+      margin-top: 4em;
+      margin-bottom: 2em; } }
 
 @media (min-width: 768px) {
   .sidebar {
@@ -323,7 +324,11 @@ form {
 
 .portfolio__title {
   margin-bottom: 0.33333em;
-  font-size: 1.66667em; }
+  font-size: 1.66667em;
+  padding-top: 2em; }
+  @media (min-width: 768px) {
+    .portfolio__title {
+      padding-top: 0.33333em; } }
 
 .portfolio__type {
   text-transform: uppercase;
@@ -334,10 +339,13 @@ form {
 
 .portfolio__client {
   font-style: italic;
-  margin-top: 1em;
   padding: 0.66667em 0;
   border-top: 1px solid rgba(128, 130, 133, 0.2);
-  border-bottom: 1px solid rgba(128, 130, 133, 0.2); }
+  border-bottom: 1px solid rgba(128, 130, 133, 0.2);
+  margin: 1.46667em auto 0.53333em; }
+  @media (min-width: 768px) {
+    .portfolio__client {
+      margin: 1.2em auto; } }
 
 main img {
   max-width: 100%; }
@@ -362,12 +370,22 @@ main img {
     font-style: italic;
     color: #808285;
     padding-top: 0.66667em; }
+    .navigation .navigation__top:hover {
+      color: #29b093; }
     @media (min-width: 768px) {
       .navigation .navigation__top {
         display: none; } }
 
-svg {
-  height: 100%; }
+.subnav {
+  height: 100%;
+  fill: none;
+  stroke: #BCBEC0;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+  .subnav:hover {
+    stroke: #29b093; }
 
 .cd-headline.type .cd-words-wrapper {
   font-style: "abril-titling", "Garamond", serif;
