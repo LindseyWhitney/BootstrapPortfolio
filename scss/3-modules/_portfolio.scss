@@ -6,6 +6,11 @@
   }
 }
 
+
+// ========================================
+// Sidebar
+// ========================================
+
 .sidebar {
   @include mq (small) {
     position: fixed;
@@ -35,11 +40,12 @@
 
 .portfolio__title {
   margin-bottom: em(5px);
-  font-size: em(24px);
+  font-size: em(25px);
 }
 
 .portfolio__type {
   text-transform: uppercase;
+  font-size: em(19px);
 
   @include mq(small) {
     text-align: left;
@@ -54,7 +60,9 @@
   border-bottom: 1px solid $color-subtle;
 }
 
-
+// ========================================
+// Main Content
+// ========================================
 
 main img {
   max-width: 100%;
@@ -66,4 +74,35 @@ main img {
   @include mq(small) {
     margin-top: em(28px);
   }
+}
+
+// ========================================
+// Navigation
+// ========================================
+
+.navigation {
+  padding: 30px 0 30px 0;
+  height: 100px;
+
+  @include mq(small) {
+    height: 40px;
+    bottom: em(40px);
+    padding: .5em 2em .5em 0;
+    margin: 0;
+  }
+
+  .navigation__top {
+    text-align: center;
+    font-style: $font-style--secondary;
+    color: $color-secondary;
+    padding-top: em(10px);
+
+    @include mq(small) {
+      display: none;
+    }
+  }
+}
+
+svg {
+  height: 100%;
 }
