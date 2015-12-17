@@ -158,33 +158,3 @@
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }
-
-// Page Transitions ========================================
-
-/*
- * CSS Animations
- * Don't forget to add vendor prefixes!
-
-  -moz- -o-   -webkit-  (transform, animation, keyframes)
- */
-.m-scene .scene_element {
-   -webkit-animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both;
-}
-
-.m-scene .scene_element--fadein {
-   -webkit-animation-name: fadeIn;
-}
-
-.m-scene.is-exiting .scene_element {
-   -webkit-animation-direction: alternate-reverse;
-}
-
-/*
- * Keyframes
- */
-@-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}

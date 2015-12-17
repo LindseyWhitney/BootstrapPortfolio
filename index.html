@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lindsey Whitney Design</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="js/dist/css/animsition.min.css">
     <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,8 +21,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://cdn.jsdelivr.net/vivus/0.2.3/vivus.min.js"></script>
   </head>
-  <body>
-
+  <body class="animsition">
 
       <!-- Navbar -->
       <nav class="navbar navbar-fixed-top nav-up">
@@ -68,43 +68,37 @@
 
       <!-- Portfolio -->
       <div class="portfolio" id="work">
-        <div id="main" class="container m-scene">
+        <div class="container">
           <ul id="da-thumbs" class="row da-thumbs codrops-demos">
             <li id="TN1" class="col-xs-6 col-sm-4">
-              <a class="scene_element scene_element--fadein" href="portfolio/portfolio1.html">
+              <a class="animsition-link" href="portfolio/portfolio1.html">
                 <img src="images/TN_CAC.jpg" alt="Thumbnail image of Campus Awards Ceremony project."/>
                 <div><span>Campus Awards Ceremony</span></div>
               </a>
             </li>
             <li id="TN2" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio2.html">
+              <a class="animsition-link" href="portfolio/portfolio2.html">
                 <img src="images/TN_GetInvolved.jpg" alt="Thumbnail image of Get(In)volved project."/>
                 <div><span>Get (IN)volved</span></div>
               </a>
             </li>
             <li id="TN3" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio3.html">
+              <a class="animsition-link" href="portfolio/portfolio3.html">
                 <img src="images/TN_Kaleidoscope.jpg" alt="Thumbnail image of Kaleidoscope Physical Therapy project."/>
                 <div><span>Kaleidoscope</span></div>
               </a>
             </li>
             <li id="TN4" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio4.html">
+              <a class="animsition-link" href="portfolio/portfolio4.html">
                 <img src="images/TN_AnnualRep.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
                 <div><span>Boise State Annual Report</span></div>
               </a>
             </li>
-
-            <!-- test -->
-            <div class="scene_element scene_element--fadein">
             <li id="TN5" class="col-xs-6 col-sm-4">
-              <a href="portfolio/summerconf.html">
+              <a class="animsition-link" href="portfolio/summerconf.html">
                 <img src="images/TN_SummerConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
                 <div><span>Summer Conferences Website</span></div>
               </a>
-            </div>
-
-
             </li>
             <li id="TN6" class="col-xs-6 col-sm-4">
               <a class="animsition-link" href="portfolio/broncoday.html">
@@ -113,37 +107,37 @@
               </a>
             </li>
             <li id="TN7" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio7.html">
+              <a class="animsition-link" href="portfolio/portfolio7.html">
                 <img src="images/TN_SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
                 <div><span>Student Diversity &amp; Inclusion</span></div>
               </a>
             </li>
             <li id="TN8" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio8.html">
+              <a class="animsition-link" href="portfolio/portfolio8.html">
                 <img src="images/TN_SweetPepper.jpg" alt="Thumbnail image of Sweet Pepper Ranch project."/>
                 <div><span>Sweet Pepper Ranch</span></div>
               </a>
             </li>
             <li id="TN9" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio9.html">
+              <a class="animsition-link" href="portfolio/portfolio9.html">
                 <img src="images/TN_WC.jpg" alt="Thumbnail image of Women's Center Brochure project."/>
                 <div><span>Women's Center Brochure</span></div>
               </a>
             </li>
             <li id="TN10" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio10.html">
+              <a class="animsition-link" href="portfolio/portfolio10.html">
                 <img src="images/TN_SummerConf.jpg" alt="Thumbnail image of Miscellaneous project."/>
                 <div><span>Miscellaneous Project</span></div>
               </a>
             </li>
             <li id="TN11" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio11.html">
+              <a class="animsition-link" href="portfolio/portfolio11.html">
                 <img src="images/TN_LeaderShape.jpg" alt="Thumbnail image of LeaderShape project."/>
                 <div><span>LeaderShape</span></div>
               </a>
             </li>
             <li id="TN12" class="col-xs-6 col-sm-4">
-              <a href="portfolio/portfolio12.html">
+              <a class="animsition-link" href="portfolio/portfolio12.html">
                 <img src="images/TN_MCC.jpg" alt="Thumbnail image of Make College Count project."/>
                 <div><span>Make College Count</span></div>
               </a>
@@ -493,8 +487,6 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-    <script src="js/jquery.smoothState.min.js"></script>
-    <script src="js/pagetransitions.js"></script>
     <script type="text/javascript">
       $(function() {
         $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
@@ -502,6 +494,33 @@
     </script>
     <script src="js/my.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="../js/dist/js/animsition.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+        });
+      });
+    </script>
 
   </body>
 </html>

@@ -523,30 +523,4 @@ main img {
       margin: 80px 20px 20px 20px;
       font-size: 1.33333em; } }
 
-/*
- * CSS Animations
- * Don't forget to add vendor prefixes!
-
-  -moz- -o-   -webkit-  (transform, animation, keyframes)
- */
-.m-scene .scene_element {
-  -webkit-animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-fill-mode: both; }
-
-.m-scene .scene_element--fadein {
-  -webkit-animation-name: fadeIn; }
-
-.m-scene.is-exiting .scene_element {
-  -webkit-animation-direction: alternate-reverse; }
-
-/*
- * Keyframes
- */
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 /*# sourceMappingURL=main.css.map */
