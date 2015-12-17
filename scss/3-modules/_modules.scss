@@ -1,11 +1,10 @@
-// ========================================
-// Nav
-// ========================================
+// Nav ===================================
 
 .navbar-brand,
 .navbar-nav li a {
   color: $color-secondary;
-  padding: .7em .5em;
+  padding: .6em .5em;
+  margin-top: .1em;
 
   @include mq(medium) {
     padding: .7em 1em;
@@ -15,11 +14,12 @@
     color: $color-primary;
     background-color: inherit;
   }
+
 }
 
 .navbar-nav li a {
   margin: 0;
-  font-size: em(22px);
+  font-size: em(18px);
 }
 
 .navbar-collapse {
@@ -31,7 +31,12 @@
 }
 
 .navbar-brand {
-  font-size: em(23px);
+  font-size: em(18px);
+
+  &:visited {
+    color: $color-secondary;
+    background-color: inherit;
+  }
 }
 
 .icon-bar {
@@ -47,9 +52,8 @@
 }
 
 
-// ========================================
-// Jumbotron
-// ========================================
+
+// Jumbotron ==============================
 
 
 
@@ -95,9 +99,7 @@
 }
 
 
-// ========================================
-// Portfolio
-// ========================================
+// Portfolio ==============================
 
 .portfolio {
   padding-top: 18%;
@@ -119,9 +121,8 @@
   }
 }
 
-// ========================================
-// Services
-// ========================================
+
+// Services ===============================
 
 #services {
   background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
@@ -189,9 +190,8 @@
   }
 }
 
-// ========================================
-// About
-// ========================================
+
+// About ==================================
 
 #about {
   padding-top: 19%;
@@ -243,12 +243,11 @@
 
 
 
-// ========================================
-// Contact
-// ========================================
+
+// Contact ===============================
 
 #contact {
-  background-color: #f1f2f2;
+  background-color: $color-light;
   padding-top: em(120px);
   padding-bottom: em(100px);
 
@@ -272,18 +271,22 @@
 }
 
 .btn:hover {
-  color: $color-secondary;
+  color: $color-light;
 }
 
 
-// ========================================
-// Footer
-// ========================================
+
+// Footer ==================================
+
 .social {
-  height: 100px;
-  padding-top: 30px;
+  height: 60px;
+  padding-top: 12px;
   background-color: $color-primary;
   position: relative;
+}
+
+.group {
+  width: 350px;
 }
 
 .size {
@@ -294,10 +297,6 @@
   margin: 0 10px;
 }
 
-.group {
-  width: 350px;
-}
-
 #twitter,
 #linkedin,
 #behance,
@@ -306,6 +305,6 @@
   fill: $color-reverse;
 
   &:hover {
-    fill: $color-secondary;
+    fill: $color-light;
   }
 }

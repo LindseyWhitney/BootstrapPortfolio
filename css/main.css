@@ -1,4 +1,4 @@
-body, html, .animsition, .pattern {
+body, html, .pattern {
   height: 100%; }
 
 body {
@@ -52,7 +52,8 @@ form {
   text-align: left; }
 
 .table {
-  display: table; }
+  display: table;
+  height: 100%; }
 
 .tablecell {
   display: table-cell;
@@ -86,7 +87,8 @@ form {
 .navbar-brand,
 .navbar-nav li a {
   color: #808285;
-  padding: .7em .5em; }
+  padding: .6em .5em;
+  margin-top: .1em; }
   @media (min-width: 992px) {
     .navbar-brand,
     .navbar-nav li a {
@@ -98,7 +100,7 @@ form {
 
 .navbar-nav li a {
   margin: 0;
-  font-size: 1.46667em; }
+  font-size: 1.2em; }
 
 .navbar-collapse {
   background-color: rgba(255, 255, 255, 0.8); }
@@ -107,7 +109,10 @@ form {
   margin: 0; }
 
 .navbar-brand {
-  font-size: 1.53333em; }
+  font-size: 1.2em; }
+  .navbar-brand:visited {
+    color: #808285;
+    background-color: inherit; }
 
 .icon-bar {
   background-color: #808285; }
@@ -262,13 +267,16 @@ form {
   border: 1px solid #29b093; }
 
 .btn:hover {
-  color: #808285; }
+  color: #f1f2f2; }
 
 .social {
-  height: 100px;
-  padding-top: 30px;
+  height: 60px;
+  padding-top: 12px;
   background-color: #29b093;
   position: relative; }
+
+.group {
+  width: 350px; }
 
 .size {
   display: inline-block;
@@ -276,9 +284,6 @@ form {
   width: 40px;
   height: 40px;
   margin: 0 10px; }
-
-.group {
-  width: 350px; }
 
 #twitter,
 #linkedin,
@@ -291,14 +296,12 @@ form {
   #behance:hover,
   #github:hover,
   #codepen:hover {
-    fill: #808285; }
+    fill: #f1f2f2; }
 
-.portfolio__page {
-  margin-top: 1.33333em; }
-  @media (min-width: 768px) {
-    .portfolio__page {
-      margin-top: 4em;
-      margin-bottom: 2em; } }
+@media (min-width: 768px) {
+  .portfolio__page {
+    margin-top: 4em;
+    margin-bottom: 2em; } }
 
 @media (min-width: 768px) {
   .sidebar {
@@ -363,18 +366,18 @@ main img {
     .navigation {
       height: 40px;
       bottom: 2.66667em;
-      padding: .5em 2em .5em 0;
+      padding: .5em 15px .5em 0;
       margin: 0; } }
-  .navigation .navigation__top {
+  .navigation .navigation__home {
     text-align: center;
     font-style: italic;
     color: #808285;
     padding-top: 0.66667em; }
-    .navigation .navigation__top:hover {
-      color: #29b093; }
     @media (min-width: 768px) {
-      .navigation .navigation__top {
-        display: none; } }
+      .navigation .navigation__home {
+        padding-top: 0.33333em; } }
+    .navigation .navigation__home:hover {
+      color: #29b093; }
 
 .subnav {
   height: 100%;
@@ -519,5 +522,31 @@ main img {
       padding: 7% 0;
       margin: 80px 20px 20px 20px;
       font-size: 1.33333em; } }
+
+/*
+ * CSS Animations
+ * Don't forget to add vendor prefixes!
+
+  -moz- -o-   -webkit-  (transform, animation, keyframes)
+ */
+.m-scene .scene_element {
+  -webkit-animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; }
+
+.m-scene .scene_element--fadein {
+  -webkit-animation-name: fadeIn; }
+
+.m-scene.is-exiting .scene_element {
+  -webkit-animation-direction: alternate-reverse; }
+
+/*
+ * Keyframes
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */

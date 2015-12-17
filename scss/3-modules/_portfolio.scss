@@ -1,5 +1,5 @@
 .portfolio__page {
-  margin-top: em(20px);
+
 
 
   @include mq(small) {
@@ -98,22 +98,22 @@ main img {
   @include mq(small) {
     height: 40px;
     bottom: em(40px);
-    padding: .5em 2em .5em 0;
+    padding: .5em 15px .5em 0;
     margin: 0;
   }
 
-  .navigation__top {
+  .navigation__home {
     text-align: center;
     font-style: $font-style--secondary;
     color: $color-secondary;
     padding-top: em(10px);
 
-    &:hover {
-      color: $color-primary;
+    @include mq(small) {
+      padding-top: em(5px);
     }
 
-    @include mq(small) {
-      display: none;
+    &:hover {
+      color: $color-primary;
     }
   }
 }
