@@ -60,6 +60,32 @@
 #jumbotron {
   display: table-cell;
   vertical-align: middle;
+  position: relative;
+
+  img {
+    display: block;
+    position: relative;
+    margin: 4em auto;
+
+
+    @include mq(small){
+        max-width: 100%;
+    }
+  }
+}
+
+.tagline {
+  text-transform: uppercase;
+  color: $color-reverse;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+
+  h2 {
+    text-align: center;
+    font-size: em(20px);
+  }
+
 }
 
 .cd-bg-1 {
@@ -143,6 +169,10 @@
   ul {
     list-style: none;
     margin-left: -2.75em;
+
+    li {
+      font-style: $font-style--secondary;
+    }
   }
 }
 

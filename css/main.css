@@ -65,7 +65,7 @@ form {
   background-attachment: fixed; }
 
 .pattern {
-  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  background-image: url("../images/Cover_BackgroundTile.jpg");
   background-attachment: fixed;
   min-height: 100%; }
 
@@ -125,7 +125,25 @@ form {
 
 #jumbotron {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: relative; }
+  #jumbotron img {
+    display: block;
+    position: relative;
+    margin: 4em auto; }
+    @media (min-width: 768px) {
+      #jumbotron img {
+        max-width: 100%; } }
+
+.tagline {
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  width: 100%; }
+  .tagline h2 {
+    text-align: center;
+    font-size: 1.33333em; }
 
 .cd-bg-1 h1 {
   font-size: 3.73333em;
@@ -182,6 +200,8 @@ form {
   #services ul {
     list-style: none;
     margin-left: -2.75em; }
+    #services ul li {
+      font-style: italic; }
 
 .emphasis {
   font-style: italic;
