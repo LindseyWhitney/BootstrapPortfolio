@@ -68,7 +68,7 @@
     margin: 4em auto;
 
 
-    @include mq(small){
+    @include mq(small) {
         max-width: 100%;
     }
   }
@@ -78,7 +78,7 @@
   text-transform: uppercase;
   color: $color-reverse;
   position: absolute;
-  top: 60%;
+  top: 70%;
   width: 100%;
 
   h2 {
@@ -88,14 +88,16 @@
 
 }
 
-.cd-bg-1 {
+.myanimation {
     h1 {
-      font-size: em(56px);
+      font-size: em(20px);
       color: $color-reverse;
       letter-spacing: 2px;
       text-align: center;
-      height: em(29px);
 
+      .is-hidden {
+        display: none;
+      }
 
       @include mq(small) {
         font-size: em(66px);
@@ -109,14 +111,11 @@
         font-size: em(96px);
     }
   }
-
-  p {
-      font-size: em(24px);
-      @include mq(small) {
-      font-size: em(30px);
-      }
-  }
 }
+
+
+
+
 
 .lead {
   color: $color-reverse;

@@ -35,6 +35,15 @@
 }
 
 // ========================================
+// Separators
+// ========================================
+
+separator--triple {
+
+}
+
+
+// ========================================
 // Alternate Fixed and Scrolling
 // ========================================
 .cd-fixed-bgtop {
@@ -44,7 +53,10 @@
 }
 
 .pattern {
-  background-image: url("../images/Cover_BackgroundTile.jpg");
+  background:
+    radial-gradient(transparent, rgba(83, 131, 171, .5)),
+    url("../images/Cover_BackgroundTile.jpg");
+
   background-attachment: fixed;
   min-height: 100%;
 }
