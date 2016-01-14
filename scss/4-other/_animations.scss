@@ -188,12 +188,22 @@
 }
 .da-thumbs li a div {
 	position: absolute;
-	background: rgba(10,179,137,0.9);
+	background-color: rgba(10,179,137,0.7);
+  background-image: url("../images/Work__Vignette.png");
 	width: 100%;
 	height: 100%;
   text-align: center;
 }
-.da-thumbs li a div span {
+
+.da-thumbs li a div div {
+  position: relative;
+  display: block;
+	width: 95%;
+	height: 90%;
+  margin: em(16px) auto;
+  border: 12px solid rgba(255,255,255,1);
+}
+.da-thumbs li a div div span {
 	display: block;
   padding: 5% 0;
   margin: 20% 20px 20px 20px;
@@ -213,8 +223,10 @@
   }
 
 	text-transform: uppercase;
+  letter-spacing: 1px;
 	color: rgba(255,255,255,1);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	border-bottom: 1px solid rgba(255,255,255,0.5);
-	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.5);
+	// box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }

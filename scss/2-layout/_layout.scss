@@ -6,6 +6,60 @@
   text-align: left;
 }
 
+.container {
+  // @include debug;
+}
+
+.newSection {
+  padding-top: 20%;
+  padding-bottom: 17%;
+
+  @include mq(medium) {
+    padding-top: em(150px);
+    padding-bottom: 8%;
+  }
+}
+
+
+// H2 Headers ==============================
+
+.h2--L {
+  display: block;
+  margin: 0 auto em(200px);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 91px;
+}
+
+#portfolio h2 {
+  background-image: url("../images/H1__FeaturedWork--L.png");
+}
+
+#services h2 {
+  background-image: url("../images/H1__Services--L.png");
+}
+
+#about h2 {
+  background-image: url("../images/H1__About--L.png");
+}
+
+#contact h2 {
+  background-image: url("../images/H1__Contact--L.png");
+}
+
+.h2__description {
+  font-style: $font-style--secondary;
+  color: $color-light;
+  text-align: center;
+  font-size: em(18px);
+  position: relative;
+  bottom: em(23px);
+  margin-bottom: em(40px);
+}
+
+
+
+
 // ========================================
 // Alternate Fixed and Scrolling
 // ========================================

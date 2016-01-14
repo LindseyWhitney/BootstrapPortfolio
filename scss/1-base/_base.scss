@@ -25,17 +25,22 @@ nav {
   transition: top 0.2s ease-in-out;
 }
 
-i {
-  font-style: $font-style--base;
-}
-
 h2 {
   margin-bottom: em(5px);
   font-size: em(24px);
   text-align: center;
 }
 
-h3,
+h3 {
+    text-transform: uppercase;
+    color: $color-secondary;
+    text-align: center;
+    font-size: em(22px);
+    position: relative;
+    bottom: em(28px);
+    letter-spacing: .75px;
+}
+
 .btn {
   font-size: em(19px);
   letter-spacing: 2px;

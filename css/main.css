@@ -13,15 +13,20 @@ nav {
   height: 51.7px;
   transition: top 0.2s ease-in-out; }
 
-i {
-  font-style: normal; }
-
 h2 {
   margin-bottom: 0.33333em;
   font-size: 1.6em;
   text-align: center; }
 
-h3,
+h3 {
+  text-transform: uppercase;
+  color: #808285;
+  text-align: center;
+  font-size: 1.46667em;
+  position: relative;
+  bottom: 1.86667em;
+  letter-spacing: .75px; }
+
 .btn {
   font-size: 1.26667em;
   letter-spacing: 2px;
@@ -32,7 +37,7 @@ p {
 
 button {
   margin-top: 2em;
-  background-color: #29b093;
+  background-color: #0ab389;
   color: #fff; }
 
 form {
@@ -40,6 +45,42 @@ form {
 
 .intro {
   text-align: left; }
+
+.newSection {
+  padding-top: 20%;
+  padding-bottom: 17%; }
+  @media (min-width: 992px) {
+    .newSection {
+      padding-top: 10em;
+      padding-bottom: 8%; } }
+
+.h2--L {
+  display: block;
+  margin: 0 auto 13.33333em;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 91px; }
+
+#portfolio h2 {
+  background-image: url("../images/H1__FeaturedWork--L.png"); }
+
+#services h2 {
+  background-image: url("../images/H1__Services--L.png"); }
+
+#about h2 {
+  background-image: url("../images/H1__About--L.png"); }
+
+#contact h2 {
+  background-image: url("../images/H1__Contact--L.png"); }
+
+.h2__description {
+  font-style: italic;
+  color: #939598;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 1.53333em;
+  margin-bottom: 2.66667em; }
 
 .cd-fixed-bgtop {
   min-height: 100%;
@@ -72,7 +113,7 @@ form {
       padding: .7em 1em; } }
   .navbar-brand:hover,
   .navbar-nav li a:hover {
-    color: #29b093;
+    color: #0ab389;
     background-color: inherit; }
 
 .navbar-nav li a {
@@ -200,19 +241,13 @@ form {
       width: 290px;
       margin: 10em auto 0; } }
 
-.portfolio {
-  padding-top: 18%;
-  padding-bottom: 17%; }
-  @media (min-width: 992px) {
-    .portfolio {
-      padding-top: 9%;
-      padding-bottom: 8%; } }
-  .portfolio li {
-    color: #29b093;
-    list-style: none; }
-  .portfolio li a img {
-    width: 100%;
-    height: auto; }
+.portfolio li {
+  color: #0ab389;
+  list-style: none;
+  padding: 0; }
+.portfolio li a img {
+  width: 100%;
+  height: auto; }
 
 #services {
   background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
@@ -271,7 +306,7 @@ form {
       padding-top: 10em;
       padding-bottom: 10em; } }
   #about h2 {
-    color: #29b093;
+    color: #0ab389;
     padding: 0; }
   #about p {
     color: #808285;
@@ -291,7 +326,7 @@ form {
   .content h3 {
     font-size: 1.13333em;
     letter-spacing: normal;
-    color: #29b093; }
+    color: #0ab389; }
   .content ul, .content li {
     padding: 0;
     list-style: none;
@@ -299,7 +334,7 @@ form {
     font-style: italic; }
 
 #contact {
-  background-color: #f1f2f2;
+  background-color: #939598;
   padding-top: 8em;
   padding-bottom: 6.66667em; }
   @media (min-width: 992px) {
@@ -307,21 +342,21 @@ form {
       padding-top: 10em;
       padding-bottom: 10em; } }
   #contact h2 {
-    color: #29b093; }
+    color: #0ab389; }
   #contact p {
     color: #808285; }
 
 .form-control:focus {
-  box-shadow: 0 0 3px #29b093;
-  border: 1px solid #29b093; }
+  box-shadow: 0 0 3px #0ab389;
+  border: 1px solid #0ab389; }
 
 .btn:hover {
-  color: #f1f2f2; }
+  color: #939598; }
 
 .social {
   height: 60px;
   padding-top: 12px;
-  background-color: #29b093;
+  background-color: #0ab389;
   position: relative; }
 
 .group {
@@ -345,7 +380,7 @@ form {
   #behance:hover,
   #github:hover,
   #codepen:hover {
-    fill: #f1f2f2; }
+    fill: #939598; }
 
 @media (min-width: 768px) {
   .portfolio__page {
@@ -426,7 +461,7 @@ main img {
       .navigation .navigation__home {
         padding-top: 0.33333em; } }
     .navigation .navigation__home:hover {
-      color: #29b093; }
+      color: #0ab389; }
 
 .subnav {
   height: 100%;
@@ -437,7 +472,7 @@ main img {
   stroke-linejoin: round;
   stroke-miterlimit: 10; }
   .subnav:hover {
-    stroke: #29b093; }
+    stroke: #0ab389; }
 
 .myanimation {
   height: 13em;
@@ -591,28 +626,38 @@ main img {
 
 .da-thumbs li a div {
   position: absolute;
-  background: rgba(10, 179, 137, 0.9);
+  background-color: rgba(10, 179, 137, 0.7);
+  background-image: url("../images/Work__Vignette.png");
   width: 100%;
   height: 100%;
   text-align: center; }
 
-.da-thumbs li a div span {
+.da-thumbs li a div div {
+  position: relative;
+  display: block;
+  width: 95%;
+  height: 90%;
+  margin: 1.06667em auto;
+  border: 12px solid white; }
+
+.da-thumbs li a div div span {
   display: block;
   padding: 5% 0;
   margin: 20% 20px 20px 20px;
   font-size: 1em;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3); }
+  border-top: 1px solid rgba(255, 255, 255, 0.5); }
   @media (min-width: 992px) {
-    .da-thumbs li a div span {
+    .da-thumbs li a div div span {
       padding: 6% 0;
       margin: 65px 20px 20px 20px;
       font-size: 1.13333em; } }
   @media (min-width: 1200px) {
-    .da-thumbs li a div span {
+    .da-thumbs li a div div span {
       padding: 7% 0;
       margin: 80px 20px 20px 20px;
       font-size: 1.33333em; } }
