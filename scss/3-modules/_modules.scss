@@ -74,7 +74,13 @@
 
 #jumbotron {
   position: relative;
-  height: 632px;
+  display: block;
+  text-align: center;
+  height: 500px;
+
+  @media (min-width: 458px ) {
+    height: 550px;
+  }
 
   @include mq (small) {
     height: 635px;
@@ -148,9 +154,34 @@
 }
 
 .intro--mobile {
-  font-size: em(48px);
+  font-size: em(30px);
+  line-height: em(27px);
+  display: inline;
+  color: $color-reverse;
+
+  @media (min-width: 458px ) {
+    font-size: em(36px);
+  }
+
+  @media (min-width: 552px ) {
+    font-size: em(46px);
+  }
 }
 
+.intro--graphic {
+  display: block;
+  margin: em(160px) auto 0;
+  width: 240px;
+
+  @media (min-width: 458px ) {
+    width: 260px;
+  }
+
+  @media (min-width: 552px ) {
+    width: 290px;
+    margin: em(150px) auto 0;
+  }
+}
 
 
 // Portfolio ==============================
