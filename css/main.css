@@ -38,36 +38,13 @@ button {
 form {
   margin-bottom: 50px; }
 
-.row {
-  padding: 0; }
-
-.col-xs-6,
-.col-md-3,
-.col-md-4,
-.col-md-6,
-.col-md-8 {
-  padding: 0.13333em; }
-
 .intro {
   text-align: left; }
-
-.table {
-  display: table;
-  height: 100%; }
-
-.tablecell {
-  display: table-cell;
-  vertical-align: middle; }
 
 .cd-fixed-bgtop {
   min-height: 100%;
   background-size: cover;
   background-attachment: fixed; }
-
-.pattern {
-  background: radial-gradient(transparent, rgba(83, 131, 171, 0.5)), url("../images/Cover_BackgroundTile.jpg");
-  background-attachment: fixed;
-  min-height: 100%; }
 
 .cd-fixed-bg {
   min-height: 100%;
@@ -123,30 +100,59 @@ form {
 .nav-up {
   top: -51.7px; }
 
+.jumbotron__background {
+  background-image: url("../images/Background_991px.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 932px; }
+  @media (min-width: 992px) {
+    .jumbotron__background {
+      background-image: url("../images/Background_1199px.jpg"); } }
+  @media (min-width: 1200px) {
+    .jumbotron__background {
+      background-image: url("../images/Background_2000px.jpg"); } }
+
 #jumbotron {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative; }
-  #jumbotron img {
-    display: block;
-    position: relative;
-    margin: 4em auto; }
-    @media (min-width: 768px) {
-      #jumbotron img {
-        max-width: 100%; } }
+  position: relative;
+  height: 632px; }
+  @media (min-width: 768px) {
+    #jumbotron {
+      height: 635px; } }
+  @media (min-width: 992px) {
+    #jumbotron {
+      height: 800px; } }
+  @media (min-width: 1200px) {
+    #jumbotron {
+      height: 932px; } }
+
+.home__graphic--atom {
+  display: block;
+  margin: 6em auto 0;
+  max-width: 100%; }
 
 .tagline {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  top: 70%;
-  width: 100%; }
-  .tagline h2 {
-    text-align: center;
-    font-size: 1.33333em; }
+  width: 100%;
+  font-size: 1.13333em;
+  letter-spacing: .5px; }
+  @media (min-width: 768px) {
+    .tagline {
+      top: 60.65%; } }
+  @media (min-width: 992px) {
+    .tagline {
+      font-size: 1.4em;
+      letter-spacing: 1px;
+      top: 63.65%; } }
+  @media (min-width: 1200px) {
+    .tagline {
+      font-size: 1.53333em;
+      top: 58.65%; } }
 
 .myanimation h1 {
-  font-size: 1.33333em;
+  position: relative;
   color: #fff;
   letter-spacing: 2px;
   text-align: center; }
@@ -154,18 +160,19 @@ form {
     display: none; }
   @media (min-width: 768px) {
     .myanimation h1 {
-      font-size: 4.4em; } }
+      font-size: 4.4em;
+      bottom: 28%; } }
   @media (min-width: 992px) {
     .myanimation h1 {
-      font-size: 5.73333em; } }
+      font-size: 5.73333em;
+      bottom: 30%; } }
   @media (min-width: 1200px) {
     .myanimation h1 {
-      font-size: 6.4em; } }
+      font-size: 6.4em;
+      bottom: 48%; } }
 
-.lead {
-  color: #fff;
-  letter-spacing: .5px;
-  text-align: center; }
+.intro--mobile {
+  font-size: 3.2em; }
 
 .portfolio {
   padding-top: 18%;

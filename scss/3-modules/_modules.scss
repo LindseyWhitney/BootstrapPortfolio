@@ -55,42 +55,73 @@
 
 // Jumbotron ==============================
 
+.jumbotron__background {
+  background-image: url("../images/Background_991px.jpg");
 
+  @include mq(medium) {
+      background-image: url("../images/Background_1199px.jpg");
+  }
+
+  @include mq(large) {
+      background-image: url("../images/Background_2000px.jpg");
+  }
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 932px;
+}
 
 #jumbotron {
-  display: table-cell;
-  vertical-align: middle;
   position: relative;
+  height: 632px;
 
-  img {
-    display: block;
-    position: relative;
-    margin: 4em auto;
-
-
-    @include mq(small) {
-        max-width: 100%;
-    }
+  @include mq (small) {
+    height: 635px;
   }
+
+  @include mq (medium) {
+    height: 800px;
+  }
+
+  @include mq (large) {
+    height: 932px;
+  }
+}
+
+.home__graphic--atom {
+  display: block;
+  margin: 6em auto 0;
+  max-width: 100%;
 }
 
 .tagline {
   text-transform: uppercase;
   color: $color-reverse;
   position: absolute;
-  top: 70%;
   width: 100%;
+  font-size: em(17px);
+  letter-spacing: .5px;
 
-  h2 {
-    text-align: center;
-    font-size: em(20px);
+  @include mq (small) {
+    top: 60.65%;
   }
 
+  @include mq (medium) {
+    font-size: em(21px);
+    letter-spacing: 1px;
+    top: 63.65%;
+  }
+
+  @include mq (large) {
+    font-size: em(23px);
+    top: 58.65%;
+  }
 }
 
 .myanimation {
     h1 {
-      font-size: em(20px);
+      position: relative;
       color: $color-reverse;
       letter-spacing: 2px;
       text-align: center;
@@ -101,27 +132,25 @@
 
       @include mq(small) {
         font-size: em(66px);
+        bottom: 28%;
       }
 
       @include mq(medium) {
         font-size: em(86px);
+        bottom: 30%;
       }
 
       @include mq(large) {
         font-size: em(96px);
+        bottom: 48%;
     }
   }
 }
 
-
-
-
-
-.lead {
-  color: $color-reverse;
-  letter-spacing: .5px;
-  text-align: center;
+.intro--mobile {
+  font-size: em(48px);
 }
+
 
 
 // Portfolio ==============================

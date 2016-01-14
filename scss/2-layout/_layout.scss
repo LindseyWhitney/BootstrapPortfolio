@@ -1,47 +1,10 @@
 // ========================================
-// Bootstrap
-// ========================================
-
-.row {
-  padding: 0;
-}
-
-.col-xs-6,
-.col-md-3,
-.col-md-4,
-.col-md-6,
-.col-md-8 {
-  padding: em(2px);
-}
-
-// ========================================
 // Styles
 // ========================================
 
 .intro {
   text-align: left;
 }
-
-// Centering Content Vertically
-
-.table {
-  display: table;
-  height: 100%;
-}
-
-.tablecell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-// ========================================
-// Separators
-// ========================================
-
-separator--triple {
-
-}
-
 
 // ========================================
 // Alternate Fixed and Scrolling
@@ -50,15 +13,6 @@ separator--triple {
   min-height: 100%;
   background-size: cover;
 	background-attachment: fixed;
-}
-
-.pattern {
-  background:
-    radial-gradient(transparent, rgba(83, 131, 171, .5)),
-    url("../images/Cover_BackgroundTile.jpg");
-
-  background-attachment: fixed;
-  min-height: 100%;
 }
 
 .cd-fixed-bg {
