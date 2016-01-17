@@ -12,11 +12,11 @@
 
 .newSection {
   padding-top: 20%;
-  padding-bottom: 17%;
+  padding-bottom: 20%;
 
-  @include mq(medium) {
+  @include mq(small) {
     padding-top: em(150px);
-    padding-bottom: 8%;
+    padding-bottom: em(150px);
   }
 }
 
@@ -51,10 +51,18 @@
   font-style: $font-style--secondary;
   color: $color-light;
   text-align: center;
-  font-size: em(18px);
+  font-size: em(16px);
   position: relative;
   bottom: em(23px);
   margin-bottom: em(40px);
+
+  @media (max-width: 552px ) {
+    display: none;
+  }
+
+  @include mq(small) {
+    font-size: em(18px);
+  }
 }
 
 

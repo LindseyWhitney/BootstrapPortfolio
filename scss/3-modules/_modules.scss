@@ -187,14 +187,6 @@
 // Portfolio ==============================
 
 .portfolio {
-  // padding-top: 20%;
-  // padding-bottom: 17%;
-  //
-  // @include mq(medium) {
-  //   padding-top: 11%;
-  //   padding-bottom: 8%;
-  // }
-
   li {
     color: $color-primary;
     list-style: none;
@@ -205,8 +197,31 @@
     width: 100%;
     height: auto;
   }
+
+  ul {
+    padding-bottom: em(50px);
+
+    @include mq(small) {
+      padding-bottom: em(85px);
+    }
+  }
 }
 
+.Work__button {
+   display: block;
+   background: url("../images/Work__button--Sprite.jpg") no-repeat;
+   height: 44px;
+   width: 333px;
+   margin: 0 auto;
+
+   &:hover {
+          background-position: center center;
+   }
+
+   &:active {
+          background-position: center bottom;
+   }
+}
 
 // Services ===============================
 
