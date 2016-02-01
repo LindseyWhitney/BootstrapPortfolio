@@ -228,15 +228,26 @@
 
 .da-thumbs li a div div span:first-child {
 	display: block;
-  padding: 5% 0;
   margin: 14% 20px;
-  font-size: em(18px);
+  padding: 2.5% 0;
+  font-size: em(20px);
+  letter-spacing: 1px;
+
+  @media (min-width: 450px ) {
+    padding: 4% 0;
+    font-size: em(21px);
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: 600px ) {
+    padding: 6% 0;
+    font-size: em(23px);
+  }
 
   @include mq(small) {
     padding: em(12px) 0;
     margin: 20px 50px 11px;
     font-size: em(18px);
-    letter-spacing: 1px;
     border-bottom: 2px solid rgba(255,255,255,0.5);
   }
 
@@ -244,7 +255,6 @@
     padding: em(16px) 0;
     margin: 30px 60px 19px;
     font-size: em(20px);
-    letter-spacing: 1px;
   }
 
   @include mq(large) {

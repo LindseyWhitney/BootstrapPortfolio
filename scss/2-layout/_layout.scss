@@ -32,19 +32,36 @@
 }
 
 #portfolio h2 {
-  background-image: url("../images/H1__FeaturedWork--L.png");
+  background-image: url("../images/H1__FeaturedWork--XS.jpg");
+  padding-bottom: 10px;
+
+  @media (min-width: 552px ) {
+    background-image: url("../images/H1__FeaturedWork--L.png");
+  }
 }
 
 #services h2 {
-  background-image: url("../images/H1__Services--L.png");
+  background-image: url("../images/H1__Services--XS.png");
+
+  @media (min-width: 552px ) {
+    background-image: url("../images/H1__Services--L.png");
+  }
 }
 
 #about h2 {
-  background-image: url("../images/H1__About--L.png");
+  background-image: url("../images/H1__About--XS.png");
+
+  @media (min-width: 552px ) {
+    background-image: url("../images/H1__About--L.png");
+  }
 }
 
 #contact h2 {
-  background-image: url("../images/H1__Contact--L.png");
+  background-image: url("../images/H1__Contact--XS.jpg");
+
+  @media (min-width: 552px ) {
+    background-image: url("../images/H1__Contact--L.png");
+  }
 }
 
 .h2__description {
@@ -78,19 +95,11 @@
 }
 
 .cd-fixed-bg {
-	min-height: 100%;
   background-repeat: repeat;
 	background-attachment: fixed;
 }
 
-.cd-fixed-bg.cd-bg-1,
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
-}
 
-.cd-fixed-bg.cd-bg-3 {
-  background-image: url("../images/IconPattern_Repeatable.png");
-}
 
 .cd-scrolling-bg {
 	min-height: 100%;

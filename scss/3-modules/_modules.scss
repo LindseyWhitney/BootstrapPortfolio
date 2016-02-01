@@ -107,7 +107,7 @@
   position: absolute;
   width: 100%;
   font-size: em(17px);
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 
   @include mq (small) {
     top: 60.65%;
@@ -115,7 +115,7 @@
 
   @include mq (medium) {
     font-size: em(21px);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     top: 63.65%;
   }
 
@@ -226,27 +226,49 @@
 // Services ===============================
 
 #services {
-  background-image: url("../images/IconPattern_Repeatable.png"), url("../images/Silk_Texture_Repeatable.jpg");
+  background-image: url("../images/Services_Background.jpg");
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  color: $color-reverse;
-  padding-top: 19%;
-  padding-bottom: 23%;
+  color: $color-light;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
-  @include mq(medium) {
-    padding-top: em(150px);
-    padding-bottom: em(150px);
+
+  @include mq(small) {
+    padding-top: 150px;
+    padding-bottom: 130px;
   }
+
 
   h2, p {
     padding: em(5px) em(15px) 0 em(15px);
   }
 
+  h3 {
+    margin-bottom: 30px;
+
+    @media (min-width: 552px ) {
+      margin-bottom: 0px;
+    }
+  }
+
   ul {
     list-style: none;
     margin-left: -2.75em;
+    position: relative;
+    bottom: 25px;
+
+    @include mq(small) {
+      padding-bottom: 20px;
+    }
+
+    @include mq(medium) {
+      padding-bottom: 0px;
+    }
 
     li {
-      font-style: $font-style--secondary;
+      font-style: $font-style--base;
     }
   }
 }
@@ -258,7 +280,7 @@
 
 .icons {
   fill: none;
-  stroke: $color-reverse;
+  stroke: $color-primary;
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-miterlimit:10;
@@ -266,10 +288,22 @@
 
 .svgcontainer {
   height: 145px;
+  position: relative;
+  bottom: 40px;
+
+  @include mq(small) {
+    bottom: 40px;
+  }
+
+  @include mq(medium) {
+    bottom: 50px;
+  }
+
 
   .lightbulb {
     width: 94px;
     padding-top: 30px;
+
   }
 
   .eyeball {
