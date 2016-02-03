@@ -40,6 +40,15 @@
   }
 }
 
+#process h2 {
+  background-image: url("../images/H1__Process--XS.jpg");
+  padding-bottom: 10px;
+
+  @media (min-width: 552px ) {
+    background-image: url("../images/H1__Process--L.png");
+  }
+}
+
 #services h2 {
   background-image: url("../images/H1__Services--XS.png");
 
@@ -98,8 +107,6 @@
   background-repeat: repeat;
 	background-attachment: fixed;
 }
-
-
 
 .cd-scrolling-bg {
 	min-height: 100%;

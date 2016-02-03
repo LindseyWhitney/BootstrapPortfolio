@@ -231,3 +231,28 @@ $(function() {
     }
   });
 });
+
+
+// Process Sub-Navigation -------------------------
+$(".process-subnav").click(function() {
+  $(this).addClass( "active" ).removeClass( "inactive" );
+  $(this).siblings("a").addClass( "inactive" ).removeClass( "active" );
+});
+
+$("#trigger--initiation").click(function() {
+  $("#initiation").addClass( "process__content-visible" ).removeClass( "process__content-hidden" );
+	$("#designdev").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
+	$("#completion").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
+});
+
+$("#trigger--designdev").click(function() {
+  $("#initiation").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
+	$("#designdev").addClass( "process__content-visible" ).removeClass( "process__content-hidden" );
+	$("#completion").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
+});
+
+$("#trigger--completion").click(function() {
+  $("#initiation").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
+	$("#designdev").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
+	$("#completion").addClass( "process__content-visible" ).removeClass( "process__content-hidden" );
+});

@@ -41,6 +41,10 @@ h4 {
   bottom: 1.86667em;
   letter-spacing: .75px; }
 
+h5 {
+  color: #808285;
+  font-size: 1.2em; }
+
 .btn {
   font-size: 1.26667em;
   letter-spacing: 2px;
@@ -55,7 +59,8 @@ button {
   color: #fff; }
 
 form {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding: 0; }
 
 .intro {
   text-align: left; }
@@ -81,6 +86,13 @@ form {
   @media (min-width: 552px) {
     #portfolio h2 {
       background-image: url("../images/H1__FeaturedWork--L.png"); } }
+
+#process h2 {
+  background-image: url("../images/H1__Process--XS.jpg");
+  padding-bottom: 10px; }
+  @media (min-width: 552px) {
+    #process h2 {
+      background-image: url("../images/H1__Process--L.png"); } }
 
 #services h2 {
   background-image: url("../images/H1__Services--XS.png"); }
@@ -362,9 +374,78 @@ form {
       .svgcontainer .laptop {
         padding-top: 40px; } }
 
+.process__content {
+  padding-top: 50px; }
+  .process__content li {
+    list-style: none; }
+  .process__content p {
+    font-style: normal;
+    color: #808285; }
+
+.process svg {
+  height: 64px;
+  display: relative;
+  bottom: 20px; }
+
+.Process__Rule {
+  height: 0;
+  width: 485px;
+  border-top: 1px solid #808285;
+  position: relative;
+  top: 12px;
+  margin: 0 auto;
+  z-index: -1; }
+
+.process .active .outer {
+  fill: #fff;
+  stroke: #0ab389;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10; }
+.process .active .inner {
+  fill: #0ab389; }
+.process .active path {
+  fill: #fff; }
+
+.process .inactive .outer {
+  fill: #fff;
+  stroke: #0ab389;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  transform: scale(0.8); }
+.process .inactive .inner {
+  fill: #0ab389;
+  transform: scale(0); }
+.process .inactive path {
+  fill: #808285; }
+.process .inactive:hover .outer {
+  transform: scale(1); }
+.process .inactive:hover .inner {
+  fill: #0ab389;
+  transform: scale(1); }
+.process .inactive:hover path {
+  transition: fill;
+  fill: #fff; }
+
+.process path,
+.process .inner,
+.process .outer {
+  transition: .3s ease-in-out;
+  transform-origin: 50% 50%; }
+
+.process__content-visible {
+  display: initial; }
+
+.process__content-hidden {
+  display: none; }
+
 #about {
   padding-top: 19%;
-  padding-bottom: 23%; }
+  padding-bottom: 23%;
+  background-image: url("../images/About__Background.jpg");
+  background-size: cover;
+  background-position: center; }
   @media (min-width: 992px) {
     #about {
       padding-top: 10em;
@@ -375,12 +456,12 @@ form {
   #about p {
     color: #808285;
     padding: 0;
-    text-align: center; }
+    text-align: left; }
 
 .aboutpic {
   display: block;
   width: 212px;
-  margin: 0 auto 20px; }
+  margin: 0 auto 30px; }
 
 .content {
   text-align: center; }
@@ -398,7 +479,6 @@ form {
     font-style: italic; }
 
 #contact {
-  background-color: #939598;
   padding-top: 8em;
   padding-bottom: 6.66667em; }
   @media (min-width: 992px) {

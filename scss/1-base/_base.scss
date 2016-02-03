@@ -57,6 +57,11 @@ h4 {
     letter-spacing: .75px;
 }
 
+h5 {
+  color: $color-secondary;
+  font-size: em(18px);
+}
+
 .btn {
   font-size: em(19px);
   letter-spacing: 2px;
@@ -75,4 +80,5 @@ button {
 
 form {
   margin-bottom: 50px;
+  padding: 0;
 }
