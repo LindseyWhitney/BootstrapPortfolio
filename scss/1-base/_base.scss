@@ -78,7 +78,11 @@ button {
   color: $color-reverse;
 }
 
+
+
 form {
   margin-bottom: 50px;
   padding: 0;
+  position: relative;
+  bottom: 20px;
 }

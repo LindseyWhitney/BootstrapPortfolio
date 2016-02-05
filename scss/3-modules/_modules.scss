@@ -331,8 +331,12 @@
 
 
 // Process ==================================
-.process__content {
 
+#process {
+  height: 885px;
+}
+
+.process__content {
   padding-top: 50px;
 
   li {
@@ -342,6 +346,8 @@
   p {
     font-style: $font-style--base;
     color: $color-secondary;
+    text-align: center;
+    margin-top: -20px;
   }
 }
 
@@ -430,6 +436,21 @@
   display: none;
 }
 
+.process__1 {
+  position: relative;
+  left: 60px;
+}
+
+.process__2 {
+  position: relative;
+  left: 29px;
+}
+
+.process__3 {
+  position: relative;
+  // left: 59px;
+}
+
 // About ==================================
 
 #about {
@@ -505,13 +526,35 @@
   }
 }
 
+.form-left input {
+  height: 34.75px;
+}
+
 .form-control:focus {
   box-shadow: 0 0 3px $color-primary;
   border: 1px solid $color-primary;
 }
 
-.btn:hover {
-  color: $color-light;
+.Submit__button {
+   display: block;
+   background: url("../images/Submit__button--Sprite.png") no-repeat;
+   height: 44px;
+   width: 333px;
+   margin: -15px auto 0;
+   position: relative;
+   top: 0px;
+
+   &:hover {
+          background-position: center center;
+   }
+
+   &:active {
+          background-position: center bottom;
+   }
+
+   @include mq(medium) {
+     top: 340px;
+   }
 }
 
 
@@ -519,22 +562,64 @@
 // Footer ==================================
 
 .social {
-  height: 60px;
-  padding-top: 12px;
+  height: 90px;
+  padding-top: 15px;
   background-color: $color-primary;
+  margin-top: 30px;
+
+  @media (min-width: 544px ) {
+    height: 60px;
+    padding-top: 12px;
+  }
+
+  @include mq(medium) {
+    margin-top: 40px;
+  }
+}
+
+.copyright {
+  color: $color-reverse;
+  font-style: $font-style--secondary;
   position: relative;
+  margin: 0 auto;
+  top: 40px;
+  text-align: center;
+
+  @media (min-width: 544px ) {
+    margin: 0 0 0 30px;
+    top: 9px;
+    text-align: left;
+  }
 }
 
 .group {
-  width: 350px;
+  width: 226px;
+  height: auto;
+  display: table;
+  position: relative;
+  bottom: 17px;
+  margin: 0 auto;
+  padding-left: 9px;
+
+  @media (min-width: 544px ) {
+    float: right;
+    margin: 0 30px 0 0;
+    bottom: 17px;
+    padding-left: 0;
+
+  }
 }
 
 .size {
   display: inline-block;
   position: relative;
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+
+  @media (min-width: 544px ) {
+    float: right;
+  }
 }
 
 #twitter,
