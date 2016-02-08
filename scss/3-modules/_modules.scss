@@ -1,13 +1,12 @@
 // Nav ===================================
 
-.navbar-brand,
 .navbar-nav li a {
   color: $color-secondary;
-  padding: .6em .5em;
-  margin-top: .1em;
+  margin: 0;
+  font-size: em(17px);
 
   @include mq(medium) {
-    padding: .7em 1em;
+    font-size: em(18px);
   }
 
   &:hover {
@@ -15,36 +14,55 @@
     background-color: inherit;
   }
 
+  &:focus {
+    background: none;
+  }
+
+  &.last {
+    padding-right: 0;
+  }
 }
 
-.navbar-nav li a {
-  margin: 0;
-  font-size: em(18px);
+a.navbar-brand {
+  color: $color-secondary;
+  font-size: em(17px);
+
+  @include mq(medium) {
+    font-size: em(18px);
+  }
+
+  &:hover {
+    color: $color-primary;
+    background-color: inherit;
+  }
+  &:focus {
+    color: $color-secondary;
+  }
 }
 
 .navbar-collapse {
   background-color: rgba(255, 255, 255, .8);
+  padding: 10px 0;
+
+  @include mq(small) {
+    padding: 0;
+  }
+}
+
+.navbar-toggle {
+    padding-right: 0;
+
+    &:hover .icon-bar {
+      background-color: $color-primary;
+    }
 }
 
 #navbar ul {
   margin: 0;
 }
 
-.navbar-brand {
-  font-size: em(18px);
-
-  &:visited {
-    color: $color-secondary;
-    background-color: inherit;
-  }
-}
-
 .icon-bar {
   background-color: $color-secondary;
-}
-
-.navbar-toggle:hover {
-  background-color: $color-subtle;
 }
 
 .nav-up {
@@ -315,7 +333,7 @@
     }
 
     @include mq(small) {
-      padding-top: 45px;
+      padding-top: 58px;
     }
   }
 
@@ -324,16 +342,43 @@
     padding-top: 48px;
 
     @include mq(small) {
-      padding-top: 40px;
+      padding-top: 45px;
+      margin-top: 0;
     }
   }
 }
 
+.design ul {
+  margin-bottom: 25px;
+
+  @include mq(medium) {
+    margin-bottom: 0;
+  }
+}
 
 // Process ==================================
 
 #process {
-  height: 885px;
+  height: 680px;
+  padding-top: 130px;
+
+  @media (min-width: 552px ) {
+    height: 795px;
+  }
+
+  @include mq (small) {
+    height: 865px;
+    padding-top: 130px;
+  }
+
+  @include mq (medium) {
+    height: 865px;
+    padding-top: 150px;
+  }
+
+  @include mq (large) {
+    height: 835px;
+  }
 }
 
 .process__content {
@@ -359,12 +404,24 @@
 
 .Process__Rule {
   height: 0;
-  width: 485px;
+  width: 70%;
   border-top: 1px solid #808285;
   position: relative;
   top: 12px;
   margin: 0 auto;
   z-index: -1;
+
+  @include mq (small) {
+    width: 355px;
+  }
+
+  @include mq (medium) {
+    width: 455px;
+  }
+
+  @include mq (large) {
+    width: 485px;
+  }
 }
 
 .process .active {
@@ -438,17 +495,49 @@
 
 .process__1 {
   position: relative;
-  left: 60px;
+  right: 20px;
+
+  @include mq(small) {
+    left: 30px;
+  }
+
+  @include mq(medium) {
+    left: 10px;
+  }
+
+  @include mq(large) {
+    left: 10px;
+  }
 }
 
 .process__2 {
   position: relative;
-  left: 29px;
+  right: 20px;
+
+  @include mq(small) {
+    left: 70px;
+  }
+
+  @include mq(medium) {
+    left: 60px;
+  }
+
+  @include mq(large) {
+    left: 75px;
+  }
 }
 
 .process__3 {
   position: relative;
-  // left: 59px;
+  right: 20px;
+
+  @include mq(small) {
+    left: 45px;
+  }
+
+  @include mq(medium) {
+    left: 40px;
+  }
 }
 
 // About ==================================
