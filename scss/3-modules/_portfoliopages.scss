@@ -1,15 +1,29 @@
 // Cover Image ==============================
 
 .coverImage {
-  background-image: url('../images/portfolio/Kaleidoscope__coverImage--backdrop.jpg');
   background-repeat: no-repeat;
   background-position: left;
   height: 700px;
+  position: relative;
+
+  &__Kaleidoscope {
+    background-image: url('../images/portfolio/Kaleidoscope__coverImage--backdrop.jpg');
+  }
+
+  &__SPR {
+    background-image: url('../images/portfolio/SPR__coverImage--backdrop.png');
+    top: 95px;
+  }
 
   img {
     margin: 0 auto;
-    padding: 240px 0 0;
     display: block;
+  }
+
+  .logo__ {
+    &Kaleidoscope {
+      padding: 240px 0 0;
+    }
   }
 }
 
@@ -36,12 +50,21 @@
   padding: 20px 0 0;
 
   h1 {
-    background-image: url('../images/portfolio/Kaleidoscope__h1.png');
-    background-repeat: no-repeat;
-    background-position: center;
     height: 95.42px;
     width: 1020px;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .h1__ {
+    &Kaleidoscope {
+      background-image: url('../images/portfolio/Kaleidoscope__h1.png');
+    }
+
+    &SPR {
+      background-image: url('../images/portfolio/SPR__h1.png');
+    }
   }
 
   h2 {
@@ -59,20 +82,29 @@
     color: $color-secondary;
     font-size: em(21px);
     line-height: 1.58;
-    padding: 0 30px 0 0;
+    padding: 0 35px 0 0;
   }
 
   &__dropcap {
     width: 82px;
-    height: 89px;
-    background-image: url('../images/portfolio/Kaleidoscope__introSection--dropcap.png');
+    height: 82px;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
     float: left;
-    margin: 0 5px 10px 0;
     position: relative;
-    top: 3px;
+    top: 9px;
+
+    &--Kaleidoscope {
+      background-image: url('../images/portfolio/Kaleidoscope__introSection--dropcap.png');
+      margin: 0 5px 10px 0;
+    }
+
+    &--SPR {
+      background-image: url('../images/portfolio/SPR__introSection--dropcap.png');
+      margin: 0 -15px 10px 0;
+      right: 10px;
+    }
   }
 
   &__allcaps {
@@ -80,10 +112,18 @@
   }
 
   &__CreativeBrief {
-    border: 2px solid #094160;
+    border: 2px solid;
     padding: 0;
     margin-top: 8px;
     height: 281px;
+
+    &--Kaleidoscope {
+      border-color:  #094160;
+    }
+
+    &--SPR {
+      border-color: #cb3b2d;
+    }
 
     dl {
       padding: 31px 15px;
@@ -96,15 +136,31 @@
 
       dd {
         font-style: $font-style--secondary;
-        margin-bottom: 30px;
+      }
+
+      .dd__ {
+        &Kaleidoscope {
+          margin-bottom: 30px;
+        }
+
+        &SPR {
+          margin-bottom: 20px;
+        }
       }
     } // &__CreativeBrief
 
     &--titlebar {
-      background-color: #094160;
       width: 100%;
       height: 50px;
       margin: 0;
+
+      &Kaleidoscope {
+        background-color: #094160;
+      }
+
+      &SPR {
+        background-color: #cb3b2d;
+      }
 
       h3 {
         text-transform: capitalize;

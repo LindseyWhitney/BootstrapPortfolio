@@ -661,14 +661,20 @@ a.navbar-brand {
     fill: #939598; }
 
 .coverImage {
-  background-image: url("../images/portfolio/Kaleidoscope__coverImage--backdrop.jpg");
   background-repeat: no-repeat;
   background-position: left;
-  height: 700px; }
+  height: 700px;
+  position: relative; }
+  .coverImage__Kaleidoscope {
+    background-image: url("../images/portfolio/Kaleidoscope__coverImage--backdrop.jpg"); }
+  .coverImage__SPR {
+    background-image: url("../images/portfolio/SPR__coverImage--backdrop.png");
+    top: 95px; }
   .coverImage img {
     margin: 0 auto;
-    padding: 240px 0 0;
     display: block; }
+  .coverImage .logo__Kaleidoscope {
+    padding: 240px 0 0; }
 
 .portfolio__content--backdrop {
   background-color: #fff;
@@ -688,12 +694,15 @@ a.navbar-brand {
 .introSection {
   padding: 20px 0 0; }
   .introSection h1 {
-    background-image: url("../images/portfolio/Kaleidoscope__h1.png");
-    background-repeat: no-repeat;
-    background-position: center;
     height: 95.42px;
     width: 1020px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .introSection .h1__Kaleidoscope {
+    background-image: url("../images/portfolio/Kaleidoscope__h1.png"); }
+  .introSection .h1__SPR {
+    background-image: url("../images/portfolio/SPR__h1.png"); }
   .introSection h2 {
     font-style: normal;
     text-transform: uppercase;
@@ -707,25 +716,34 @@ a.navbar-brand {
     color: #808285;
     font-size: 1.4em;
     line-height: 1.58;
-    padding: 0 30px 0 0; }
+    padding: 0 35px 0 0; }
   .introSection__dropcap {
     width: 82px;
-    height: 89px;
-    background-image: url("../images/portfolio/Kaleidoscope__introSection--dropcap.png");
+    height: 82px;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
     float: left;
-    margin: 0 5px 10px 0;
     position: relative;
-    top: 3px; }
+    top: 9px; }
+    .introSection__dropcap--Kaleidoscope {
+      background-image: url("../images/portfolio/Kaleidoscope__introSection--dropcap.png");
+      margin: 0 5px 10px 0; }
+    .introSection__dropcap--SPR {
+      background-image: url("../images/portfolio/SPR__introSection--dropcap.png");
+      margin: 0 -15px 10px 0;
+      right: 10px; }
   .introSection__allcaps {
     text-transform: uppercase; }
   .introSection__CreativeBrief {
-    border: 2px solid #094160;
+    border: 2px solid;
     padding: 0;
     margin-top: 8px;
     height: 281px; }
+    .introSection__CreativeBrief--Kaleidoscope {
+      border-color: #094160; }
+    .introSection__CreativeBrief--SPR {
+      border-color: #cb3b2d; }
     .introSection__CreativeBrief dl {
       padding: 31px 15px;
       color: #808285;
@@ -733,13 +751,19 @@ a.navbar-brand {
       .introSection__CreativeBrief dl dt {
         font-style: normal; }
       .introSection__CreativeBrief dl dd {
-        font-style: italic;
+        font-style: italic; }
+      .introSection__CreativeBrief dl .dd__Kaleidoscope {
         margin-bottom: 30px; }
+      .introSection__CreativeBrief dl .dd__SPR {
+        margin-bottom: 20px; }
     .introSection__CreativeBrief--titlebar {
-      background-color: #094160;
       width: 100%;
       height: 50px;
       margin: 0; }
+      .introSection__CreativeBrief--titlebarKaleidoscope {
+        background-color: #094160; }
+      .introSection__CreativeBrief--titlebarSPR {
+        background-color: #cb3b2d; }
       .introSection__CreativeBrief--titlebar h3 {
         text-transform: capitalize;
         font-size: 1.26667em;
