@@ -6,6 +6,10 @@
   text-align: left;
 }
 
+.navbar {
+    border-bottom: 1px solid $color-subtle;
+}
+
 .container {
   // @include debug;
 }
@@ -37,6 +41,22 @@
 
   @media (min-width: 552px ) {
     background-image: url("../images/H1__FeaturedWork--L.png");
+  }
+}
+
+#portfolioOverview {
+
+  ul {
+    padding-top: 30px;
+  }
+
+  h2 {
+    background-image: url("../images/H1__Portfolio--XS.png");
+    padding-bottom: 10px;
+
+    @media (min-width: 552px ) {
+      background-image: url("../images/H1__Portfolio--L.png");
+      }
   }
 }
 

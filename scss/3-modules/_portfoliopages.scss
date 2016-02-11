@@ -1,3 +1,21 @@
+// Portfolio Overview ==============================
+
+.Return__button {
+   display: block;
+   background: url("../images/Return__button--Sprite.png") no-repeat;
+   height: 44px;
+   width: 333px;
+   margin: 0 auto;
+
+   &:hover {
+          background-position: center center;
+   }
+
+   &:active {
+          background-position: center bottom;
+   }
+}
+
 // Cover Image ==============================
 
 .coverImage {
@@ -12,17 +30,67 @@
 
   &__SPR {
     background-image: url('../images/portfolio/SPR__coverImage--backdrop.png');
+    background-position: center;
     top: 95px;
+  }
+
+  &__BroncoDay {
+    background-color: #f26529;
+  }
+
+  &__CAC {
+    background-image: url('../images/portfolio/CAC__coverImage--backdrop.jpg');
+    top: 55px;
+  }
+
+  &__SDI {
+    background-image: url('../images/portfolio/SDI__coverImage--backdrop.jpg');
+  }
+
+  &__GetIn {
+    background-image: url('../images/portfolio/GetIn__coverImage--backdrop.png');
+    background-position: center;
+    top: 55px;
+  }
+
+  &__WC {
+    background-image: url('../images/portfolio/WC__coverImage--backdrop.png');
+    background-position: center;
+    top: 275px;
+  }
+
+  &__SumConf{
+    background-image: url('../images/portfolio/SumConf__coverImage--backdrop.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__AR2014{
+    background-image: url('../images/portfolio/AR2014__coverImage--backdrop.jpg');
+    background-position: right;
   }
 
   img {
     margin: 0 auto;
     display: block;
+    position: relative;
   }
 
   .logo__ {
     &Kaleidoscope {
       padding: 240px 0 0;
+    }
+
+    &BroncoDay {
+      top: 50px;
+    }
+
+    &GetIn {
+      top: 180px;
+    }
+
+    &WC {
+      bottom: 180px;
     }
   }
 }
@@ -65,6 +133,34 @@
     &SPR {
       background-image: url('../images/portfolio/SPR__h1.png');
     }
+
+    &BroncoDay {
+      background-image: url('../images/portfolio/BroncoDay__h1.png');
+    }
+
+    &CAC {
+      background-image: url('../images/portfolio/CAC__h1.png');
+    }
+
+    &SDI {
+      background-image: url('../images/portfolio/SDI__h1.png');
+    }
+
+    &GetIn {
+      background-image: url('../images/portfolio/GetIn__h1.png');
+    }
+
+    &WC {
+      background-image: url('../images/portfolio/WC__h1.png');
+    }
+
+    &SumConf {
+      background-image: url('../images/portfolio/SumConf__h1.png');
+    }
+
+    &AR2014 {
+      background-image: url('../images/portfolio/AR2014__h1.png');
+    }
   }
 
   h2 {
@@ -75,6 +171,8 @@
     letter-spacing: 1px;
     position: relative;
     bottom: 45px;
+    left: 2px;
+    text-align: center;
   }
 
   p {
@@ -105,6 +203,48 @@
       margin: 0 -15px 10px 0;
       right: 10px;
     }
+
+    &--BroncoDay {
+      background-image: url('../images/portfolio/BroncoDay__introSection--dropcap.png');
+      margin: 0 -10px 10px 0;
+      right: 10px;
+    }
+
+    &--CAC {
+      background-image: url('../images/portfolio/CAC__introSection--dropcap.png');
+      margin: 0 -10px 10px 0;
+      right: 10px;
+    }
+
+    &--SDI {
+      background-image: url('../images/portfolio/SDI__introSection--dropcap.png');
+      margin: 0 -15px 10px 0;
+      right: 10px;
+    }
+
+    &--GetIn {
+      background-image: url('../images/portfolio/GetIn__introSection--dropcap.png');
+      margin: 0 -10px 10px 0;
+      right: 10px;
+    }
+
+    &--WC {
+      background-image: url('../images/portfolio/WC__introSection--dropcap.png');
+      margin: 0 -10px 10px 0;
+      right: 10px;
+    }
+
+    &--SumConf {
+      background-image: url('../images/portfolio/SumConf__introSection--dropcap.png');
+      margin: 0 -15px 10px 0;
+      right: 10px;
+    }
+
+    &--AR2014 {
+      background-image: url('../images/portfolio/AR2014__introSection--dropcap.png');
+      margin: 0 -10px 10px 0;
+      right: 10px;
+    }
   }
 
   &__allcaps {
@@ -123,6 +263,27 @@
 
     &--SPR {
       border-color: #cb3b2d;
+    }
+
+    &--BroncoDay {
+      border-color: #f26529;
+    }
+
+    &--SDI {
+      border-color: #48afd5;
+    }
+
+    &--GetIn {
+      border-color: #06357a;
+    }
+
+    &--WC {
+      border-color: #c08ea3;
+    }
+
+    &--SumConf,
+    &--AR2014 {
+      border-color: #005daa;
     }
 
     dl {
@@ -146,6 +307,16 @@
         &SPR {
           margin-bottom: 20px;
         }
+
+        &BroncoDay {
+          margin-bottom: 35px;
+          margin-top: 5px;
+        }
+
+        &CAC {
+          margin-bottom: 35px;
+          margin-top: 4px;
+        }
       }
     } // &__CreativeBrief
 
@@ -160,6 +331,27 @@
 
       &SPR {
         background-color: #cb3b2d;
+      }
+
+      &BroncoDay {
+        background-color: #f26529;
+      }
+
+      &SDI {
+        background-color: #48afd5;
+      }
+
+      &GetIn {
+        background-color: #06357a;
+      }
+
+      &WC {
+        background-color: #c08ea3;
+      }
+
+      &SumConf,
+      &AR2014 {
+        background-color: #005daa;
       }
 
       h3 {
