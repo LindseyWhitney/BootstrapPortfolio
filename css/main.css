@@ -611,8 +611,10 @@ a.navbar-brand {
 .social {
   height: 90px;
   padding-top: 15px;
-  background-color: #0ab389;
+  background-color: #808285;
   margin-top: 30px; }
+  .social--home {
+    background-color: #0ab389; }
   @media (min-width: 544px) {
     .social {
       height: 60px;
@@ -670,7 +672,7 @@ a.navbar-brand {
   #behance:hover,
   #github:hover,
   #codepen:hover {
-    fill: #939598; }
+    fill: #d9d9d9; }
 
 .Return__button {
   display: block;
@@ -686,115 +688,236 @@ a.navbar-brand {
 .coverImage {
   background-repeat: no-repeat;
   background-position: left;
-  height: 700px;
+  height: 600px;
   position: relative; }
+  @media (min-width: 992px) {
+    .coverImage {
+      height: 700px; } }
   .coverImage__Kaleidoscope {
     background-image: url("../images/portfolio/Kaleidoscope__coverImage--backdrop.jpg"); }
   .coverImage__SPR {
     background-image: url("../images/portfolio/SPR__coverImage--backdrop.png");
     background-position: center;
-    top: 95px; }
+    top: 103px; }
   .coverImage__BroncoDay {
     background-color: #f26529; }
   .coverImage__CAC {
     background-image: url("../images/portfolio/CAC__coverImage--backdrop.jpg");
-    top: 55px; }
+    top: 55px;
+    background-size: contain; }
   .coverImage__SDI {
-    background-image: url("../images/portfolio/SDI__coverImage--backdrop.jpg"); }
+    background-image: url("../images/portfolio/SDI__coverImage--logoVignette.png"), url("../images/portfolio/SDI__coverImage--backdrop.jpg"); }
   .coverImage__GetIn {
     background-image: url("../images/portfolio/GetIn__coverImage--backdrop.png");
     background-position: center;
-    top: 55px; }
+    top: 95px;
+    background-size: 110%; }
+    @media (min-width: 992px) {
+      .coverImage__GetIn {
+        background-size: 115%;
+        top: 55px; } }
+    @media (min-width: 1200px) {
+      .coverImage__GetIn {
+        background-size: auto; } }
   .coverImage__WC {
     background-image: url("../images/portfolio/WC__coverImage--backdrop.png");
     background-position: center;
-    top: 275px; }
+    top: 145px; }
+    @media (min-width: 768px) {
+      .coverImage__WC {
+        top: 275px; } }
   .coverImage__SumConf {
     background-image: url("../images/portfolio/SumConf__coverImage--backdrop.jpg");
     background-position: center;
     background-size: cover; }
   .coverImage__AR2014 {
     background-image: url("../images/portfolio/AR2014__coverImage--backdrop.jpg");
-    background-position: right; }
+    background-position: right;
+    background-size: contain; }
   .coverImage img {
     margin: 0 auto;
     display: block;
-    position: relative; }
+    position: relative;
+    width: auto; }
   .coverImage .logo__Kaleidoscope {
-    padding: 240px 0 0; }
+    padding: 140px 0 0;
+    max-width: 75%; }
+    @media (min-width: 992px) {
+      .coverImage .logo__Kaleidoscope {
+        padding: 240px 0 0; } }
+  .coverImage .logo__SDI {
+    top: 130px; }
+    @media (min-width: 992px) {
+      .coverImage .logo__SDI {
+        top: 200px; } }
   .coverImage .logo__BroncoDay {
-    top: 50px; }
+    top: 80px;
+    width: 700px; }
+    @media (min-width: 992px) {
+      .coverImage .logo__BroncoDay {
+        top: 140px;
+        width: 850px; } }
+    @media (min-width: 1200px) {
+      .coverImage .logo__BroncoDay {
+        top: 50px;
+        width: auto; } }
   .coverImage .logo__GetIn {
-    top: 180px; }
+    top: 180px;
+    width: 80%; }
+    @media (min-width: 992px) {
+      .coverImage .logo__GetIn {
+        top: 210px; } }
+    @media (min-width: 1200px) {
+      .coverImage .logo__GetIn {
+        top: 180px;
+        width: auto; } }
   .coverImage .logo__WC {
-    bottom: 180px; }
+    bottom: 150px;
+    width: 300px; }
+    @media (min-width: 992px) {
+      .coverImage .logo__WC {
+        bottom: 180px;
+        width: 375px; } }
+  .coverImage .logo__SPR {
+    width: 70%;
+    max-width: 372px;
+    padding-bottom: 10px; }
+    @media (min-width: 992px) {
+      .coverImage .logo__SPR {
+        max-width: 410px;
+        top: 30px; } }
 
 .portfolio__content--backdrop {
   background-color: #fff;
   padding: 50px 0 0;
   position: relative;
-  bottom: 100px;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13);
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13); }
+  bottom: 60px;
+  border-top: 1px solid rgba(128, 130, 133, 0.2); }
+  @media (min-width: 768px) {
+    .portfolio__content--backdrop {
+      bottom: 100px;
+      border-top: none;
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13);
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13); } }
 
 .portfolio__divider {
   height: 0;
   border-top: 1px solid rgba(128, 130, 133, 0.2);
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 50px 0 85px; }
 
 .introSection {
-  padding: 20px 0 0; }
+  padding-top: 70px; }
+  @media (min-width: 768px) {
+    .introSection {
+      padding: 20px 0 0; } }
   .introSection h1 {
     height: 95.42px;
-    width: 1020px;
+    width: 97%;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center; }
   .introSection .h1__Kaleidoscope {
-    background-image: url("../images/portfolio/Kaleidoscope__h1.png"); }
+    background-image: url("../images/portfolio/Kaleidoscope__h1--xs.png"); }
+    @media (max-width: 470px) {
+      .introSection .h1__Kaleidoscope {
+        background-size: contain;
+        margin-bottom: -10px; } }
+    @media (min-width: 768px) {
+      .introSection .h1__Kaleidoscope {
+        background-image: url("../images/portfolio/Kaleidoscope__h1.png"); } }
   .introSection .h1__SPR {
-    background-image: url("../images/portfolio/SPR__h1.png"); }
+    background-image: url("../images/portfolio/SPR__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__SPR {
+        background-image: url("../images/portfolio/SPR__h1.png"); } }
   .introSection .h1__BroncoDay {
-    background-image: url("../images/portfolio/BroncoDay__h1.png"); }
+    background-image: url("../images/portfolio/BroncoDay__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__BroncoDay {
+        background-image: url("../images/portfolio/BroncoDay__h1.png"); } }
   .introSection .h1__CAC {
-    background-image: url("../images/portfolio/CAC__h1.png"); }
+    background-image: url("../images/portfolio/CAC__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__CAC {
+        background-image: url("../images/portfolio/CAC__h1.png"); } }
   .introSection .h1__SDI {
-    background-image: url("../images/portfolio/SDI__h1.png"); }
+    background-image: url("../images/portfolio/SDI__h1--xs.png"); }
+    @media (max-width: 470px) {
+      .introSection .h1__SDI {
+        background-size: contain;
+        margin-bottom: -10px; } }
+    @media (min-width: 768px) {
+      .introSection .h1__SDI {
+        background-image: url("../images/portfolio/SDI__h1.png"); } }
   .introSection .h1__GetIn {
-    background-image: url("../images/portfolio/GetIn__h1.png"); }
+    background-image: url("../images/portfolio/GetIn__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__GetIn {
+        background-image: url("../images/portfolio/GetIn__h1.png"); } }
   .introSection .h1__WC {
-    background-image: url("../images/portfolio/WC__h1.png"); }
+    background-image: url("../images/portfolio/WC__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__WC {
+        background-image: url("../images/portfolio/WC__h1.png"); } }
   .introSection .h1__SumConf {
-    background-image: url("../images/portfolio/SumConf__h1.png"); }
+    background-image: url("../images/portfolio/SumConf__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__SumConf {
+        background-image: url("../images/portfolio/SumConf__h1.png"); } }
   .introSection .h1__AR2014 {
-    background-image: url("../images/portfolio/AR2014__h1.png"); }
+    background-image: url("../images/portfolio/AR2014__h1--xs.png"); }
+    @media (max-width: 470px) {
+      .introSection .h1__AR2014 {
+        background-size: contain;
+        margin-bottom: -10px; } }
+    @media (min-width: 768px) {
+      .introSection .h1__AR2014 {
+        background-image: url("../images/portfolio/AR2014__h1.png"); } }
   .introSection h2 {
     font-style: normal;
     text-transform: uppercase;
     color: #808285;
-    font-size: 1.4em;
+    font-size: 1.26667em;
     letter-spacing: 1px;
     position: relative;
-    bottom: 45px;
-    left: 2px;
-    text-align: center; }
+    bottom: 25px;
+    text-align: center;
+    padding-bottom: 30px; }
+    @media (min-width: 471px) {
+      .introSection h2 {
+        bottom: 25px; } }
+    @media (min-width: 768px) {
+      .introSection h2 {
+        font-size: 1.4em;
+        bottom: 45px;
+        left: 2px;
+        padding-bottom: 0; } }
   .introSection p {
     font-style: normal;
     color: #808285;
-    font-size: 1.4em;
-    line-height: 1.58;
-    padding: 0 35px 0 0; }
+    padding: 0 35px 0 0;
+    font-size: 1.2em;
+    line-height: 1.48; }
+    @media (min-width: 1200px) {
+      .introSection p {
+        font-size: 1.4em; } }
   .introSection__dropcap {
-    width: 82px;
-    height: 82px;
+    width: 68px;
+    height: 68px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     display: inline-block;
     float: left;
     position: relative;
-    top: 9px; }
+    top: 6px; }
+    @media (min-width: 1200px) {
+      .introSection__dropcap {
+        width: 82px;
+        height: 82px; } }
     .introSection__dropcap--Kaleidoscope {
       background-image: url("../images/portfolio/Kaleidoscope__introSection--dropcap.png");
       margin: 0 5px 10px 0; }
@@ -835,8 +958,10 @@ a.navbar-brand {
   .introSection__CreativeBrief {
     border: 2px solid;
     padding: 0;
-    margin-top: 8px;
-    height: 281px; }
+    height: 229px; }
+    @media (min-width: 1200px) {
+      .introSection__CreativeBrief {
+        height: 281px; } }
     .introSection__CreativeBrief--Kaleidoscope {
       border-color: #094160; }
     .introSection__CreativeBrief--SPR {
@@ -852,23 +977,42 @@ a.navbar-brand {
     .introSection__CreativeBrief--SumConf, .introSection__CreativeBrief--AR2014 {
       border-color: #005daa; }
     .introSection__CreativeBrief dl {
-      padding: 31px 15px;
       color: #808285;
+      padding: 31px 11px;
       font-size: 1.13333em; }
+      @media (min-width: 1200px) {
+        .introSection__CreativeBrief dl {
+          padding: 25px 13px;
+          font-size: 1.13333em; } }
       .introSection__CreativeBrief dl dt {
         font-style: normal; }
       .introSection__CreativeBrief dl dd {
         font-style: italic; }
       .introSection__CreativeBrief dl .dd__Kaleidoscope {
-        margin-bottom: 30px; }
+        margin-bottom: 11px; }
+        @media (min-width: 1200px) {
+          .introSection__CreativeBrief dl .dd__Kaleidoscope {
+            margin-top: 8px;
+            margin-bottom: 23px; } }
       .introSection__CreativeBrief dl .dd__SPR {
-        margin-bottom: 20px; }
-      .introSection__CreativeBrief dl .dd__BroncoDay {
-        margin-bottom: 35px;
-        margin-top: 5px; }
-      .introSection__CreativeBrief dl .dd__CAC {
-        margin-bottom: 35px;
-        margin-top: 4px; }
+        margin-bottom: 32px; }
+        @media (min-width: 1200px) {
+          .introSection__CreativeBrief dl .dd__SPR {
+            margin-top: 4px;
+            margin-bottom: 18px; } }
+      .introSection__CreativeBrief dl .dd__SumConf, .introSection__CreativeBrief dl .dd__AR2014, .introSection__CreativeBrief dl .dd__SDI, .introSection__CreativeBrief dl .dd__GetIn {
+        margin-bottom: 32px; }
+        @media (min-width: 1200px) {
+          .introSection__CreativeBrief dl .dd__SumConf, .introSection__CreativeBrief dl .dd__AR2014, .introSection__CreativeBrief dl .dd__SDI, .introSection__CreativeBrief dl .dd__GetIn {
+            margin-top: 12px;
+            margin-bottom: 25px; } }
+      .introSection__CreativeBrief dl .dd__CAC, .introSection__CreativeBrief dl .dd__WC, .introSection__CreativeBrief dl .dd__BroncoDay {
+        margin-top: 10px;
+        margin-bottom: 29px; }
+        @media (min-width: 1200px) {
+          .introSection__CreativeBrief dl .dd__CAC, .introSection__CreativeBrief dl .dd__WC, .introSection__CreativeBrief dl .dd__BroncoDay {
+            margin-top: 12px;
+            margin-bottom: 25px; } }
     .introSection__CreativeBrief--titlebar {
       width: 100%;
       height: 50px;
@@ -896,24 +1040,31 @@ a.navbar-brand {
         color: #fff; }
 
 .portfolioDisplay img {
-  width: 1170px; }
+  width: 100%;
+  max-width: 1170px; }
 
 .portfolio__subNav {
-  margin-bottom: 90px; }
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .portfolio__subNav {
+      margin-bottom: 90px; } }
   .portfolio__subNav svg {
-    height: 64px;
+    height: 54px;
     margin: 0 auto;
     width: 100%; }
+    @media (min-width: 768px) {
+      .portfolio__subNav svg {
+        height: 64px; } }
 
 .portfolio__subNav--button .outer {
   fill: #fff;
-  stroke: #0ab389;
+  stroke: #808285;
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-miterlimit: 10;
   transform: scale(0.8); }
 .portfolio__subNav--button .inner {
-  fill: #0ab389;
+  fill: #808285;
   transform: scale(0); }
 .portfolio__subNav--button polyline {
   fill: none;

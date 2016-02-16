@@ -653,8 +653,12 @@ a.navbar-brand {
 .social {
   height: 90px;
   padding-top: 15px;
-  background-color: $color-primary;
+  background-color: $color-secondary;
   margin-top: 30px;
+
+  &--home {
+    background-color: $color-primary;
+  }
 
   @media (min-width: 544px ) {
     height: 60px;
@@ -719,6 +723,6 @@ a.navbar-brand {
   fill: $color-reverse;
 
   &:hover {
-    fill: $color-light;
+    fill: darken( $color-reverse, 15% );
   }
 }

@@ -21,8 +21,12 @@
 .coverImage {
   background-repeat: no-repeat;
   background-position: left;
-  height: 700px;
+  height: 600px;
   position: relative;
+
+  @include mq(medium) {
+    height: 700px;
+  }
 
   &__Kaleidoscope {
     background-image: url('../images/portfolio/Kaleidoscope__coverImage--backdrop.jpg');
@@ -31,7 +35,7 @@
   &__SPR {
     background-image: url('../images/portfolio/SPR__coverImage--backdrop.png');
     background-position: center;
-    top: 95px;
+    top: 103px;
   }
 
   &__BroncoDay {
@@ -41,22 +45,37 @@
   &__CAC {
     background-image: url('../images/portfolio/CAC__coverImage--backdrop.jpg');
     top: 55px;
+    background-size: contain;
   }
 
   &__SDI {
-    background-image: url('../images/portfolio/SDI__coverImage--backdrop.jpg');
+    background-image: url('../images/portfolio/SDI__coverImage--logoVignette.png'), url('../images/portfolio/SDI__coverImage--backdrop.jpg');
   }
 
   &__GetIn {
     background-image: url('../images/portfolio/GetIn__coverImage--backdrop.png');
     background-position: center;
-    top: 55px;
+    top: 95px;
+    background-size: 110%;
+
+    @include mq(medium) {
+      background-size: 115%;
+      top: 55px;
+    }
+
+    @include mq(large) {
+      background-size: auto;
+    }
   }
 
   &__WC {
     background-image: url('../images/portfolio/WC__coverImage--backdrop.png');
     background-position: center;
-    top: 275px;
+    top: 145px;
+
+    @include mq(small) {
+      top: 275px;
+    }
   }
 
   &__SumConf{
@@ -68,29 +87,84 @@
   &__AR2014{
     background-image: url('../images/portfolio/AR2014__coverImage--backdrop.jpg');
     background-position: right;
+    background-size: contain;
   }
 
   img {
     margin: 0 auto;
     display: block;
     position: relative;
+    width: auto;
+
   }
 
   .logo__ {
     &Kaleidoscope {
-      padding: 240px 0 0;
+      padding: 140px 0 0;
+      max-width: 75%;
+
+      @include mq(medium) {
+        padding: 240px 0 0;
+      }
+    }
+
+    &SDI {
+      top: 130px;
+
+      @include mq(medium) {
+        top: 200px;
+      }
     }
 
     &BroncoDay {
-      top: 50px;
+      top: 80px;
+      width: 700px;
+
+      @include mq(medium) {
+        top: 140px;
+        width: 850px;
+      }
+
+      @include mq(large) {
+        top: 50px;
+        width: auto;
+      }
     }
 
     &GetIn {
       top: 180px;
+      width: 80%;
+
+      @include mq(medium) {
+        top: 210px;
+
+      }
+
+      @include mq(large) {
+        top: 180px;
+        width: auto;
+      }
     }
 
     &WC {
-      bottom: 180px;
+      bottom: 150px;
+      width: 300px;
+
+      @include mq(medium) {
+        bottom: 180px;
+        width: 375px;
+      }
+    }
+
+    &SPR {
+      width: 70%;
+      max-width: 372px;
+      padding-bottom: 10px;
+
+      @include mq(medium) {
+        max-width: 410px;
+        top: 30px;
+      }
     }
   }
 }
@@ -101,25 +175,37 @@
     background-color: #fff;
     padding: 50px 0 0;
     position: relative;
-    bottom: 100px;
-    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.13);
-    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.13);
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.13);
+    bottom: 60px;
+    border-top: 1px solid $color-subtle;
+
+    @include mq(small) {
+      bottom: 100px;
+      border-top: none;
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.13);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.13);
+      box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.13);
+    }
 }
 
 .portfolio__divider {
   height: 0;
   border-top: 1px solid $color-subtle;
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 50px 0 85px;
 }
 
 .introSection {
-  padding: 20px 0 0;
+
+  padding-top: 70px;
+
+  @include mq(small) {
+    padding: 20px 0 0;
+  }
 
   h1 {
     height: 95.42px;
-    width: 1020px;
+    width: 97%;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -127,39 +213,90 @@
 
   .h1__ {
     &Kaleidoscope {
-      background-image: url('../images/portfolio/Kaleidoscope__h1.png');
+      background-image: url('../images/portfolio/Kaleidoscope__h1--xs.png');
+
+      @media (max-width: 470px ) {
+        background-size: contain;
+        margin-bottom: -10px;
+      }
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/Kaleidoscope__h1.png');
+      }
     }
 
     &SPR {
-      background-image: url('../images/portfolio/SPR__h1.png');
+      background-image: url('../images/portfolio/SPR__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/SPR__h1.png');
+      }
     }
 
     &BroncoDay {
-      background-image: url('../images/portfolio/BroncoDay__h1.png');
+      background-image: url('../images/portfolio/BroncoDay__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/BroncoDay__h1.png');
+      }
     }
 
     &CAC {
-      background-image: url('../images/portfolio/CAC__h1.png');
+      background-image: url('../images/portfolio/CAC__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/CAC__h1.png');
+      }
     }
 
     &SDI {
-      background-image: url('../images/portfolio/SDI__h1.png');
+      background-image: url('../images/portfolio/SDI__h1--xs.png');
+
+      @media (max-width: 470px ) {
+        background-size: contain;
+        margin-bottom: -10px;
+      }
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/SDI__h1.png');
+      }
     }
 
     &GetIn {
-      background-image: url('../images/portfolio/GetIn__h1.png');
+      background-image: url('../images/portfolio/GetIn__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/GetIn__h1.png');
+      }
     }
 
     &WC {
-      background-image: url('../images/portfolio/WC__h1.png');
+      background-image: url('../images/portfolio/WC__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/WC__h1.png');
+      }
     }
 
     &SumConf {
-      background-image: url('../images/portfolio/SumConf__h1.png');
+      background-image: url('../images/portfolio/SumConf__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/SumConf__h1.png');
+      }
     }
 
     &AR2014 {
-      background-image: url('../images/portfolio/AR2014__h1.png');
+      background-image: url('../images/portfolio/AR2014__h1--xs.png');
+
+      @media (max-width: 470px ) {
+        background-size: contain;
+        margin-bottom: -10px;
+      }
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/AR2014__h1.png');
+      }
     }
   }
 
@@ -167,31 +304,53 @@
     font-style: $font-style--base;
     text-transform: uppercase;
     color: $color-secondary;
-    font-size: em(21px);
+    font-size: em(19px);
     letter-spacing: 1px;
     position: relative;
-    bottom: 45px;
-    left: 2px;
+    bottom: 25px;
     text-align: center;
+    padding-bottom: 30px;
+
+    @media (min-width: 471px ) {
+      bottom: 25px;
+    }
+
+    @include mq (small) {
+      font-size: em(21px);
+      bottom: 45px;
+      left: 2px;
+      padding-bottom: 0;
+    }
   }
 
   p {
     font-style: $font-style--base;
     color: $color-secondary;
-    font-size: em(21px);
-    line-height: 1.58;
     padding: 0 35px 0 0;
+    font-size: em(18px);
+    line-height: 1.48;
+
+    @include mq(large) {
+      font-size: em(21px);
+
+    }
   }
 
   &__dropcap {
-    width: 82px;
-    height: 82px;
+    width: 68px;
+    height: 68px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     display: inline-block;
     float: left;
     position: relative;
-    top: 9px;
+    top: 6px;
+
+    @include mq(large) {
+      width: 82px;
+      height: 82px;
+    }
 
     &--Kaleidoscope {
       background-image: url('../images/portfolio/Kaleidoscope__introSection--dropcap.png');
@@ -254,8 +413,11 @@
   &__CreativeBrief {
     border: 2px solid;
     padding: 0;
-    margin-top: 8px;
-    height: 281px;
+    height: 229px;
+
+    @include mq(large) {
+      height: 281px;
+    }
 
     &--Kaleidoscope {
       border-color:  #094160;
@@ -287,9 +449,14 @@
     }
 
     dl {
-      padding: 31px 15px;
       color: $color-secondary;
+      padding: 31px 11px;
       font-size: em(17px);
+
+      @include mq(large) {
+        padding: 25px 13px;
+        font-size: em(17px);
+      }
 
       dt {
         font-style: $font-style--base;
@@ -301,21 +468,46 @@
 
       .dd__ {
         &Kaleidoscope {
-          margin-bottom: 30px;
+          margin-bottom: 11px;
+
+          @include mq(large) {
+            margin-top: 8px;
+            margin-bottom: 23px;
+          }
         }
 
-        &SPR {
-          margin-bottom: 20px;
+        &SPR, {
+          margin-bottom: 32px;
+
+          @include mq(large) {
+            margin-top: 4px;
+            margin-bottom: 18px;
+          }
         }
 
+        &SumConf,
+        &AR2014,
+        &SDI,
+        &GetIn {
+          margin-bottom: 32px;
+
+          @include mq(large) {
+            margin-top: 12px;
+            margin-bottom: 25px;
+
+          }
+        }
+
+        &CAC,
+        &WC,
         &BroncoDay {
-          margin-bottom: 35px;
-          margin-top: 5px;
-        }
+          margin-top: 10px;
+          margin-bottom: 29px;
 
-        &CAC {
-          margin-bottom: 35px;
-          margin-top: 4px;
+          @include mq(large) {
+            margin-top: 12px;
+            margin-bottom: 25px;
+          }
         }
       }
     } // &__CreativeBrief
@@ -371,7 +563,8 @@
 // Portfolio Display ==============================
 
 .portfolioDisplay img {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
 }
 
 
@@ -379,19 +572,27 @@
 // Bottom Navigation ==============================
 
 .portfolio__subNav {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
+
+  @include mq(small) {
+    margin-bottom: 90px;
+  }
 
   svg {
-    height: 64px;
+    height: 54px;
     margin: 0 auto;
     width: 100%;
+
+    @include mq(small) {
+      height: 64px;
+    }
   }
 }
 
 .portfolio__subNav--button {
   .outer {
       fill: #fff;  // white
-      stroke: #0ab389; // emerald
+      stroke: #808285;  // dark gray
       stroke-width: 2.5;
       stroke-linecap: round;
       stroke-miterlimit: 10;
@@ -399,7 +600,7 @@
    }
 
    .inner {
-      fill: #0ab389; // emerald
+      fill: #808285;  // dark gray
       transform: scale(0);
     }
 
