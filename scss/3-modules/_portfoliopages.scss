@@ -192,7 +192,16 @@
   border-top: 1px solid $color-subtle;
   width: 100%;
   max-width: 1170px;
-  margin: 50px 0 85px;
+  margin: 50px 0 0;
+  position: relative;
+
+  @include mq(small) {
+    bottom: 25px;
+  }
+
+  @include mq(medium) {
+    bottom: 0;
+  }
 }
 
 .introSection {
@@ -221,6 +230,10 @@
       }
 
       @include mq (small) {
+        background-image: url('../images/portfolio/Kaleidoscope__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/Kaleidoscope__h1.png');
       }
     }
@@ -229,6 +242,10 @@
       background-image: url('../images/portfolio/SPR__h1--xs.png');
 
       @include mq (small) {
+        background-image: url('../images/portfolio/SPR__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/SPR__h1.png');
       }
     }
@@ -237,6 +254,10 @@
       background-image: url('../images/portfolio/BroncoDay__h1--xs.png');
 
       @include mq (small) {
+        background-image: url('../images/portfolio/BroncoDay__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/BroncoDay__h1.png');
       }
     }
@@ -245,6 +266,10 @@
       background-image: url('../images/portfolio/CAC__h1--xs.png');
 
       @include mq (small) {
+        background-image: url('../images/portfolio/CAC__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/CAC__h1.png');
       }
     }
@@ -258,6 +283,10 @@
       }
 
       @include mq (small) {
+        background-image: url('../images/portfolio/SDI__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/SDI__h1.png');
       }
     }
@@ -266,6 +295,10 @@
       background-image: url('../images/portfolio/GetIn__h1--xs.png');
 
       @include mq (small) {
+        background-image: url('../images/portfolio/GetIn__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/GetIn__h1.png');
       }
     }
@@ -274,6 +307,10 @@
       background-image: url('../images/portfolio/WC__h1--xs.png');
 
       @include mq (small) {
+        background-image: url('../images/portfolio/WC__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/WC__h1.png');
       }
     }
@@ -282,6 +319,10 @@
       background-image: url('../images/portfolio/SumConf__h1--xs.png');
 
       @include mq (small) {
+        background-image: url('../images/portfolio/SumConf__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/SumConf__h1.png');
       }
     }
@@ -295,6 +336,10 @@
       }
 
       @include mq (small) {
+        background-image: url('../images/portfolio/AR2014__h1--sm.png');
+      }
+
+      @include mq (large) {
         background-image: url('../images/portfolio/AR2014__h1.png');
       }
     }
@@ -309,11 +354,7 @@
     position: relative;
     bottom: 25px;
     text-align: center;
-    padding-bottom: 30px;
-
-    @media (min-width: 471px ) {
-      bottom: 25px;
-    }
+    padding-bottom: 0;
 
     @include mq (small) {
       font-size: em(21px);
@@ -565,6 +606,14 @@
 .portfolioDisplay img {
   width: 100%;
   max-width: 1170px;
+
+  @include mq(small) {
+    margin-top: -25px;
+  }
+
+  @include mq(medium) {
+    margin-top: 0;
+  }
 }
 
 
@@ -589,51 +638,71 @@
   }
 }
 
-.portfolio__subNav--button {
-  .outer {
-      fill: #fff;  // white
-      stroke: #808285;  // dark gray
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-miterlimit: 10;
-      transform: scale(.8);
-   }
+.Next__button {
+  display: block;
+  background: url("../images/portfolio/Next__button--Sprite.png") no-repeat;
+  height: 44px;
+  width: 166px;
+  margin: 0 auto;
+  float: right;
+  position: relative;
+  left: 40px;
+  bottom: 44px;
 
-   .inner {
-      fill: #808285;  // dark gray
-      transform: scale(0);
-    }
+  @include mq(small) {
+    left: 0;
+  }
 
-    polyline {
-      fill: none;
-      stroke: #808285;  // dark gray
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-miterlimit: 10;
-    }
+  &:hover {
+         background-position: center center;
+  }
 
-    &:hover {
-      .outer {
-        transform: scale(1);
-      }
-
-      .inner {
-         transform: scale(1);
-      }
-
-      polyline {
-        fill: none;
-        stroke: #fff; // white
-        stroke-width: 2.5;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-      }
-    } // end hover
+  &:active {
+         background-position: center bottom;
+  }
 }
 
-.portfolio__subNav polyline,
-.portfolio__subNav .inner,
-.portfolio__subNav .outer {
-  transition: .3s ease-in-out;
-  transform-origin: 50% 50%;
+.Previous__button {
+  display: block;
+  background: url("../images/portfolio/Previous__button--Sprite.png") no-repeat;
+  height: 44px;
+  width: 166px;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  right: 40px;
+
+  @include mq(small) {
+    right: 0;
+  }
+
+  &:hover {
+         background-position: center center;
+  }
+
+  &:active {
+         background-position: center bottom;
+  }
+}
+
+.Overview__button {
+  display: block;
+  background: url("../images/portfolio/Overview__button--Sprite.png") no-repeat;
+  height: 44px;
+  width: 45px;
+  margin: 0 auto;
+  // position: absolute;
+  // right: 40px;
+
+  // @include mq(small) {
+  //   right: 0;
+  // }
+
+  &:hover {
+         background-position: center center;
+  }
+
+  &:active {
+         background-position: center bottom;
+  }
 }

@@ -308,10 +308,8 @@ a.navbar-brand {
   height: 145px;
   position: relative;
   bottom: 40px;
-
-  @include mq(small) {
-    bottom: 40px;
-  }
+  // transform-origin: 50% 50%;
+  // transform-origin: 35.33px 35px;
 
   @include mq(medium) {
     bottom: 50px;
@@ -400,6 +398,7 @@ a.navbar-brand {
   height: 64px;
   display: relative;
   bottom: 20px;
+  transform-origin: 35.33px 35px;
 }
 
 .Process__Rule {
@@ -483,6 +482,7 @@ a.navbar-brand {
 .process .outer {
   transition: .3s ease-in-out;
   transform-origin: 50% 50%;
+  transform-origin: 35.33px 35px;
 }
 
 .process__content-visible {
@@ -493,51 +493,11 @@ a.navbar-brand {
   display: none;
 }
 
-.process__1 {
-  position: relative;
-  right: 20px;
-
-  @include mq(small) {
-    left: 30px;
-  }
-
-  @include mq(medium) {
-    left: 10px;
-  }
-
-  @include mq(large) {
-    left: 10px;
-  }
-}
-
-.process__2 {
-  position: relative;
-  right: 20px;
-
-  @include mq(small) {
-    left: 70px;
-  }
-
-  @include mq(medium) {
-    left: 60px;
-  }
-
-  @include mq(large) {
-    left: 75px;
-  }
-}
-
+.process__1,
+.process__2,
 .process__3 {
   position: relative;
   right: 20px;
-
-  @include mq(small) {
-    left: 45px;
-  }
-
-  @include mq(medium) {
-    left: 40px;
-  }
 }
 
 // About ==================================
@@ -562,6 +522,10 @@ a.navbar-brand {
     color: $color-secondary;
     padding: 0;
     text-align: left;
+  }
+
+  a {
+    color: $color-primary;
   }
 }
 
@@ -653,8 +617,12 @@ a.navbar-brand {
 .social {
   height: 90px;
   padding-top: 15px;
-  background-color: $color-secondary;
+  background-color: $color-primary;
   margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  top: 3px;
 
   &--home {
     background-color: $color-primary;

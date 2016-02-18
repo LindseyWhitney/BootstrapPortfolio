@@ -27,10 +27,9 @@ h3 {
   bottom: 1em;
   height: 45px;
   letter-spacing: .75px; }
-  @media (min-width: 552px) {
+  @media (min-width: 768px) {
     h3 {
-      bottom: 1.86667em;
-      height: auto; } }
+      bottom: 41px; } }
 
 h4 {
   text-transform: uppercase;
@@ -86,9 +85,11 @@ form {
   height: 91px; }
 
 #portfolio h2 {
-  background-image: url("../images/H1__FeaturedWork--XS.jpg");
-  padding-bottom: 10px; }
-  @media (min-width: 552px) {
+  background-image: url("../images/H1__FeaturedWork--XS.jpg"); }
+  @media (min-width: 768px) {
+    #portfolio h2 {
+      background-image: url("../images/H1__FeaturedWork--SM.png"); } }
+  @media (min-width: 992px) {
     #portfolio h2 {
       background-image: url("../images/H1__FeaturedWork--L.png"); } }
 
@@ -97,32 +98,47 @@ form {
 #portfolioOverview h2 {
   background-image: url("../images/H1__Portfolio--XS.png");
   padding-bottom: 10px; }
-  @media (min-width: 552px) {
+  @media (min-width: 768px) {
+    #portfolioOverview h2 {
+      background-image: url("../images/H1__Portfolio--SM.png"); } }
+  @media (min-width: 992px) {
     #portfolioOverview h2 {
       background-image: url("../images/H1__Portfolio--L.png"); } }
 
 #process h2 {
   background-image: url("../images/H1__Process--XS.jpg");
   padding-bottom: 10px; }
-  @media (min-width: 552px) {
+  @media (min-width: 768px) {
+    #process h2 {
+      background-image: url("../images/H1__Process--SM.png"); } }
+  @media (min-width: 992px) {
     #process h2 {
       background-image: url("../images/H1__Process--L.png"); } }
 
 #services h2 {
   background-image: url("../images/H1__Services--XS.png"); }
-  @media (min-width: 552px) {
+  @media (min-width: 768px) {
+    #services h2 {
+      background-image: url("../images/H1__Services--SM.png"); } }
+  @media (min-width: 992px) {
     #services h2 {
       background-image: url("../images/H1__Services--L.png"); } }
 
 #about h2 {
   background-image: url("../images/H1__About--XS.png"); }
-  @media (min-width: 552px) {
+  @media (min-width: 768px) {
+    #about h2 {
+      background-image: url("../images/H1__About--SM.png"); } }
+  @media (min-width: 992px) {
     #about h2 {
       background-image: url("../images/H1__About--L.png"); } }
 
 #contact h2 {
   background-image: url("../images/H1__Contact--XS.jpg"); }
-  @media (min-width: 552px) {
+  @media (min-width: 768px) {
+    #contact h2 {
+      background-image: url("../images/H1__Contact--SM.png"); } }
+  @media (min-width: 992px) {
     #contact h2 {
       background-image: url("../images/H1__Contact--L.png"); } }
 
@@ -134,9 +150,6 @@ form {
   position: relative;
   bottom: 1.53333em;
   margin-bottom: 2.66667em; }
-  @media (max-width: 552px) {
-    .h2__description {
-      display: none; } }
   @media (min-width: 768px) {
     .h2__description {
       font-size: 1.2em; } }
@@ -373,9 +386,6 @@ a.navbar-brand {
   height: 145px;
   position: relative;
   bottom: 40px; }
-  @media (min-width: 768px) {
-    .svgcontainer {
-      bottom: 40px; } }
   @media (min-width: 992px) {
     .svgcontainer {
       bottom: 50px; } }
@@ -435,7 +445,8 @@ a.navbar-brand {
 .process svg {
   height: 64px;
   display: relative;
-  bottom: 20px; }
+  bottom: 20px;
+  transform-origin: 35.33px 35px; }
 
 .Process__Rule {
   height: 0;
@@ -491,7 +502,8 @@ a.navbar-brand {
 .process .inner,
 .process .outer {
   transition: .3s ease-in-out;
-  transform-origin: 50% 50%; }
+  transform-origin: 50% 50%;
+  transform-origin: 35.33px 35px; }
 
 .process__content-visible {
   display: initial; }
@@ -499,41 +511,11 @@ a.navbar-brand {
 .process__content-hidden {
   display: none; }
 
-.process__1 {
-  position: relative;
-  right: 20px; }
-  @media (min-width: 768px) {
-    .process__1 {
-      left: 30px; } }
-  @media (min-width: 992px) {
-    .process__1 {
-      left: 10px; } }
-  @media (min-width: 1200px) {
-    .process__1 {
-      left: 10px; } }
-
-.process__2 {
-  position: relative;
-  right: 20px; }
-  @media (min-width: 768px) {
-    .process__2 {
-      left: 70px; } }
-  @media (min-width: 992px) {
-    .process__2 {
-      left: 60px; } }
-  @media (min-width: 1200px) {
-    .process__2 {
-      left: 75px; } }
-
+.process__1,
+.process__2,
 .process__3 {
   position: relative;
   right: 20px; }
-  @media (min-width: 768px) {
-    .process__3 {
-      left: 45px; } }
-  @media (min-width: 992px) {
-    .process__3 {
-      left: 40px; } }
 
 #about {
   padding-top: 19%;
@@ -552,6 +534,8 @@ a.navbar-brand {
     color: #808285;
     padding: 0;
     text-align: left; }
+  #about a {
+    color: #0ab389; }
 
 .aboutpic {
   display: block;
@@ -611,8 +595,12 @@ a.navbar-brand {
 .social {
   height: 90px;
   padding-top: 15px;
-  background-color: #808285;
-  margin-top: 30px; }
+  background-color: #0ab389;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  top: 3px; }
   .social--home {
     background-color: #0ab389; }
   @media (min-width: 544px) {
@@ -806,7 +794,14 @@ a.navbar-brand {
   border-top: 1px solid rgba(128, 130, 133, 0.2);
   width: 100%;
   max-width: 1170px;
-  margin: 50px 0 85px; }
+  margin: 50px 0 0;
+  position: relative; }
+  @media (min-width: 768px) {
+    .portfolio__divider {
+      bottom: 25px; } }
+  @media (min-width: 992px) {
+    .portfolio__divider {
+      bottom: 0; } }
 
 .introSection {
   padding-top: 70px; }
@@ -827,20 +822,32 @@ a.navbar-brand {
         margin-bottom: -10px; } }
     @media (min-width: 768px) {
       .introSection .h1__Kaleidoscope {
+        background-image: url("../images/portfolio/Kaleidoscope__h1--sm.png"); } }
+    @media (min-width: 1200px) {
+      .introSection .h1__Kaleidoscope {
         background-image: url("../images/portfolio/Kaleidoscope__h1.png"); } }
   .introSection .h1__SPR {
     background-image: url("../images/portfolio/SPR__h1--xs.png"); }
     @media (min-width: 768px) {
+      .introSection .h1__SPR {
+        background-image: url("../images/portfolio/SPR__h1--sm.png"); } }
+    @media (min-width: 1200px) {
       .introSection .h1__SPR {
         background-image: url("../images/portfolio/SPR__h1.png"); } }
   .introSection .h1__BroncoDay {
     background-image: url("../images/portfolio/BroncoDay__h1--xs.png"); }
     @media (min-width: 768px) {
       .introSection .h1__BroncoDay {
+        background-image: url("../images/portfolio/BroncoDay__h1--sm.png"); } }
+    @media (min-width: 1200px) {
+      .introSection .h1__BroncoDay {
         background-image: url("../images/portfolio/BroncoDay__h1.png"); } }
   .introSection .h1__CAC {
     background-image: url("../images/portfolio/CAC__h1--xs.png"); }
     @media (min-width: 768px) {
+      .introSection .h1__CAC {
+        background-image: url("../images/portfolio/CAC__h1--sm.png"); } }
+    @media (min-width: 1200px) {
       .introSection .h1__CAC {
         background-image: url("../images/portfolio/CAC__h1.png"); } }
   .introSection .h1__SDI {
@@ -851,20 +858,32 @@ a.navbar-brand {
         margin-bottom: -10px; } }
     @media (min-width: 768px) {
       .introSection .h1__SDI {
+        background-image: url("../images/portfolio/SDI__h1--sm.png"); } }
+    @media (min-width: 1200px) {
+      .introSection .h1__SDI {
         background-image: url("../images/portfolio/SDI__h1.png"); } }
   .introSection .h1__GetIn {
     background-image: url("../images/portfolio/GetIn__h1--xs.png"); }
     @media (min-width: 768px) {
+      .introSection .h1__GetIn {
+        background-image: url("../images/portfolio/GetIn__h1--sm.png"); } }
+    @media (min-width: 1200px) {
       .introSection .h1__GetIn {
         background-image: url("../images/portfolio/GetIn__h1.png"); } }
   .introSection .h1__WC {
     background-image: url("../images/portfolio/WC__h1--xs.png"); }
     @media (min-width: 768px) {
       .introSection .h1__WC {
+        background-image: url("../images/portfolio/WC__h1--sm.png"); } }
+    @media (min-width: 1200px) {
+      .introSection .h1__WC {
         background-image: url("../images/portfolio/WC__h1.png"); } }
   .introSection .h1__SumConf {
     background-image: url("../images/portfolio/SumConf__h1--xs.png"); }
     @media (min-width: 768px) {
+      .introSection .h1__SumConf {
+        background-image: url("../images/portfolio/SumConf__h1--sm.png"); } }
+    @media (min-width: 1200px) {
       .introSection .h1__SumConf {
         background-image: url("../images/portfolio/SumConf__h1.png"); } }
   .introSection .h1__AR2014 {
@@ -874,6 +893,9 @@ a.navbar-brand {
         background-size: contain;
         margin-bottom: -10px; } }
     @media (min-width: 768px) {
+      .introSection .h1__AR2014 {
+        background-image: url("../images/portfolio/AR2014__h1--sm.png"); } }
+    @media (min-width: 1200px) {
       .introSection .h1__AR2014 {
         background-image: url("../images/portfolio/AR2014__h1.png"); } }
   .introSection h2 {
@@ -885,10 +907,7 @@ a.navbar-brand {
     position: relative;
     bottom: 25px;
     text-align: center;
-    padding-bottom: 30px; }
-    @media (min-width: 471px) {
-      .introSection h2 {
-        bottom: 25px; } }
+    padding-bottom: 0; }
     @media (min-width: 768px) {
       .introSection h2 {
         font-size: 1.4em;
@@ -1042,6 +1061,12 @@ a.navbar-brand {
 .portfolioDisplay img {
   width: 100%;
   max-width: 1170px; }
+  @media (min-width: 768px) {
+    .portfolioDisplay img {
+      margin-top: -25px; } }
+  @media (min-width: 992px) {
+    .portfolioDisplay img {
+      margin-top: 0; } }
 
 .portfolio__subNav {
   margin-bottom: 60px; }
@@ -1056,38 +1081,51 @@ a.navbar-brand {
       .portfolio__subNav svg {
         height: 64px; } }
 
-.portfolio__subNav--button .outer {
-  fill: #fff;
-  stroke: #808285;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-miterlimit: 10;
-  transform: scale(0.8); }
-.portfolio__subNav--button .inner {
-  fill: #808285;
-  transform: scale(0); }
-.portfolio__subNav--button polyline {
-  fill: none;
-  stroke: #808285;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-.portfolio__subNav--button:hover .outer {
-  transform: scale(1); }
-.portfolio__subNav--button:hover .inner {
-  transform: scale(1); }
-.portfolio__subNav--button:hover polyline {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
+.Next__button {
+  display: block;
+  background: url("../images/portfolio/Next__button--Sprite.png") no-repeat;
+  height: 44px;
+  width: 166px;
+  margin: 0 auto;
+  float: right;
+  position: relative;
+  left: 40px;
+  bottom: 44px; }
+  @media (min-width: 768px) {
+    .Next__button {
+      left: 0; } }
+  .Next__button:hover {
+    background-position: center center; }
+  .Next__button:active {
+    background-position: center bottom; }
 
-.portfolio__subNav polyline,
-.portfolio__subNav .inner,
-.portfolio__subNav .outer {
-  transition: .3s ease-in-out;
-  transform-origin: 50% 50%; }
+.Previous__button {
+  display: block;
+  background: url("../images/portfolio/Previous__button--Sprite.png") no-repeat;
+  height: 44px;
+  width: 166px;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  right: 40px; }
+  @media (min-width: 768px) {
+    .Previous__button {
+      right: 0; } }
+  .Previous__button:hover {
+    background-position: center center; }
+  .Previous__button:active {
+    background-position: center bottom; }
+
+.Overview__button {
+  display: block;
+  background: url("../images/portfolio/Overview__button--Sprite.png") no-repeat;
+  height: 44px;
+  width: 45px;
+  margin: 0 auto; }
+  .Overview__button:hover {
+    background-position: center center; }
+  .Overview__button:active {
+    background-position: center bottom; }
 
 .myanimation {
   height: 13em;

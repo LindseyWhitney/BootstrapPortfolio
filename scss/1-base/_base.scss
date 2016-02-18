@@ -41,9 +41,8 @@ h3 {
     height: 45px;
     letter-spacing: .75px;
 
-    @media (min-width: 552px ) {
-      bottom: em(28px);
-      height: auto;
+    @include mq(small) {
+      bottom: 41px;
     }
 }
 

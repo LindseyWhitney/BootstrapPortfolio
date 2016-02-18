@@ -37,9 +37,13 @@
 
 #portfolio h2 {
   background-image: url("../images/H1__FeaturedWork--XS.jpg");
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
 
-  @media (min-width: 552px ) {
+  @include mq(small) {
+    background-image: url("../images/H1__FeaturedWork--SM.png");
+  }
+
+  @include mq(medium) {
     background-image: url("../images/H1__FeaturedWork--L.png");
   }
 }
@@ -54,9 +58,13 @@
     background-image: url("../images/H1__Portfolio--XS.png");
     padding-bottom: 10px;
 
-    @media (min-width: 552px ) {
+    @include mq(small) {
+      background-image: url("../images/H1__Portfolio--SM.png");
+    }
+
+    @include mq(medium) {
       background-image: url("../images/H1__Portfolio--L.png");
-      }
+    }
   }
 }
 
@@ -64,7 +72,11 @@
   background-image: url("../images/H1__Process--XS.jpg");
   padding-bottom: 10px;
 
-  @media (min-width: 552px ) {
+  @include mq(small) {
+    background-image: url("../images/H1__Process--SM.png");
+  }
+
+  @include mq(medium) {
     background-image: url("../images/H1__Process--L.png");
   }
 }
@@ -72,7 +84,11 @@
 #services h2 {
   background-image: url("../images/H1__Services--XS.png");
 
-  @media (min-width: 552px ) {
+  @include mq(small) {
+    background-image: url("../images/H1__Services--SM.png");
+  }
+
+  @include mq(medium) {
     background-image: url("../images/H1__Services--L.png");
   }
 }
@@ -80,7 +96,11 @@
 #about h2 {
   background-image: url("../images/H1__About--XS.png");
 
-  @media (min-width: 552px ) {
+  @include mq(small) {
+    background-image: url("../images/H1__About--SM.png");
+  }
+
+  @include mq(medium) {
     background-image: url("../images/H1__About--L.png");
   }
 }
@@ -88,7 +108,11 @@
 #contact h2 {
   background-image: url("../images/H1__Contact--XS.jpg");
 
-  @media (min-width: 552px ) {
+  @include mq(small) {
+    background-image: url("../images/H1__Contact--SM.png");
+  }
+
+  @include mq(medium) {
     background-image: url("../images/H1__Contact--L.png");
   }
 }
@@ -101,10 +125,6 @@
   position: relative;
   bottom: em(23px);
   margin-bottom: em(40px);
-
-  @media (max-width: 552px ) {
-    display: none;
-  }
 
   @include mq(small) {
     font-size: em(18px);
