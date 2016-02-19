@@ -304,47 +304,49 @@ a.navbar-brand {
   stroke-miterlimit:10;
 }
 
-.svgcontainer {
-  height: 145px;
-  position: relative;
-  bottom: 40px;
+// .svgcontainer {
+//   height: 145px;
+//   position: relative;
+//   bottom: 40px;
   // transform-origin: 50% 50%;
   // transform-origin: 35.33px 35px;
 
-  @include mq(medium) {
-    bottom: 50px;
+  // @include mq(medium) {
+  //   bottom: 50px;
+  // }
+
+#services svg {
+  position: relative;
+}
+
+.lightbulb {
+  width: 94px;
+  top: -10px;
+}
+
+.eyeball {
+  width: 145px;
+  top: 22px;
+
+  .visible {
+    display:inline;
   }
 
-
-  .lightbulb {
-    width: 94px;
-    padding-top: 30px;
-
-  }
-
-  .eyeball {
-    width: 145px;
-    padding-top: 62px;
-
-    .visible {
-      display:inline;
-    }
-
-    @include mq(small) {
-      padding-top: 58px;
-    }
-  }
-
-  .laptop {
-    width: 150px;
-    padding-top: 48px;
-
-    @include mq(small) {
-      padding-top: 45px;
-      margin-top: 0;
-    }
+  @include mq(small) {
+    top: 18px;
   }
 }
+
+.laptop {
+  width: 150px;
+  top: 8px;
+
+  @include mq(small) {
+    top: 5px;
+    margin-top: 0;
+  }
+}
+
 
 .design ul {
   margin-bottom: 25px;

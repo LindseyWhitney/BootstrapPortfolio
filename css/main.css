@@ -382,31 +382,29 @@ a.navbar-brand {
   stroke-linecap: round;
   stroke-miterlimit: 10; }
 
-.svgcontainer {
-  height: 145px;
-  position: relative;
-  bottom: 40px; }
-  @media (min-width: 992px) {
-    .svgcontainer {
-      bottom: 50px; } }
-  .svgcontainer .lightbulb {
-    width: 94px;
-    padding-top: 30px; }
-  .svgcontainer .eyeball {
-    width: 145px;
-    padding-top: 62px; }
-    .svgcontainer .eyeball .visible {
-      display: inline; }
-    @media (min-width: 768px) {
-      .svgcontainer .eyeball {
-        padding-top: 58px; } }
-  .svgcontainer .laptop {
-    width: 150px;
-    padding-top: 48px; }
-    @media (min-width: 768px) {
-      .svgcontainer .laptop {
-        padding-top: 45px;
-        margin-top: 0; } }
+#services svg {
+  position: relative; }
+
+.lightbulb {
+  width: 94px;
+  top: -10px; }
+
+.eyeball {
+  width: 145px;
+  top: 22px; }
+  .eyeball .visible {
+    display: inline; }
+  @media (min-width: 768px) {
+    .eyeball {
+      top: 18px; } }
+
+.laptop {
+  width: 150px;
+  top: 8px; }
+  @media (min-width: 768px) {
+    .laptop {
+      top: 5px;
+      margin-top: 0; } }
 
 .design ul {
   margin-bottom: 25px; }
