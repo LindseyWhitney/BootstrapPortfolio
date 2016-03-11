@@ -75,6 +75,16 @@ a.navbar-brand {
 
 .jumbotron__background {
   background-image: url("../images/Background_991px.jpg");
+  background-position: center;
+  background-size: contain, auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 932px;
+
+  @include mq(small) {
+    background-image: url("../images/Background_991px.jpg");
+  }
 
   @include mq(medium) {
       background-image: url("../images/Background_1199px.jpg");
@@ -83,18 +93,13 @@ a.navbar-brand {
   @include mq(large) {
       background-image: url("../images/Background_2000px.jpg");
   }
-
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 932px;
 }
 
 #jumbotron {
   position: relative;
   display: block;
   text-align: center;
-  height: 500px;
+  height: 470px;
 
   @media (min-width: 458px ) {
     height: 550px;
@@ -198,6 +203,14 @@ a.navbar-brand {
   @media (min-width: 552px ) {
     width: 290px;
     margin: em(150px) auto 0;
+  }
+}
+
+.intro--atomgraphic {
+  position: absolute;
+
+  @media (min-width: 610px ) {
+    width: 100%;
   }
 }
 

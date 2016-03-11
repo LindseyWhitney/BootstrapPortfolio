@@ -216,10 +216,15 @@ a.navbar-brand {
 
 .jumbotron__background {
   background-image: url("../images/Background_991px.jpg");
+  background-position: center;
+  background-size: contain, auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 932px; }
+  @media (min-width: 768px) {
+    .jumbotron__background {
+      background-image: url("../images/Background_991px.jpg"); } }
   @media (min-width: 992px) {
     .jumbotron__background {
       background-image: url("../images/Background_1199px.jpg"); } }
@@ -231,7 +236,7 @@ a.navbar-brand {
   position: relative;
   display: block;
   text-align: center;
-  height: 500px; }
+  height: 470px; }
   @media (min-width: 458px) {
     #jumbotron {
       height: 550px; } }
@@ -313,6 +318,12 @@ a.navbar-brand {
     .intro--graphic {
       width: 290px;
       margin: 10em auto 0; } }
+
+.intro--atomgraphic {
+  position: absolute; }
+  @media (min-width: 610px) {
+    .intro--atomgraphic {
+      width: 100%; } }
 
 .portfolio li {
   color: #0ab389;
