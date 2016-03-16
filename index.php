@@ -387,40 +387,127 @@
           <p class="h2__description col-md-10 col-md-offset-1 hidden-xs">If you know the value of good design and want to learn more about working together to strengthen your business, fill out my form. I take a limited number of projects each month to ensure I can provide my best work for each and every client, so let’s start the conversation!</p>
           <div class="row">
 
-              <form action=“index.html” method=“post”>
-                <div class="col-md-6 form-left">
-                  <div class="form-group">
-                    <label for="form__fname" class="sr-only">First Name</label>
-                    <input type="text" class="form-control" id="form__fname" name="firstname" placeholder="First Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="form__lname" class="sr-only">Last Name</label>
-                    <input type="text" class="form-control" id="form__lname" name="lastname" placeholder="Last Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="form__email" class="sr-only">Email</label>
-                    <input type="email" class="form-control" id="form__email" name="user_email" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <label for="form__phone" class="sr-only">Phone Number</label>
-                    <input type="text" class="form-control" id="form__phone" name="phonenumber" placeholder="Phone Number">
-                  </div>
-                  <div class="form-group">
-                    <label for="form__marketing" class="sr-only">How did you hear about me?</label>
-                    <input type="text" class="form-control" id="form__marketing" name="user_marketing" placeholder="How did you hear about me?">
-                  </div>
-                </div> <!-- .col-md-6 form-left -->
-                <div class="form-group col-md-6">
-                  <label for="form__message" class="sr-only">Message</label>
-                  <textarea class="form-control" rows="11" id="form__message" placeholder="Message"></textarea>
+            <?php
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $fname = trim(filter_input(INPUT_POST, "fname", FILTER_SANITIZE_STRING));
+                $lname = trim(filter_input(INPUT_POST, "lname", FILTER_SANITIZE_STRING));
+                $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+                $phone = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
+                $marketing = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
+                $message = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_SPECIAL_CHARS));
+
+                if ($name == "" || $email == "" || $message == "") {
+                      $error_message = "Please fill in the required fields: First Name, Last Name, Email, Phone Number and Message";
+                }
+                if (!isset($error_message) && $_POST["address"] != "") {
+                      $error_message = "Bad form input";
+                }
+
+                require("inc/phpmailer/class.phpmailer.php");
+
+                $mail = new PHPMailer;
+
+                if (!isset($error_message) && !$mail->ValidateAddress($email)) {
+                    $error_message = "Invalid Email Address";
+                }
+
+                if (!isset($error_message)) {
+                    $email_body = "";
+                    $email_body .= "First Name " . $fname . "\n";
+                    $email_body .= "Last Name " . $lname . "\n";
+                    $email_body .= "Email " . $email . "\n";
+                    $email_body .= "Phone Number " . $phone . "\n";
+                    $email_body .= "Marketing " . $marketing . "\n";
+                    $email_body .= "Message " . $message . "\n";
+
+                    $mail->IsSMTP();
+                    $mail->SMTPAuth = true;
+                    $mail->Host = "smtp.pepipost.com";
+                    $mail->Port = 25;
+                    $mail->Username = "lindseyw";
+                    $mail->Password = "2Bamboo!";
+
+                    $mail->setFrom($email, $name);
+                    $mail->addAddress('lindsey@lindseywhitneydesign.com', 'Lindsey');     // Add a recipient
+                    $mail->isHTML(false);                                  // Set email format to HTML
+
+                    $mail->Subject = 'Design Inquiry from ' . $name;
+                    $mail->Body    = $email_body;
+
+                    if ($mail->send()) {
+                        header("location:index.php#contact?status=thanks");
+                        exit;
+                    }
+                    $error_message = 'Message could not be sent.';
+                    $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
+                }
+            }
+
+            if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
+                    echo "<p class='form_submission'>Thanks for the message! I&rsquo;ll be in touch with you soon.</p>";
+            } else {
+                if (isset($error_message)) {
+                        echo "<p class='message'>".$error_message . "</p>";
+                }
+            ?>
+
+            <form method=“post” action=“index.php”>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form__fname" class="sr-only">First Name</label>
+                  <input type="text" class="form-control" id="form__fname" name="fname" placeholder="First Name (Required)" value="<?php if (isset($fname)) {
+                        echo $fname;
+} ?>">
                 </div>
-              </form>
-              <a href="" class="text-hide Submit__button">Submit</a>
-            </div> <!--/.col sizes -->
+                <div class="form-group">
+                  <label for="form__lname" class="sr-only">Last Name</label>
+                  <input type="text" class="form-control" id="form__lname" name="lname" placeholder="Last Name (Required)" value="<?php if (isset($lname)) {
+                        echo $lname;
+} ?>">
+                </div>
+                <div class="form-group">
+                  <label for="form__email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" id="form__email" name="mail" placeholder="Email (Required)" value="<?php if (isset($email)) {
+                        echo $email;
+} ?>">
+                </div>
+                <div class="form-group">
+                  <label for="form__phone" class="sr-only">Phone Number</label>
+                  <input type="text" class="form-control" id="form__phone" name="phone" placeholder="Phone Number (Required)" value="<?php if (isset($phone)) {
+                        echo $phone;
+} ?>">
+
+                </div>
+                <div class="form-group">
+                  <label for="form__marketing" class="sr-only">How did you hear about me?</label>
+                  <input type="text" class="form-control" id="form__marketing" name="marketing" placeholder="How did you hear about me?" value="<?php if (isset($marketing)) {
+                        echo $marketing;
+} ?>">
+                </div>
+              </div> <!-- .col-md-6 form-left -->
+              <div class="form-group col-md-6">
+                <label for="form__message" class="sr-only">Message</label>
+                <textarea name="message" class="form-control" rows="11" id="form__message" placeholder="What's on your mind?"><?php if (isset($message)) {
+                    echo htmlspecialchars($_POST["message"]);
+} ?></textarea>
+              </div>
+              <div style="display:none">
+                <label for="form__address" class="sr-only">Address</label>
+                <input type="text" class="form-control" id="form__address" name="address" placeholder="Please leave this field blank.">
+                <p>Please leave this field blank.</p>
+              </div>
+            </form>
+
+            <a href="" class="text-hide Submit__button">Submit</a>
+
+            <?php
+            } ?>
+
+
           </div> <!--/.row -->
         </div> <!--/.container -->
       </div> <!--/#contact -->
-
       <!-- Footer -->
       <footer class="social social--home">
         <p class="copyright">&copy; Lindsey Whitney Design, LLC.  |  2016</p>

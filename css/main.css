@@ -599,7 +599,15 @@ a.navbar-brand {
     background-position: center bottom; }
   @media (min-width: 992px) {
     .Submit__button {
-      top: 340px; } }
+      top: 380px; } }
+
+.form_submission {
+  color: #0ab389;
+  text-align: center; }
+
+.message {
+  color: red;
+  text-align: center; }
 
 .social {
   height: 90px;

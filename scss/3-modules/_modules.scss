@@ -621,8 +621,18 @@ a.navbar-brand {
    }
 
    @include mq(medium) {
-     top: 340px;
+     top: 380px;
    }
+}
+
+.form_submission {
+  color: $color-primary;
+  text-align: center;
+}
+
+.message {
+  color: red;
+  text-align: center;
 }
 
 
