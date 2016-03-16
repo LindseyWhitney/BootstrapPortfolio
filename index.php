@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name='verify-v1' content='330858edf6bcaa85d4aa3150032564f9'/>
     <meta name="google-site-verification" content="6xLc5k4rUe94P_Lix8GtyvVQfqn5gZbfBnsgtn-WQJE" />
-    <title>Lindsey Whitney Design</title>
+    <title>Lindsey Whitney Design, LLC</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="js/dist/css/animsition.min.css">
     <link href="css/main.css" rel="stylesheet">
