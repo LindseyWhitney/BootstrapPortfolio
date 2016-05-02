@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="js/dist/css/animsition.min.css">
     <link href="css/main.css" rel="stylesheet">
 
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -86,7 +84,7 @@
 
             <!-- Kaleidoscope Pediatric Therapy -->
             <li id="TN3" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__kaleidoscope.html">
+              <a class="animsition-link" href="portfolio/portfolio__kaleidoscope.php">
                 <img src="images/Work__Thumbnail--KPT.jpg" alt="Thumbnail image of Kaleidoscope Physical Therapy project."/>
                 <div>
                   <div>
@@ -99,7 +97,7 @@
 
             <!-- Summer Conferences -->
             <li id="TN5" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__SumConf.html">
+              <a class="animsition-link" href="portfolio/portfolio__SumConf.php">
                 <img src="images/Work__Thumbnail--SumConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
                 <div>
                   <div>
@@ -112,7 +110,7 @@
 
             <!-- Annual Report 2014 -->
             <li id="TN4" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__AR2014.html">
+              <a class="animsition-link" href="portfolio/portfolio__AR2014.php">
                 <img src="images/Work__Thumbnail--AR2013.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
                 <div>
                   <div>
@@ -125,7 +123,7 @@
 
             <!-- Student Diversity & Inclusion -->
             <li id="TN7" class="hidden-xs col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__SDI.html">
+              <a class="animsition-link" href="portfolio/portfolio__SDI.php">
                 <img src="images/Work__Thumbnail--SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
                 <div>
                   <div>
@@ -138,7 +136,7 @@
 
 
           </ul>
-          <a href="portfolio/portfolio__Overview.html" class="text-hide Work__button">More Work</a>
+          <a href="portfolio/portfolio__Overview.php" class="text-hide Work__button">More Work</a>
         </div> <!--/.container -->
       </div> <!--/.portfolio -->
 
