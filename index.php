@@ -386,71 +386,80 @@
           <div class="row">
 
             <?php
+                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                            $fname = trim(filter_input(INPUT_POST, "fname", FILTER_SANITIZE_STRING));
+                            $lname = trim(filter_input(INPUT_POST, "lname", FILTER_SANITIZE_STRING));
+                            $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+                            $phone = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
+                            $marketing = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
+                            $message = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_SPECIAL_CHARS));
 
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $fname = trim(filter_input(INPUT_POST, "fname", FILTER_SANITIZE_STRING));
-                $lname = trim(filter_input(INPUT_POST, "lname", FILTER_SANITIZE_STRING));
-                $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
-                $phone = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
-                $marketing = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
-                $message = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_SPECIAL_CHARS));
+                            if ($fname == "" || $lname == "" || $email == "" || $message == "") {
+                                  $error_message = "Please fill in the required fields: First Name, Last Name, Email, and Message.";
+                            }
+                            if (!isset($error_message) && $_POST["address"] != "") {
+                                  $error_message = "Bad form input.";
+                            }
 
-                if ($name == "" || $email == "" || $message == "") {
-                      $error_message = "Please fill in the required fields: First Name, Last Name, Email, Phone Number and Message";
-                }
-                if (!isset($error_message) && $_POST["address"] != "") {
-                      $error_message = "Bad form input";
-                }
+                            require("inc/phpmailer/PHPMailerAutoload.php");
 
-                require("inc/phpmailer/class.phpmailer.php");
+                            $mail = new PHPMailer;
 
-                $mail = new PHPMailer;
+                            if (!isset($error_message) && !$mail->ValidateAddress($email)) {
+                                $error_message = "Invalid Email Address";
+                            }
 
-                if (!isset($error_message) && !$mail->ValidateAddress($email)) {
-                    $error_message = "Invalid Email Address";
-                }
+                            if (!isset($error_message)) {
+                              $email_body = "";
+                              $email_body .= "First Name " . $fname . "\n";
+                              $email_body .= "Last Name " . $lname . "\n";
+                              $email_body .= "Email " . $email . "\n";
+                              $email_body .= "Phone Number " . $phone . "\n";
+                              $email_body .= "Marketing " . $marketing . "\n";
+                              $email_body .= "Message " . $message . "\n";
 
-                if (!isset($error_message)) {
-                    $email_body = "";
-                    $email_body .= "First Name " . $fname . "\n";
-                    $email_body .= "Last Name " . $lname . "\n";
-                    $email_body .= "Email " . $email . "\n";
-                    $email_body .= "Phone Number " . $phone . "\n";
-                    $email_body .= "Marketing " . $marketing . "\n";
-                    $email_body .= "Message " . $message . "\n";
+                                  $mail->IsSMTP();
+                                  $mail->SMTPDebug = 2;
+                                  $mail->Debugoutput = 'html';
+                                  $mail->Host = 'smtp.gmail.com';
+                                  $mail->Port = 587;
+                                  $mail->SMTPSecure = 'tls';
+                                  $mail->SMTPAuth = true;
+                                  $mail->Username = "lindsey@lindseywhitneydesign.com";
+                                  $mail->Password = "2bamboo!";
 
-                    $mail->IsSMTP();
-                    $mail->SMTPAuth = true;
-                    $mail->Host = "smtp.pepipost.com";
-                    $mail->Port = 25;
-                    $mail->Username = "lindseyw";
-                    $mail->Password = "2Bamboo!";
 
-                    $mail->setFrom($email, $name);
-                    $mail->addAddress('lindsey@lindseywhitneydesign.com', 'Lindsey');     // Add a recipient
-                    $mail->isHTML(false);                                  // Set email format to HTML
+                                  $mail->setFrom($email, $lname);
+                                  $mail->addAddress('lindsey@lindseywhitneydesign.com', 'Lindsey Whitney');     // Add a recipient
+                                  $mail->isHTML(false);                                  // Set email format to HTML
 
-                    $mail->Subject = 'Design Inquiry from ' . $name;
-                    $mail->Body    = $email_body;
+                                  $mail->Subject = 'Design Inquiry from ' . $fname . ' ' . $lname;
+                                  $mail->Body    = $email_body;
 
-                    if ($mail->send()) {
-                        header("location:index.php#contact?status=thanks");
-                        exit;
-                    }
-                    $error_message = 'Message could not be sent.';
-                    $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
-                }
-            }
 
-            if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
-                    echo "<p class='form_submission'>Thanks for the message! I&rsquo;ll be in touch with you soon.</p>";
-            } else {
-                if (isset($error_message)) {
-                        echo "<p class='message'>".$error_message . "</p>";
-                }
-            ?>
+                              if ($mail->send()) {
+                                  echo "Message sent!!!!";
+                              }
+                              $error_message = 'Message could not be sent. ';
+                              $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
+                          }
 
-            <form method=“post” action=“index.php”>
+
+                        }
+
+
+                        if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
+                          echo "<p class='form_submission'>Thanks for the message! I&rsquo;ll be in touch with you soon.</p>";
+                        } else {
+                          if (isset($error_message)) {
+                            echo "<p class='error_message col-xs-12'> {$error_message} </p>";
+                          }
+                        }
+          ?>
+
+
+
+            <form action="index.php#contact" method="post">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="form__fname" class="sr-only">First Name</label>
@@ -466,13 +475,13 @@
                 </div>
                 <div class="form-group">
                   <label for="form__email" class="sr-only">Email</label>
-                  <input type="email" class="form-control" id="form__email" name="mail" placeholder="Email (Required)" value="<?php if (isset($email)) {
+                  <input type="email" class="form-control" id="form__email" name="email" placeholder="Email (Required)" value="<?php if (isset($email)) {
                         echo $email;
 } ?>">
                 </div>
                 <div class="form-group">
                   <label for="form__phone" class="sr-only">Phone Number</label>
-                  <input type="text" class="form-control" id="form__phone" name="phone" placeholder="Phone Number (Required)" value="<?php if (isset($phone)) {
+                  <input type="text" class="form-control" id="form__phone" name="phone" placeholder="Phone Number" value="<?php if (isset($phone)) {
                         echo $phone;
 } ?>">
 
@@ -495,13 +504,9 @@
                 <input type="text" class="form-control" id="form__address" name="address" placeholder="Please leave this field blank.">
                 <p>Please leave this field blank.</p>
               </div>
+
+              <input type="submit" name="submit" value="Submit" />
             </form>
-
-            <a href="" class="text-hide Submit__button">Submit</a>
-
-            <?php
-            } ?>
-
 
           </div> <!--/.row -->
         </div> <!--/.container -->
@@ -644,7 +649,7 @@
     </script>
     <script src="js/my.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="../js/dist/js/animsition.min.js"></script>
+    <script src="js/dist/js/animsition.min.js"></script>
     <script>
       $(document).ready(function() {
       $(".animsition").animsition({

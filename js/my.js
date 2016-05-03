@@ -214,25 +214,6 @@ $window.trigger('scroll');
 
 
 
-// Smooth scrolling on anchor tags -------------------------
-// Reference: https://css-tricks.com/snippets/jquery/smooth-scrolling/
-
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-
-
 // Process Sub-Navigation -------------------------
 $(".process-subnav").click(function() {
   $(this).addClass( "active" ).removeClass( "inactive" );
@@ -255,4 +236,24 @@ $("#trigger--completion").click(function() {
   $("#initiation").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
 	$("#designdev").addClass( "process__content-hidden" ).removeClass( "process__content-visible" );
 	$("#completion").addClass( "process__content-visible" ).removeClass( "process__content-hidden" );
+});
+
+
+
+// Smooth scrolling on anchor tags -------------------------
+// Reference: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });

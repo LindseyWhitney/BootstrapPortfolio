@@ -592,6 +592,13 @@ a.navbar-brand {
   p {
     color: $color-secondary;
   }
+
+  p.error_message {
+    color: red;
+    text-align: center;
+    position: relative;
+    bottom: em(30px);
+  }
 }
 
 .form-left input {
@@ -630,7 +637,7 @@ a.navbar-brand {
   text-align: center;
 }
 
-.message {
+.error_message {
   color: red;
   text-align: center;
 }

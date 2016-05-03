@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://use.typekit.net/vxj4ehz.js"></script>
-    <script src="js/modernizr.custom.97074.js"></script>
+    <script src="../js/modernizr.custom.97074.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   </head>

@@ -577,6 +577,11 @@ a.navbar-brand {
     color: #0ab389; }
   #contact p {
     color: #808285; }
+  #contact p.error_message {
+    color: red;
+    text-align: center;
+    position: relative;
+    bottom: 2em; }
 
 .form-left input {
   height: 34.75px; }
@@ -605,7 +610,7 @@ a.navbar-brand {
   color: #0ab389;
   text-align: center; }
 
-.message {
+.error_message {
   color: red;
   text-align: center; }
 
