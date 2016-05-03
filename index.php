@@ -421,12 +421,13 @@
                                   $mail->IsSMTP();
                                   $mail->SMTPDebug = 2;
                                   $mail->Debugoutput = 'html';
-                                  $mail->Host = 'smtp.gmail.com';
-                                  $mail->Port = 587;
+
                                   $mail->SMTPSecure = 'tls';
                                   $mail->SMTPAuth = true;
+                                  $mail->Host = 'smtp-relay.sendinblue.com';
+                                  $mail->Port = 587;
                                   $mail->Username = "lindsey@lindseywhitneydesign.com";
-                                  $mail->Password = "2bamboo!";
+                                  $mail->Password = "gTq3EvMGdAaRQnWZ";
 
 
                                   $mail->setFrom($email, $lname);
@@ -512,8 +513,19 @@
         </div> <!--/.container -->
       </div> <!--/#contact -->
       <!-- Footer -->
-      <footer class="social social--home">
-        <p class="copyright">&copy; Lindsey Whitney Design, LLC.  |  2016</p>
+<?php
+  $startYear = 2016;
+  $thisYear = date('Y');
+  if ($thisYear > $startYear) {
+    $copyright = "$startYear&ndash;$thisYear";
+  } else {
+    $copyright = $startYear;
+  }
+?>
+
+      <!-- Footer -->
+      <footer class="social">
+        <p class="copyright">&copy; Lindsey Whitney Design, LLC  |  <?php echo $copyright; ?></p>
         <div class="group">
 
           <!-- Behance -->
