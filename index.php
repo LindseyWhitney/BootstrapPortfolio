@@ -8,6 +8,7 @@
     <meta name='verify-v1' content='330858edf6bcaa85d4aa3150032564f9'/>
     <meta name="google-site-verification" content="6xLc5k4rUe94P_Lix8GtyvVQfqn5gZbfBnsgtn-WQJE" />
     <title>Lindsey Whitney Design, LLC</title>
+    <link rel="icon" href="images/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="js/dist/css/animsition.min.css">
     <link href="css/main.css" rel="stylesheet">
@@ -411,27 +412,27 @@
 
                             if (!isset($error_message)) {
                               $email_body = "";
-                              $email_body .= "First Name " . $fname . "\n";
-                              $email_body .= "Last Name " . $lname . "\n";
-                              $email_body .= "Email " . $email . "\n";
-                              $email_body .= "Phone Number " . $phone . "\n";
-                              $email_body .= "Marketing " . $marketing . "\n";
-                              $email_body .= "Message " . $message . "\n";
+                              $email_body .= "First Name: " . $fname . "\n";
+                              $email_body .= "Last Name: " . $lname . "\n";
+                              $email_body .= "Email: " . $email . "\n";
+                              $email_body .= "Phone Number: " . $phone . "\n";
+                              $email_body .= "Marketing: " . $marketing . "\n";
+                              $email_body .= "Message: " . $message . "\n";
 
                                   $mail->IsSMTP();
-                                  $mail->SMTPDebug = 2;
+                                  //$mail->SMTPDebug = 2;
                                   $mail->Debugoutput = 'html';
 
-                                  $mail->SMTPSecure = 'tls';
+                                  $mail->SMTPSecure = 'ssl';
                                   $mail->SMTPAuth = true;
-                                  $mail->Host = 'smtp-relay.sendinblue.com';
-                                  $mail->Port = 587;
-                                  $mail->Username = "lindsey@lindseywhitneydesign.com";
-                                  $mail->Password = "gTq3EvMGdAaRQnWZ";
+                                  $mail->Host = 'just14.justhost.com';
+                                  $mail->Port = 465;
+                                  $mail->Username = "contact@lindseywhitneydesign.com";
+                                  $mail->Password = "l]Iz!9saprG4/y";
 
 
                                   $mail->setFrom($email, $lname);
-                                  $mail->addAddress('lindsey@lindseywhitneydesign.com', 'Lindsey Whitney');     // Add a recipient
+                                  $mail->addAddress('contact@lindseywhitneydesign.com', 'Lindsey Whitney');     // Add a recipient
                                   $mail->isHTML(false);                                  // Set email format to HTML
 
                                   $mail->Subject = 'Design Inquiry from ' . $fname . ' ' . $lname;
@@ -439,23 +440,25 @@
 
 
                               if ($mail->send()) {
-                                  echo "Message sent!!!!";
+                                $success_message = "Thanks for the message! I&rsquo;ll be in touch with you soon.";
+                              } else {
+                                $error_message = 'Message could not be sent. ';
+                                $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
                               }
-                              $error_message = 'Message could not be sent. ';
-                              $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
                           }
-
-
                         }
 
 
-                        if (isset($_GET["status"]) && $_GET["status"] == "thanks") {
-                          echo "<p class='form_submission'>Thanks for the message! I&rsquo;ll be in touch with you soon.</p>";
+                        if (isset($success_message)) {
+                          echo "<p class='form_submission col-xs-12'> {$success_message} </p>";
+
                         } else {
                           if (isset($error_message)) {
                             echo "<p class='error_message col-xs-12'> {$error_message} </p>";
                           }
                         }
+
+          if (!isset($success_message)) {
           ?>
 
 
@@ -508,6 +511,8 @@
 
               <input type="submit" name="submit" value="Submit" />
             </form>
+
+          <?php } ?>
 
           </div> <!--/.row -->
         </div> <!--/.container -->

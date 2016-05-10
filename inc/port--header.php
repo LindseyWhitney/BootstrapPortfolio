@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lindsey Whitney Design</title>
-
+    <link rel="icon" href="../images/favicon.ico">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../js/dist/css/animsition.min.css">
     <link href="../css/main.css" rel="stylesheet">

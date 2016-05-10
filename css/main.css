@@ -575,13 +575,17 @@ a.navbar-brand {
       padding-bottom: 10em; } }
   #contact h2 {
     color: #0ab389; }
-  #contact p {
-    color: #808285; }
   #contact p.error_message {
     color: red;
     text-align: center;
     position: relative;
     bottom: 2em; }
+  #contact p.form_submission {
+    color: #0ab389;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
+    padding-bottom: 8em; }
 
 .form-left input {
   height: 34.75px; }
@@ -613,6 +617,30 @@ a.navbar-brand {
 .error_message {
   color: red;
   text-align: center; }
+
+input[type="submit"] {
+  background: #0ab389;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: .1em;
+  line-height: inherit;
+  padding: 0.84375em 0.875em 0.78125em;
+  text-transform: uppercase;
+  margin: 40px auto 0;
+  display: block;
+  width: 300px;
+  position: relative;
+  top: 1.33333em; }
+
+input[type="submit"]:hover {
+  color: #d9d9d9; }
+
+input[type="submit"]:active {
+  color: #808285;
+  box-shadow: none; }
 
 .social {
   height: 90px;

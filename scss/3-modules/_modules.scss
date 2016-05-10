@@ -589,15 +589,20 @@ a.navbar-brand {
   h2 {
     color: $color-primary;
   }
-  p {
-    color: $color-secondary;
-  }
 
   p.error_message {
     color: red;
     text-align: center;
     position: relative;
     bottom: em(30px);
+  }
+
+  p.form_submission {
+    color: $color-primary;
+    text-align: center;
+    position: relative;
+    bottom: em(30px);
+    padding-bottom: em(120px);
   }
 }
 
@@ -642,6 +647,32 @@ a.navbar-brand {
   text-align: center;
 }
 
+input[type="submit"] {
+	background: #0ab389;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	font-family: inherit;
+	font-weight: inherit;
+	letter-spacing: .1em;
+	line-height: inherit;
+	padding: 0.84375em 0.875em 0.78125em;
+	text-transform: uppercase;
+  margin: 40px auto 0;
+  display: block;
+  width: 300px;
+  position: relative;
+  top: em(20px);
+}
+
+input[type="submit"]:hover {
+  color: darken( $color-reverse, 15% );
+}
+
+input[type="submit"]:active {
+  color: $color-secondary;
+  box-shadow: none;
+}
 
 
 // Footer ==================================
