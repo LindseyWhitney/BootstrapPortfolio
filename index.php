@@ -369,9 +369,9 @@
                 <img class="aboutpic" src="images/AboutMe.png" alt="Photo of Lindsey Whitney.">
               </div>
               <div class="col-md-8">
-                <p>My favorite thing about being a freelance designer is working with other small business owners—like yourself—who are passionate about what they offer and want to work together to craft visual pieces that genuinely represent them and communicate a professional image to their customers and clients. Being small allows me to provide my expertise in a hassle-free way at much lower costs than a design agency, and establish relationships that continue and grow with your business.</p>
-                <p>I’ve been designing since 2008, and my most recent position was that of Creative Director at Boise State University in their Student Affairs Marketing department. I have my Bachelor of Fine Arts degree in Graphic Design, and have even won some awards over the years. For more details, please see my <a href="https://www.linkedin.com/in/whitneylindsey">LinkedIn</a> profile.</p>
-                <p>I love Boise (where I live), and enjoy traveling (I’ve visited 20+ countries), knitting, reading, heirloom veggies, and tennis (I recently started playing and am already hooked). Oh, and of course coffee. Plenty of coffee.</p>
+                <p>My favorite thing about being a designer is working with other small business owners—like yourself—who are passionate about what they offer and want to work together to craft visual pieces that genuinely represent them and communicate a professional image to their customers and clients. If you like clean, modern design and want to avoid the fuss (and price tag!) that comes with working with a large design agency, we might be a great fit.</p>
+                <p>I’ve been designing since 2008, and my most recent position (before I struck out on my own) was that of Creative Director at Boise State University in their Student Affairs Marketing department. I have my Bachelor of Fine Arts degree in Graphic Design, and have even won some awards over the years. For more details, please see my <a href="https://www.linkedin.com/in/whitneylindsey">LinkedIn</a> profile.</p>
+                <p>I love trying new recipes, knitting, tennis, and getting lost in a good book. I have the travel bug, and have visited over 20 countries. And last but not least, I’m a huge Game of Thrones fan, so be forewarned.</p>
               </div>
             </div> <!-- .col-md-10 col-md-offset-1 -->
           </div> <!--/.row -->
