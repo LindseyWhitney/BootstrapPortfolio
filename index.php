@@ -273,9 +273,9 @@
 
             <section>
             	<div class="row">
-            		<div class="col-xs-8 col-xs-offset-2">
-                  <a href="#0" data-date="1" class="process-subnav active" id="trigger--initiation">
-                    <svg class="col-xs-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+                  <a href="#0" data-date="1" class="process-subnav inactive">
+                    <svg class="hidden-xs hidden-sm col-md-4 col-md-offset-0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 70.67 70" style="enable-background:new 0 0 70.67 70;" xml:space="preserve">
                       <g id="Process__1">
                         <circle class="outer" cx="35.33" cy="35" r="31.96"/>
@@ -287,8 +287,8 @@
                     </svg>
                   </a>
 
-                  <a href="#0" data-date="2" class="process-subnav inactive" id="trigger--designdev">
-                    <svg class="col-xs-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <a href="#0" data-date="2" class="process-subnav inactive">
+                    <svg class="hidden-xs hidden-sm col-md-4 col-md-offset-0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 70.67 70" style="enable-background:new 0 0 70.67 70;" xml:space="preserve">
                         <g id="Process__2">
                             <circle class="outer" cx="35.33" cy="35" r="31.96"/>
@@ -302,8 +302,8 @@
                       </svg>
                   </a>
 
-                  <a href="#0" data-date="3" class="process-subnav inactive" id="trigger--completion">
-                    <svg class="col-xs-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <a href="#0" data-date="3" class="process-subnav inactive">
+                    <svg class="hidden-xs hidden-sm col-md-4 col-md-offset-0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 70.67 70" style="enable-background:new 0 0 70.67 70;" xml:space="preserve">
                       <g id="Process__3">
                            <circle class="outer" cx="35.33" cy="35" r="31.96"/>
@@ -318,14 +318,14 @@
                     </svg>
                   </a>
 
-                  <div class="Process__Rule"></div>
-            		</div> <!-- .col-md-8 col-md-offset-2 -->
+
+
             	</div> <!-- .row -->
 
             	<div class="row process__content">
             		<ol>
-            			<li id="initiation" class="process__content-visible" data-date="1">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 process__1">
+            			<li data-date="1">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
                       <h4>Project Kickoff</h4>
               				<p>
               					I begin every project by getting to know you and your business. We’ll discuss everything from your target market to your competitors, and narrow in on what sets you apart. We’ll establish the right design parameters for your business goals, and record everything we’ve agreed upon in a Creative Brief.
@@ -333,8 +333,8 @@
                     </div>
             			</li>
 
-            			<li id="designdev" class="process__content-hidden" data-date="2">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 process__2">
+            			<li data-date="2">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
                       <h4>Design &amp; Development</h4>
                       <p>
                         With the Creative Brief as a guide, I’ll begin designing. I’ll provide mood boards, sketches, and design proofs along the way for you to review, provide feedback, and approve. This system allows us to work together to go from general to specific, building our way up to a design perfectly crafted for your business.
@@ -342,8 +342,8 @@
                     </div>
                   </li>
 
-                  <li id="completion" class="process__content-hidden" data-date="3">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 process__3">
+                  <li data-date="3">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
                       <h4>Project Wrap-up</h4>
                       <p>
                         Once the final design has been approved I’ll implement it through the entire project as a visual system. I’ll provide you with all necessary files, explain how and when to use each of them, and answer any questions you may have to ensure you are set up for success. And that's it!

@@ -424,14 +424,14 @@ a.navbar-brand {
       margin-bottom: 0; } }
 
 #process {
-  height: 680px;
+  height: 1080px;
   padding-top: 130px; }
   @media (min-width: 552px) {
     #process {
-      height: 795px; } }
+      height: 955px; } }
   @media (min-width: 768px) {
     #process {
-      height: 865px;
+      height: 1025px;
       padding-top: 130px; } }
   @media (min-width: 992px) {
     #process {
@@ -441,50 +441,30 @@ a.navbar-brand {
     #process {
       height: 835px; } }
 
-.process__content {
-  padding-top: 50px; }
-  .process__content li {
-    list-style: none; }
-  .process__content p {
-    font-style: normal;
-    color: #808285;
-    text-align: center;
-    margin-top: -20px; }
+@media (min-width: 992px) {
+  .process__content {
+    padding-top: 40px; } }
+.process__content li {
+  list-style: none; }
+.process__content h4 {
+  margin-top: 50px; }
+  @media (min-width: 992px) {
+    .process__content h4 {
+      margin-top: 0; } }
+.process__content p {
+  font-style: normal;
+  color: #808285;
+  text-align: center;
+  margin-top: -20px; }
+.process__content ol {
+  padding-left: 0; }
 
 .process svg {
   height: 64px;
   display: relative;
   bottom: 20px;
-  transform-origin: 35.33px 35px; }
-
-.Process__Rule {
-  height: 0;
-  width: 70%;
-  border-top: 1px solid #808285;
-  position: relative;
-  top: 12px;
-  margin: 0 auto;
-  z-index: -1; }
-  @media (min-width: 768px) {
-    .Process__Rule {
-      width: 355px; } }
-  @media (min-width: 992px) {
-    .Process__Rule {
-      width: 455px; } }
-  @media (min-width: 1200px) {
-    .Process__Rule {
-      width: 485px; } }
-
-.process .active .outer {
-  fill: #fff;
-  stroke: #0ab389;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-.process .active .inner {
-  fill: #0ab389; }
-.process .active path {
-  fill: #fff; }
+  transform-origin: 35.33px 35px;
+  cursor: default; }
 
 .process .inactive .outer {
   fill: #fff;
@@ -513,18 +493,6 @@ a.navbar-brand {
   transition: .3s ease-in-out;
   transform-origin: 50% 50%;
   transform-origin: 35.33px 35px; }
-
-.process__content-visible {
-  display: initial; }
-
-.process__content-hidden {
-  display: none; }
-
-.process__1,
-.process__2,
-.process__3 {
-  position: relative;
-  right: 20px; }
 
 #about {
   padding-top: 19%;

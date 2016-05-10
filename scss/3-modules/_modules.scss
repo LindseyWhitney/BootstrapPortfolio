@@ -372,15 +372,15 @@ a.navbar-brand {
 // Process ==================================
 
 #process {
-  height: 680px;
+  height: 1080px;
   padding-top: 130px;
 
   @media (min-width: 552px ) {
-    height: 795px;
+    height: 955px;
   }
 
   @include mq (small) {
-    height: 865px;
+    height: 1025px;
     padding-top: 130px;
   }
 
@@ -395,10 +395,21 @@ a.navbar-brand {
 }
 
 .process__content {
-  padding-top: 50px;
+
+  @include mq (medium) {
+    padding-top: 40px;
+  }
 
   li {
     list-style: none;
+  }
+
+  h4 {
+    margin-top: 50px;
+
+    @include mq (medium) {
+      margin-top: 0;
+    }
   }
 
   p {
@@ -407,6 +418,10 @@ a.navbar-brand {
     text-align: center;
     margin-top: -20px;
   }
+
+  ol {
+    padding-left: 0;
+  }
 }
 
 .process svg {
@@ -414,46 +429,7 @@ a.navbar-brand {
   display: relative;
   bottom: 20px;
   transform-origin: 35.33px 35px;
-}
-
-.Process__Rule {
-  height: 0;
-  width: 70%;
-  border-top: 1px solid #808285;
-  position: relative;
-  top: 12px;
-  margin: 0 auto;
-  z-index: -1;
-
-  @include mq (small) {
-    width: 355px;
-  }
-
-  @include mq (medium) {
-    width: 455px;
-  }
-
-  @include mq (large) {
-    width: 485px;
-  }
-}
-
-.process .active {
-  .outer {
-      fill: #fff;  // white
-      stroke: #0ab389; // emerald
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-miterlimit: 10;
-   }
-
-  .inner {
-    fill: #0ab389; // emerald
-  }
-
-  path {
-    fill: #fff;  // white
-  }
+  cursor: default;
 }
 
 .process .inactive {
@@ -500,20 +476,8 @@ a.navbar-brand {
   transform-origin: 35.33px 35px;
 }
 
-.process__content-visible {
-  display: initial;
-}
 
-.process__content-hidden {
-  display: none;
-}
 
-.process__1,
-.process__2,
-.process__3 {
-  position: relative;
-  right: 20px;
-}
 
 // About ==================================
 
