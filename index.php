@@ -11,6 +11,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="js/dist/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -81,63 +82,138 @@
           <h2 class="text-hide h2--L">Featured Work</h2>
           <h3>Each project is unique</h3>
           <p class="h2__description hidden-xs">I take the time to get to know each of my clients, and craft visual pieces<br>that communicate targeted messages while reflecting what they value most.</p>
-          <ul id="da-thumbs" class="row da-thumbs codrops-demos">
+          <ul>
 
-            <!-- Kaleidoscope Pediatric Therapy -->
-            <li id="TN3" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__kaleidoscope.php">
-                <img src="images/Work__Thumbnail--KPT.jpg" alt="Thumbnail image of Kaleidoscope Physical Therapy project."/>
-                <div>
-                  <div>
-                    <span>Kaleidoscope</br>Pediatric Therapy</span>
-                    <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
-                  </div>
-                </div>
-              </a>
-            </li>
+            <div id="da-thumbs" class="slick_carousel row da-thumbs codrops-demos">
 
-            <!-- Summer Conferences -->
-            <li id="TN5" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__SumConf.php">
-                <img src="images/Work__Thumbnail--SumConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
-                <div>
-                  <div>
-                    <span>Summer</br>Conferences</span>
-                    <span class="thumbnail__tags hidden-xs">web design</span>
-                  </div>
-                </div>
-              </a>
-            </li>
+              <div class="carousel_group">
+                <!-- Kaleidoscope Pediatric Therapy -->
+                <li id="TN3" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__kaleidoscope.php">
+                    <img src="images/Work__Thumbnail--KPT.jpg" alt="Thumbnail image of Kaleidoscope Physical Therapy project."/>
+                    <div>
+                      <div>
+                        <span>Kaleidoscope</br>Pediatric Therapy</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
 
-            <!-- Annual Report 2014 -->
-            <li id="TN4" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__AR2014.php">
-                <img src="images/Work__Thumbnail--AR2013.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
-                <div>
-                  <div>
-                    <span>Boise State</br>Annual Report</span>
-                    <span class="thumbnail__tags hidden-xs">graphic design</span>
-                  </div>
-                </div>
-              </a>
-            </li>
+                <!-- Summer Conferences -->
+                <li id="TN5" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__SumConf.php">
+                    <img src="images/Work__Thumbnail--SumConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
+                    <div>
+                      <div>
+                        <span>Summer</br>Conferences</span>
+                        <span class="thumbnail__tags hidden-xs">web design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
 
-            <!-- Student Diversity & Inclusion -->
-            <li id="TN7" class="hidden-xs col-sm-6 col-sm-offset-0">
-              <a class="animsition-link" href="portfolio/portfolio__SDI.php">
-                <img src="images/Work__Thumbnail--SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
-                <div>
-                  <div>
-                    <span>Student Diversity</br>&amp; Inclusion</span>
-                    <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
-                  </div>
-                </div>
-              </a>
-            </li>
+                <!-- Annual Report 2014 -->
+                <li id="TN4" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__AR2014.php">
+                    <img src="images/Work__Thumbnail--AR2013.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
+                    <div>
+                      <div>
+                        <span>Boise State</br>Annual Report</span>
+                        <span class="thumbnail__tags hidden-xs">graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Student Diversity & Inclusion -->
+                <li id="TN7" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__SDI.php">
+                    <img src="images/Work__Thumbnail--SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
+                    <div>
+                      <div>
+                        <span>Student Diversity</br>&amp; Inclusion</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </div>
+
+              <div class="carousel_group">
+                <!-- Campus Awards Ceremony -->
+                <li id="TN1" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__CAC.php">
+                    <img src="../images/Work__Thumbnail--CAC.jpg" alt="Thumbnail image of Campus Awards Ceremony project."/>
+                    <div>
+                      <div>
+                        <span>Campus</br>Awards Ceremony</span>
+                        <span class="thumbnail__tags hidden-xs">graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Sweet Pepper Ranch -->
+                <li id="TN8" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__SPR.php">
+                    <img src="../images/Work__Thumbnail--SPR.jpg" alt="Thumbnail image of Sweet Pepper Ranch project."/>
+                    <div>
+                      <div>
+                        <span>Sweet</br>Pepper Ranch</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Women's Center -->
+                <li id="TN2" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__WC.php">
+                    <img src="../images/Work__Thumbnail--WC.png" alt="Thumbnail image of Women's Center project."/>
+                    <div>
+                      <div>
+                        <span>Women&rsquo;s</br>Center</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Bronco Day -->
+                <li id="TN9" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__BroncoDay.php">
+                    <img src="../images/Work__Thumbnail--BroncoDay.jpg" alt="Thumbnail image of Bronco Day project."/>
+                    <div>
+                      <div>
+                        <span>Bronco</br>Day</span>
+                        <span class="thumbnail__tags hidden-xs">event branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </div>
+
+              <div class="carousel_group">
+                <!-- Get Involved -->
+                <li id="TN6" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__GetIn.php">
+                    <img src="../images/Work__Thumbnail--GetIn.jpg" alt="Thumbnail image of Get Involved project."/>
+                    <div>
+                      <div>
+                        <span>Get</br>Involved</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </div>
+            </div> <!--/.slick_carousel -->
 
 
           </ul>
-          <a href="portfolio/portfolio__Overview.php" class="text-hide Work__button">More Work</a>
+
         </div> <!--/.container -->
       </div> <!--/.portfolio -->
 
@@ -661,12 +737,13 @@
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
     <script type="text/javascript">
       $(function() {
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+        $(' #da-thumbs > div > li ').each( function() { $(this).hoverdir(); } );
       });
     </script>
     <script src="js/my.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/dist/js/animsition.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
       $(document).ready(function() {
       $(".animsition").animsition({

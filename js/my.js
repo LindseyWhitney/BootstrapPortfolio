@@ -159,6 +159,21 @@ jQuery(document).ready(function($){
 
 
 
+// Slick Carousel -------------------------
+// Reference: http://kenwheeler.github.io/slick/
+
+$(document).ready(function(){
+  $('.slick_carousel').slick({
+		slidesToShow: 1,
+  	slidesToScroll: 1,
+  	fade: true,
+		speed: 1000,
+  	cssEase: 'linear',
+		dots: true
+  });
+});
+
+
 // JavaScript for Icon Animation on Scroll -------------------------
 // Reference: http://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
 

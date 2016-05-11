@@ -333,21 +333,99 @@ a.navbar-brand {
   width: 100%;
   height: auto; }
 .portfolio ul {
-  padding-bottom: 3.33333em; }
+  padding-bottom: 3.33333em;
+  padding-left: 0; }
   @media (min-width: 768px) {
     .portfolio ul {
       padding-bottom: 5.66667em; } }
 
-.Work__button {
-  display: block;
-  background: url("../images/Work__Button--Sprite.jpg") no-repeat;
-  height: 44px;
-  width: 333px;
-  margin: 0 auto; }
-  .Work__button:hover {
-    background-position: center center; }
-  .Work__button:active {
-    background-position: center bottom; }
+.slick_carousel button {
+  background-color: #d9d9d9;
+  height: 30px;
+  width: 20px;
+  text-indent: -9999px;
+  outline: none;
+  padding: 0;
+  border: none;
+  position: absolute; }
+  .slick_carousel button.slick-prev {
+    background-image: url("../images/Carousel__Arrow--Left.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -17px;
+    left: 104px; }
+    @media (min-width: 506px) {
+      .slick_carousel button.slick-prev {
+        left: 152px; } }
+    @media (min-width: 611px) {
+      .slick_carousel button.slick-prev {
+        left: 182px; } }
+    @media (min-width: 768px) {
+      .slick_carousel button.slick-prev {
+        bottom: 18px;
+        left: 239px; } }
+    @media (min-width: 992px) {
+      .slick_carousel button.slick-prev {
+        left: 351px; } }
+    @media (min-width: 1200px) {
+      .slick_carousel button.slick-prev {
+        left: 448px; } }
+  .slick_carousel button.slick-next {
+    background-image: url("../images/Carousel__Arrow--Right.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -17px;
+    right: 106px; }
+    @media (min-width: 506px) {
+      .slick_carousel button.slick-next {
+        right: 154px; } }
+    @media (min-width: 611px) {
+      .slick_carousel button.slick-next {
+        right: 184px; } }
+    @media (min-width: 768px) {
+      .slick_carousel button.slick-next {
+        bottom: 18px;
+        right: 241px; } }
+    @media (min-width: 992px) {
+      .slick_carousel button.slick-next {
+        right: 353px; } }
+    @media (min-width: 1200px) {
+      .slick_carousel button.slick-next {
+        right: 450px; } }
+  .slick_carousel button:hover {
+    background-color: #939598; }
+  .slick_carousel button:active {
+    background-color: #0ab389; }
+
+.slick-dots {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center; }
+  .slick-dots .slick-active button {
+    background-color: #0ab389; }
+  .slick-dots li {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    right: 30px; }
+    .slick-dots li button {
+      background-color: #d9d9d9;
+      height: 16px;
+      width: 16px;
+      text-indent: -9999px;
+      box-shadow: none;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      border: none;
+      padding: 0;
+      outline: none;
+      margin: 50px 20px; }
+      .slick-dots li button:hover {
+        background-color: #939598; }
+      .slick-dots li button:active, .slick-dots li button:focus {
+        background-color: #0ab389; }
 
 #services {
   background-image: url("../images/Services_Background.jpg");
@@ -601,7 +679,8 @@ input[type="submit"] {
   display: block;
   width: 300px;
   position: relative;
-  top: 1.33333em; }
+  top: 1.33333em;
+  outline: none; }
 
 input[type="submit"]:hover {
   color: #d9d9d9; }

@@ -231,6 +231,7 @@ a.navbar-brand {
 
   ul {
     padding-bottom: em(50px);
+    padding-left: 0;
 
     @include mq(small) {
       padding-bottom: em(85px);
@@ -238,21 +239,133 @@ a.navbar-brand {
   }
 }
 
-.Work__button {
-   display: block;
-   background: url("../images/Work__Button--Sprite.jpg") no-repeat;
-   height: 44px;
-   width: 333px;
-   margin: 0 auto;
+.slick_carousel {
 
-   &:hover {
-          background-position: center center;
-   }
+  & button {
+    background-color: darken( $color-reverse, 15% );
+    height: 30px;
+    width: 20px;
+    text-indent: -9999px;
+    outline: none;
+    padding: 0;
+    border: none;
+    position: absolute;
 
-   &:active {
-          background-position: center bottom;
-   }
+
+    &.slick-prev {
+      background-image: url("../images/Carousel__Arrow--Left.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: -17px;
+      left: 104px;
+
+      @media (min-width: 506px ) {
+        left: 152px;
+      }
+
+      @media (min-width: 611px ) {
+        left: 182px;
+      }
+
+
+      @include mq(small) {
+        bottom: 18px;
+        left: 239px;
+      }
+
+      @include mq(medium) {
+        left: 351px;
+      }
+
+      @include mq(large) {
+        left: 448px;
+      }
+    }
+
+    &.slick-next {
+      background-image: url("../images/Carousel__Arrow--Right.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: -17px;
+      right: 106px;
+
+      @media (min-width: 506px ) {
+        right: 154px;
+      }
+
+      @media (min-width: 611px ) {
+        right: 184px;
+      }
+
+      @include mq(small) {
+        bottom: 18px;
+        right: 241px;
+      }
+
+      @include mq(medium) {
+        right: 353px;
+      }
+
+      @include mq(large) {
+        right: 450px;
+      }
+    }
+
+    &:hover {
+      background-color: $color-light;
+    }
+
+    &:active {
+      background-color: $color-primary;
+    }
+  }
+
 }
+
+.slick-dots {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+  .slick-active {
+    & button {
+      background-color: $color-primary;
+    }
+  }
+
+  & li {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    right: 30px;
+
+    & button {
+      background-color: darken( $color-reverse, 15% );
+      height: 16px;
+      width: 16px;
+      text-indent: -9999px;
+      box-shadow: none;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      border: none;
+      padding: 0;
+      outline: none;
+      margin: 50px 20px;
+
+      &:hover {
+        background-color: $color-light;
+      }
+
+      &:active, &:focus {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+
 
 // Services ===============================
 
@@ -627,6 +740,7 @@ input[type="submit"] {
   width: 300px;
   position: relative;
   top: em(20px);
+  outline: none;
 }
 
 input[type="submit"]:hover {
