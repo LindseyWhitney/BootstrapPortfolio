@@ -499,7 +499,7 @@
               </div> <!-- .col-md-6 form-left -->
               <div class="form-group col-md-6">
                 <label for="form__message" class="sr-only">Message</label>
-                <textarea name="message" class="form-control" rows="11" id="form__message" placeholder="What's on your mind?"><?php if (isset($message)) {
+                <textarea name="message" class="form-control" rows="11" id="form__message" placeholder="Message (Required)"><?php if (isset($message)) {
                     echo htmlspecialchars($_POST["message"]);
 } ?></textarea>
               </div>
