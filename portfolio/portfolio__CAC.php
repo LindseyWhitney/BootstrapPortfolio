@@ -12,7 +12,7 @@
         <h1 class="text-hide h1__CAC">Campus Awards Ceremony</h1>
         <h2>Event Brand Development</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--CAC text-hide">T</span><span class="introSection__allcaps">he Campus Awards Ceremony</span> is  a yearly event hosted at Boise State University to recognize outstanding students, staff, faculty, and organizations on campus. It focuses on positive change, and the good works that people are doing every day to make a difference in our community. In other words—it’s an awards ceremony that focuses on what it means to truly be a Bronco. </p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--CAC text-hide">T</span><span class="introSection__allcaps">he Campus Awards Ceremony</span> is a yearly event hosted at Boise State University to recognize outstanding students, staff, faculty, and organizations on campus. For this project I created a custom illustration of a bronco, and then used it to develop a brand identity for the entire event campaign, including advertisements, posters, awards certificates, and a unique program.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--BroncoDay col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarBroncoDay">
               <h3>Creative Brief | Overview</h3>
@@ -45,13 +45,13 @@
     <nav class="portfolio__subNav">
 
       <!-- Previous -->
-      <a href="../portfolio/portfolio__SDI.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+      <a href="../portfolio/portfolio__AR2015.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__SPR.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__SumConf.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

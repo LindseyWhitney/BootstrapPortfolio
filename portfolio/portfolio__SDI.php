@@ -14,7 +14,7 @@
         <h1 class="text-hide h1__SDI">Student Diversity and Inclusion</h1>
         <h2>Logo &amp; Brand Development</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--SDI text-hide">S</span><span class="introSection__allcaps">tudent diversity &amp; inclusion</span> at Boise State University is an umbrella team composed of various departments whose sole mission is to promote inclusive excellence on campus. They work with students, staff, and faculty through workshops, training, consultations, and events. They believe everyone should feel welcome, and actively promote student success and learning.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--SDI text-hide">S</span><span class="introSection__allcaps">tudent diversity &amp; inclusion</span> at Boise State is a team of departments whose sole mission is to promote inclusive excellence on campus. I worked with the director to develop an entire brand identity including a logo, custom brochure that unfolds into a poster, signage, and pop-up banners. The brochure won an award from the Association of College Unions International.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--SDI col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarSDI">
               <h3>Creative Brief | Overview</h3>
@@ -46,13 +46,13 @@
     <nav class="portfolio__subNav">
 
       <!-- Previous -->
-      <a href="../portfolio/portfolio__AR2014.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+      <a href="../portfolio/portfolio__WC.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__CAC.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__GetIn.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

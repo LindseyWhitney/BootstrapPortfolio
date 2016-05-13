@@ -3,7 +3,7 @@
 ?>
 
     <!-- Cover Image -->
-    <div class="coverImage coverImage__AR2014 hidden-xs"></div> <!-- /.coverImage -->
+    <div class="coverImage coverImage__AR2015 hidden-xs"></div> <!-- /.coverImage -->
 
     <div class="container portfolio__content--backdrop">
 
@@ -12,7 +12,7 @@
         <h1 class="text-hide h1__AR2014">Student Affairs Annual Report</h1>
         <h2>Annual Report Design</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--AR2014 text-hide">T</span><span class="introSection__allcaps">he Division of Student Affairs</span> asked me to design an annual report that would be a visual depiction of the achievements and stories from the division, as well as act as a conversation piece between departments and universities. I worked directly with the vice president to develop the concept, organize the content, create the design, and have them professionally printed.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--AR2014 text-hide">T</span><span class="introSection__allcaps">he Division of Student Affairs</span> asked me to design an annual report that would be a visual depiction of the achievements and stories from the division, as well as act as a conversation piece between departments and universities. This was the second year I worked on the annual report, and I used feedback from the previous year to create a completely fresh redesign.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--AR2014 col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarAR2014">
               <h3>Creative Brief | Overview</h3>
@@ -33,10 +33,12 @@
 
       <!-- Portfolio Display -->
       <div class="portfolioDisplay">
-          <img alt="Photo of inside spread and cover of the 2014 Student Affairs Annual Report." src="../images/portfolio/AR2014__1.jpg">
-          <img alt="Design of an inside spread in the 2014 Student Affairs Annual Report." src="../images/portfolio/AR2014__2.jpg">
-          <img alt="Design of an inside spread in the 2014 Student Affairs Annual Report." src="../images/portfolio/AR2014__3.jpg">
-          <img alt="Design of an inside spread in the 2014 Student Affairs Annual Report." src="../images/portfolio/AR2014__4.jpg">
+          <img alt="Mockup of 2015 Student Affairs Annual Report cover." src="../images/portfolio/AR2015__coverdark.jpg">
+          <img alt="Mockup of 2015 Student Affairs Annual Report inside spreads." src="../images/portfolio/AR2015__2.jpg">
+          <img alt="Mockup of 2015 Student Affairs Annual Report inside spread." src="../images/portfolio/AR2015__1dark.jpg">
+          <img alt="Mockup of 2015 Student Affairs Annual Report inside spreads." src="../images/portfolio/AR2015__4.jpg">
+          <img alt="Mockup of 2015 Student Affairs Annual Report inside spread." src="../images/portfolio/AR2015__4dark.jpg">
+          <img alt="Mockup of 2015 Student Affairs Annual Report front and back covers." src="../images/portfolio/AR2015__backdark.jpg">
       </div> <!-- /.portfolioDisplay -->
     </div> <!-- /.container -->
 
@@ -44,13 +46,13 @@
     <nav class="portfolio__subNav">
 
       <!-- Previous -->
-      <a href="../portfolio/portfolio__GetIn.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+      <a href="../portfolio/portfolio__HackerH.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
       <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__kaleidoscope.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__CAC.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

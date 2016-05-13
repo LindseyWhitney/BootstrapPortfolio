@@ -78,6 +78,13 @@
     }
   }
 
+  &__HackerH {
+    background-image: url('../images/portfolio/HackerH__coverImage--backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+
+  }
+
   &__SumConf{
     background-image: url('../images/portfolio/SumConf__coverImage--backdrop.jpg');
     background-position: center;
@@ -88,6 +95,12 @@
     background-image: url('../images/portfolio/AR2014__coverImage--backdrop.jpg');
     background-position: right;
     background-size: contain;
+  }
+
+  &__AR2015{
+    background-image: url('../images/portfolio/AR2015__coverImage--backdrop.jpg');
+    background-position: center;
+    background-size: cover;
   }
 
   img {
@@ -152,6 +165,15 @@
 
       @include mq(medium) {
         bottom: 180px;
+        width: 375px;
+      }
+    }
+
+    &HackerH {
+      top: 100px;
+      width: 300px;
+
+      @include mq(medium) {
         width: 375px;
       }
     }
@@ -315,6 +337,18 @@
       }
     }
 
+    &HackerH {
+      background-image: url('../images/portfolio/HackerH__h1--xs.png');
+
+      @include mq (small) {
+        background-image: url('../images/portfolio/HackerH__h1--sm.png');
+      }
+
+      @include mq (large) {
+        background-image: url('../images/portfolio/HackerH__h1.png');
+      }
+    }
+
     &SumConf {
       background-image: url('../images/portfolio/SumConf__h1--xs.png');
 
@@ -434,6 +468,12 @@
       right: 10px;
     }
 
+    &--HackerH {
+      background-image: url('../images/portfolio/HackerH__introSection--dropcap.png');
+      margin: 0 5px 10px 0;
+      right: 0;
+    }
+
     &--SumConf {
       background-image: url('../images/portfolio/SumConf__introSection--dropcap.png');
       margin: 0 -15px 10px 0;
@@ -482,6 +522,10 @@
 
     &--WC {
       border-color: #c08ea3;
+    }
+
+    &--HackerH {
+      border-color: #193f6f;
     }
 
     &--SumConf,
@@ -582,6 +626,10 @@
         background-color: #c08ea3;
       }
 
+      &HackerH {
+        background-color: #193f6f;
+      }
+
       &SumConf,
       &AR2014 {
         background-color: #005daa;
@@ -621,7 +669,9 @@
 // Bottom Navigation ==============================
 
 .portfolio__subNav {
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
 
   @include mq(small) {
     margin-bottom: 90px;
@@ -639,49 +689,57 @@
 }
 
 .Next__button {
-  display: block;
-  background: url("../images/portfolio/Next__Button--Sprite.png") no-repeat;
-  height: 44px;
-  width: 166px;
-  margin: 0 auto;
-  float: right;
-  position: relative;
-  left: 40px;
-  bottom: 44px;
+  background-color: darken( $color-reverse, 15% );
+  height: 30px;
+  width: 20px;
+  background-image: url("../images/Carousel__Arrow--Right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 60%;
+  bottom: 15px;
+  display: inline-block;
 
   @include mq(small) {
-    left: 0;
+    left: 58.5%;
+  }
+
+  @include mq(medium) {
+    left: 59%;
   }
 
   &:hover {
-         background-position: center center;
+    background-color: $color-light;
   }
 
   &:active {
-         background-position: center bottom;
+    background-color: $color-primary;
   }
 }
 
+
 .Previous__button {
-  display: block;
-  background: url("../images/portfolio/Previous__Button--Sprite.png") no-repeat;
-  height: 44px;
-  width: 166px;
-  margin: 0 auto;
-  float: left;
-  position: relative;
-  right: 40px;
+  background-color: darken( $color-reverse, 15% );
+  height: 30px;
+  width: 20px;
+  background-image: url("../images/Carousel__Arrow--Left.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 35%;
+  top: 7px;
+  display: inline-block;
 
   @include mq(small) {
-    right: 0;
+    left: 40%;
   }
 
   &:hover {
-         background-position: center center;
+    background-color: $color-light;
   }
 
   &:active {
-         background-position: center bottom;
+    background-color: $color-primary;
   }
 }
 
@@ -691,12 +749,6 @@
   height: 44px;
   width: 45px;
   margin: 0 auto;
-  // position: absolute;
-  // right: 40px;
-
-  // @include mq(small) {
-  //   right: 0;
-  // }
 
   &:hover {
          background-position: center center;

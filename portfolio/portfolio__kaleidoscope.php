@@ -14,7 +14,7 @@
         <h1 class="text-hide h1__Kaleidoscope">Kaleidoscope Pediatric Therapy</h1>
         <h2>Logo &amp; Brand Development</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--Kaleidoscope text-hide">K</span><span class="introSection__allcaps">aleidoscope Pediatric Therapy</span> is  a therapist-owned company providing physical, occupational, and speech therapy services to Idaho children and their families. They shape a better future for their patients through relationships, connections, and working together. They offer a fun, child-friendly environment and only the best care for each and every family.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--Kaleidoscope text-hide">K</span><span class="introSection__allcaps">aleidoscope Pediatric Therapy</span> is a therapist-owned company providing physical, occupational, and speech therapy services to Idaho children and their families. I worked with them directly to create a custom logo that was sophisticated enough to appeal to parents, but playful enough to be inviting to kids. The logo works as part of a flexible branding system.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--Kaleidoscope col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarKaleidoscope">
               <h3>Creative Brief | Overview</h3>
@@ -46,13 +46,13 @@
     <nav class="portfolio__subNav">
 
         <!-- Previous -->
-        <a href="../portfolio/portfolio__GetIn.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+        <a href="../portfolio/portfolio__AR2014.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
         <!-- Back to Overview -->
-        <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+        <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
         <!-- Next -->
-        <a href="../portfolio/portfolio__SumConf.php" class="text-hide Next__button animsition-link">Next Project</a>
+        <a href="../portfolio/portfolio__HackerH.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

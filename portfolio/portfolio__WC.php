@@ -14,7 +14,7 @@
         <h1 class="text-hide h1__WC">Women's Center</h1>
         <h2>Logo &amp; Brand Development</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--WC text-hide">T</span><span class="introSection__allcaps">he Women’s Center</span> at Boise State University empowers students to achieve their academic goals by providing educational outreach, support services and a safe place. They focus primarily on encouraging dialogue around gender-related topics and issues. Their hope is to inspire students toward action that challenges oppression and promotes a safe and just society for all.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--WC text-hide">T</span><span class="introSection__allcaps">he Women’s Center</span> at Boise State empowers students to achieve their academic goals by providing educational outreach, support services and a safe place. I worked directly with the director to develop an entire brand identity for their center, including a logo and a custom brochure that unfolds into a poster. This piece won an award from the Association of College Unions International.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--WC col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarWC">
               <h3>Creative Brief | Overview</h3>
@@ -50,10 +50,10 @@
       <a href="../portfolio/portfolio__SPR.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__BroncoDay.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__SDI.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

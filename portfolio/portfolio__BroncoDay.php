@@ -14,7 +14,7 @@
         <h1 class="text-hide h1__BroncoDay">BroncoDay</h1>
         <h2>Event Logo &amp; T-Shirt Design</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--BroncoDay text-hide">B</span><span class="introSection__allcaps">ronco Day</span> is a new event hosted by Boise State University each year to welcome prospective students to campus and show them first-hand what Bronco Spirit is all about. This t-shirt was commissioned by President Bob Kustra to be used as a main give-away that visitors could wear the day of the event, and take home with them as a reminder of their time spent at Boise State.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--BroncoDay text-hide">B</span><span class="introSection__allcaps">ronco Day</span> is a new event hosted by Boise State University each year to welcome prospective students to campus and show them first-hand what Bronco Spirit is all about. As the sole designer, I was asked to design something "fresh and hip" that would appeal to young visitors. I created numerous design choices, with this design being the final design they printed.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--BroncoDay col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarBroncoDay">
               <h3>Creative Brief | Overview</h3>
@@ -45,13 +45,13 @@
     <nav class="portfolio__subNav">
 
       <!-- Previous -->
-      <a href="../portfolio/portfolio__WC.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+      <a href="../portfolio/portfolio__SumConf.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__GetIn.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__SPR.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

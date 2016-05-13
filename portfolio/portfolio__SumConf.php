@@ -12,7 +12,7 @@
         <h1 class="text-hide h1__SumConf">Summer Conferences</h1>
         <h2>Landing Page Web Design</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--SumConf text-hide">S</span><span class="introSection__allcaps">ummer Conferences</span> allow outside groups to reserve and use the facilities at Boise State University for various events, camps, and workshops. The department working behind the scenes wanted a landing page for their website that was engaging and had very clear calls to action in order to help visitors quickly locate the resources most useful to them and make reservations a breeze.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--SumConf text-hide">S</span><span class="introSection__allcaps">ummer Conferences</span> allow outside groups to reserve and use the facilities at Boise State for various events, camps, and workshops. I worked with their staff and the web development team to create a custom home page redesign. I also assisted in the UX design for the entire site, and coordinated with the copywriter to produce content that worked hand-in-hand with the design.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--SumConf col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarSumConf">
               <h3>Creative Brief | Overview</h3>
@@ -43,13 +43,13 @@
     <nav class="portfolio__subNav">
 
       <!-- Previous -->
-      <a href="../portfolio/portfolio__kaleidoscope.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+      <a href="../portfolio/portfolio__CAC.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__AR2014.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__BroncoDay.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

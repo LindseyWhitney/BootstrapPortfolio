@@ -9,6 +9,7 @@
     <meta name="google-site-verification" content="6xLc5k4rUe94P_Lix8GtyvVQfqn5gZbfBnsgtn-WQJE" />
     <title>Lindsey Whitney Design, LLC</title>
     <link rel="icon" href="images/favicon.ico">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="js/dist/css/animsition.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -27,6 +28,7 @@
     <script src="https://cdn.jsdelivr.net/vivus/0.2.3/vivus.min.js"></script>
   </head>
   <body class="animsition" id="Home">
+
 
       <!-- Navbar -->
       <nav class="navbar navbar-fixed-top nav-up hidden-xs">
@@ -100,47 +102,32 @@
                   </a>
                 </li>
 
-                <!-- Summer Conferences -->
-                <li id="TN5" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-                  <a class="animsition-link" href="portfolio/portfolio__SumConf.php">
-                    <img src="images/Work__Thumbnail--SumConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
+                <!-- Hacker Hours Boise -->
+                <li id="TN4" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__HackerH.php">
+                    <img src="images/Work__Thumbnail--HackerH.jpg" alt="Thumbnail image of Hacker Hours Boise project."/>
                     <div>
                       <div>
-                        <span>Summer</br>Conferences</span>
-                        <span class="thumbnail__tags hidden-xs">web design</span>
+                        <span>Hacker</br>Hours</span>
+                        <span class="thumbnail__tags hidden-xs">graphic design &amp; web development</span>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <!-- Annual Report 2014 -->
+                <!-- Annual Report 2015 -->
                 <li id="TN4" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-                  <a class="animsition-link" href="portfolio/portfolio__AR2014.php">
-                    <img src="images/Work__Thumbnail--AR2013.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
+                  <a class="animsition-link" href="portfolio/portfolio__AR2015.php">
+                    <img src="images/Work__Thumbnail--AR2015.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
                     <div>
                       <div>
-                        <span>Boise State</br>Annual Report</span>
+                        <span>Boise State</br>Annual Report 2015</span>
                         <span class="thumbnail__tags hidden-xs">graphic design</span>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <!-- Student Diversity & Inclusion -->
-                <li id="TN7" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-                  <a class="animsition-link" href="portfolio/portfolio__SDI.php">
-                    <img src="images/Work__Thumbnail--SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
-                    <div>
-                      <div>
-                        <span>Student Diversity</br>&amp; Inclusion</span>
-                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </div>
-
-              <div class="carousel_group">
                 <!-- Campus Awards Ceremony -->
                 <li id="TN1" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
                   <a class="animsition-link" href="portfolio/portfolio__CAC.php">
@@ -153,28 +140,17 @@
                     </div>
                   </a>
                 </li>
+              </div>
 
-                <!-- Sweet Pepper Ranch -->
-                <li id="TN8" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-                  <a class="animsition-link" href="portfolio/portfolio__SPR.php">
-                    <img src="../images/Work__Thumbnail--SPR.jpg" alt="Thumbnail image of Sweet Pepper Ranch project."/>
+              <div class="carousel_group">
+                <!-- Summer Conferences -->
+                <li id="TN5" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__SumConf.php">
+                    <img src="images/Work__Thumbnail--SumConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
                     <div>
                       <div>
-                        <span>Sweet</br>Pepper Ranch</span>
-                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <!-- Women's Center -->
-                <li id="TN2" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-                  <a class="animsition-link" href="portfolio/portfolio__WC.php">
-                    <img src="../images/Work__Thumbnail--WC.png" alt="Thumbnail image of Women's Center project."/>
-                    <div>
-                      <div>
-                        <span>Women&rsquo;s</br>Center</span>
-                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                        <span>Summer</br>Conferences</span>
+                        <span class="thumbnail__tags hidden-xs">web design</span>
                       </div>
                     </div>
                   </a>
@@ -192,13 +168,53 @@
                     </div>
                   </a>
                 </li>
+
+
+                <!-- Sweet Pepper Ranch -->
+                <li id="TN8" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__SPR.php">
+                    <img src="../images/Work__Thumbnail--SPR.jpg" alt="Thumbnail image of Sweet Pepper Ranch project."/>
+                    <div>
+                      <div>
+                        <span>Sweet</br>Pepper Ranch</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Women's Center -->
+                <li id="TN2" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__WC.php">
+                    <img src="../images/Work__Thumbnail--WC2.jpg" alt="Thumbnail image of Women's Center project."/>
+                    <div>
+                      <div>
+                        <span>Women&rsquo;s</br>Center</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
               </div>
 
               <div class="carousel_group">
+                <!-- Student Diversity & Inclusion -->
+                <li id="TN7" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__SDI.php">
+                    <img src="images/Work__Thumbnail--SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
+                    <div>
+                      <div>
+                        <span>Student Diversity</br>&amp; Inclusion</span>
+                        <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
                 <!-- Get Involved -->
                 <li id="TN6" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
                   <a class="animsition-link" href="portfolio/portfolio__GetIn.php">
-                    <img src="../images/Work__Thumbnail--GetIn.jpg" alt="Thumbnail image of Get Involved project."/>
+                    <img src="../images/Work__Thumbnail--GetIn2.jpg" alt="Thumbnail image of Get Involved project."/>
                     <div>
                       <div>
                         <span>Get</br>Involved</span>
@@ -208,9 +224,20 @@
                   </a>
                 </li>
 
+                <!-- Annual Report 2013 -->
+                <li id="TN4" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <a class="animsition-link" href="portfolio/portfolio__AR2014.php">
+                    <img src="images/Work__Thumbnail--AR2013.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
+                    <div>
+                      <div>
+                        <span>Boise State</br>Annual Report 2013</span>
+                        <span class="thumbnail__tags hidden-xs">graphic design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
               </div>
             </div> <!--/.slick_carousel -->
-
 
           </ul>
 
@@ -326,9 +353,9 @@
                   <h4>Web Design</h4>
                   <ul>
                     <li>Responsive, Mobile-First Design</li>
-                    <li>HTML5, CSS3, &amp; JavaScript</li>
-                    <li>Bootstrap Framework</li>
-                    <li>Standards Compliant &amp; Accessible</li>
+                    <li>HTML5, CSS3, &amp; Sass</li>
+                    <li>JavaScript, JQuery, &amp; Bootstrap</li>
+                    <li>PHP &amp MySQL</li>
                     <li>Email &amp; Newsletter Campaigns</li>
                     <li>Digital Advertising</li>
                   </ul>
@@ -422,7 +449,7 @@
                     <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
                       <h4>Project Wrap-up</h4>
                       <p>
-                        Once the final design has been approved I’ll implement it through the entire project as a visual system. I’ll provide you with all necessary files, explain how and when to use each of them, and answer any questions you may have to ensure you are set up for success. And that's it!
+                        Once the final design has been approved I’ll implement it through the entire project as a visual system. I’ll provide you with all necessary files, explain how and when to use each of them, and answer any questions you may have to ensure you are set up for success and love your new design.
                       </p>
                     </div>
                   </li>

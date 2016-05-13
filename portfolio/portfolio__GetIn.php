@@ -14,7 +14,7 @@
         <h1 class="text-hide h1__GetIn">Get Involved</h1>
         <h2>Campaign Logo &amp; Brand Development</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--GetIn text-hide">T</span><span class="introSection__allcaps">he student involvement &amp; leadership center</span> at Boise State University is passionate about helping students connect with opportunities to build leadership skills, embrace civic engagement, and create positive relationships. They are  big-picture thinkers, and hope to be a stepping stone for students to go out and make a positive change in the world.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--GetIn text-hide">T</span><span class="introSection__allcaps">he student involvement &amp; leadership center</span> at Boise State helps students build leadership skills. I worked with their director to develop an entire brand identity for their department. As part of the campaign I completed a custom photo shoot featuring real students.  The campaign was robust, including signage, posters, social media imagery, and promotional materials.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--GetIn col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarGetIn">
               <h3>Creative Brief | Overview</h3>
@@ -46,13 +46,13 @@
     <nav class="portfolio__subNav">
 
       <!-- Previous -->
-      <a href="../portfolio/portfolio__BroncoDay.php" class="text-hide Previous__button animsition-link">Previous Project</a>
+      <a href="../portfolio/portfolio__SDI.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../portfolio/portfolio__Overview.php" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
 
       <!-- Next -->
-      <a href="../portfolio/portfolio__kaleidoscope.php" class="text-hide Next__button animsition-link">Next Project</a>
+      <a href="../portfolio/portfolio__AR2014.php" class="text-hide Next__button animsition-link">Next Project</a>
 
     </nav>
 

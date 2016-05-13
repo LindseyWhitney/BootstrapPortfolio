@@ -337,7 +337,7 @@ a.navbar-brand {
   padding-left: 0; }
   @media (min-width: 768px) {
     .portfolio ul {
-      padding-bottom: 5.66667em; } }
+      padding-bottom: 3.33333em; } }
 
 .slick_carousel button {
   background-color: #d9d9d9;
@@ -362,7 +362,6 @@ a.navbar-brand {
         left: 182px; } }
     @media (min-width: 768px) {
       .slick_carousel button.slick-prev {
-        bottom: 18px;
         left: 239px; } }
     @media (min-width: 992px) {
       .slick_carousel button.slick-prev {
@@ -384,7 +383,6 @@ a.navbar-brand {
         right: 184px; } }
     @media (min-width: 768px) {
       .slick_carousel button.slick-next {
-        bottom: 18px;
         right: 241px; } }
     @media (min-width: 992px) {
       .slick_carousel button.slick-next {
@@ -811,6 +809,10 @@ input[type="submit"]:active {
     @media (min-width: 768px) {
       .coverImage__WC {
         top: 275px; } }
+  .coverImage__HackerH {
+    background-image: url("../images/portfolio/HackerH__coverImage--backdrop.jpg");
+    background-size: cover;
+    background-position: center; }
   .coverImage__SumConf {
     background-image: url("../images/portfolio/SumConf__coverImage--backdrop.jpg");
     background-position: center;
@@ -819,6 +821,10 @@ input[type="submit"]:active {
     background-image: url("../images/portfolio/AR2014__coverImage--backdrop.jpg");
     background-position: right;
     background-size: contain; }
+  .coverImage__AR2015 {
+    background-image: url("../images/portfolio/AR2015__coverImage--backdrop.jpg");
+    background-position: center;
+    background-size: cover; }
   .coverImage img {
     margin: 0 auto;
     display: block;
@@ -862,6 +868,12 @@ input[type="submit"]:active {
     @media (min-width: 992px) {
       .coverImage .logo__WC {
         bottom: 180px;
+        width: 375px; } }
+  .coverImage .logo__HackerH {
+    top: 100px;
+    width: 300px; }
+    @media (min-width: 992px) {
+      .coverImage .logo__HackerH {
         width: 375px; } }
   .coverImage .logo__SPR {
     width: 70%;
@@ -975,6 +987,14 @@ input[type="submit"]:active {
     @media (min-width: 1200px) {
       .introSection .h1__WC {
         background-image: url("../images/portfolio/WC__h1.png"); } }
+  .introSection .h1__HackerH {
+    background-image: url("../images/portfolio/HackerH__h1--xs.png"); }
+    @media (min-width: 768px) {
+      .introSection .h1__HackerH {
+        background-image: url("../images/portfolio/HackerH__h1--sm.png"); } }
+    @media (min-width: 1200px) {
+      .introSection .h1__HackerH {
+        background-image: url("../images/portfolio/HackerH__h1.png"); } }
   .introSection .h1__SumConf {
     background-image: url("../images/portfolio/SumConf__h1--xs.png"); }
     @media (min-width: 768px) {
@@ -1061,6 +1081,10 @@ input[type="submit"]:active {
       background-image: url("../images/portfolio/WC__introSection--dropcap.png");
       margin: 0 -10px 10px 0;
       right: 10px; }
+    .introSection__dropcap--HackerH {
+      background-image: url("../images/portfolio/HackerH__introSection--dropcap.png");
+      margin: 0 5px 10px 0;
+      right: 0; }
     .introSection__dropcap--SumConf {
       background-image: url("../images/portfolio/SumConf__introSection--dropcap.png");
       margin: 0 -15px 10px 0;
@@ -1090,6 +1114,8 @@ input[type="submit"]:active {
       border-color: #06357a; }
     .introSection__CreativeBrief--WC {
       border-color: #c08ea3; }
+    .introSection__CreativeBrief--HackerH {
+      border-color: #193f6f; }
     .introSection__CreativeBrief--SumConf, .introSection__CreativeBrief--AR2014 {
       border-color: #005daa; }
     .introSection__CreativeBrief dl {
@@ -1145,6 +1171,8 @@ input[type="submit"]:active {
         background-color: #06357a; }
       .introSection__CreativeBrief--titlebarWC {
         background-color: #c08ea3; }
+      .introSection__CreativeBrief--titlebarHackerH {
+        background-color: #193f6f; }
       .introSection__CreativeBrief--titlebarSumConf, .introSection__CreativeBrief--titlebarAR2014 {
         background-color: #005daa; }
       .introSection__CreativeBrief--titlebar h3 {
@@ -1166,7 +1194,9 @@ input[type="submit"]:active {
       margin-top: 0; } }
 
 .portfolio__subNav {
-  margin-bottom: 60px; }
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative; }
   @media (min-width: 768px) {
     .portfolio__subNav {
       margin-bottom: 90px; } }
@@ -1179,39 +1209,45 @@ input[type="submit"]:active {
         height: 64px; } }
 
 .Next__button {
-  display: block;
-  background: url("../images/portfolio/Next__Button--Sprite.png") no-repeat;
-  height: 44px;
-  width: 166px;
-  margin: 0 auto;
-  float: right;
-  position: relative;
-  left: 40px;
-  bottom: 44px; }
+  background-color: #d9d9d9;
+  height: 30px;
+  width: 20px;
+  background-image: url("../images/Carousel__Arrow--Right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 60%;
+  bottom: 15px;
+  display: inline-block; }
   @media (min-width: 768px) {
     .Next__button {
-      left: 0; } }
+      left: 58.5%; } }
+  @media (min-width: 992px) {
+    .Next__button {
+      left: 59%; } }
   .Next__button:hover {
-    background-position: center center; }
+    background-color: #939598; }
   .Next__button:active {
-    background-position: center bottom; }
+    background-color: #0ab389; }
 
 .Previous__button {
-  display: block;
-  background: url("../images/portfolio/Previous__Button--Sprite.png") no-repeat;
-  height: 44px;
-  width: 166px;
-  margin: 0 auto;
-  float: left;
-  position: relative;
-  right: 40px; }
+  background-color: #d9d9d9;
+  height: 30px;
+  width: 20px;
+  background-image: url("../images/Carousel__Arrow--Left.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 35%;
+  top: 7px;
+  display: inline-block; }
   @media (min-width: 768px) {
     .Previous__button {
-      right: 0; } }
+      left: 40%; } }
   .Previous__button:hover {
-    background-position: center center; }
+    background-color: #939598; }
   .Previous__button:active {
-    background-position: center bottom; }
+    background-color: #0ab389; }
 
 .Overview__button {
   display: block;
