@@ -244,15 +244,15 @@
 
   .h1__ {
     &Kaleidoscope {
-      background-image: url('../images/portfolio/Kaleidoscope__h1--xs.png');
-
-      @media (max-width: 470px ) {
-        background-size: contain;
-        margin-bottom: -10px;
-      }
+      background-image: url('../images/portfolio/Kaleidoscope__h1--xs-51.svg');
+      // background-size: 524px 60px;
+      background-size: 400px auto;
+      margin-bottom: -10px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/Kaleidoscope__h1--sm.png');
+        background-size: auto;
+        margin-bottom: 0;
       }
 
       @include mq (large) {
@@ -261,10 +261,12 @@
     }
 
     &SPR {
-      background-image: url('../images/portfolio/SPR__h1--xs.png');
+      background-image: url('../images/portfolio/SPR__h1--xs-50.svg');
+      background-size: 372px 60px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/SPR__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -273,10 +275,12 @@
     }
 
     &BroncoDay {
-      background-image: url('../images/portfolio/BroncoDay__h1--xs.png');
+      background-image: url('../images/portfolio/BroncoDay__h1--xs-49.svg');
+      background-size: 352px 60px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/BroncoDay__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -285,10 +289,13 @@
     }
 
     &CAC {
-      background-image: url('../images/portfolio/CAC__h1--xs.png');
+      background-image: url('../images/portfolio/CAC__h1--xs-48.svg');
+      // background-size: 460px 60px;
+      background-size: 400px auto;
 
       @include mq (small) {
         background-image: url('../images/portfolio/CAC__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -297,15 +304,17 @@
     }
 
     &SDI {
-      background-image: url('../images/portfolio/SDI__h1--xs.png');
+      background-image: url('../images/portfolio/SDI__h1--xs-45.svg');
+      // background-size: 494px 60px;
+      background-size: 400px auto;
 
       @media (max-width: 470px ) {
-        background-size: contain;
         margin-bottom: -10px;
       }
 
       @include mq (small) {
         background-image: url('../images/portfolio/SDI__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -314,10 +323,12 @@
     }
 
     &GetIn {
-      background-image: url('../images/portfolio/GetIn__h1--xs.png');
+      background-image: url('../images/portfolio/GetIn__h1--xs-44.svg');
+      background-size: 352px 60px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/GetIn__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -326,10 +337,12 @@
     }
 
     &WC {
-      background-image: url('../images/portfolio/WC__h1--xs.png');
+      background-image: url('../images/portfolio/WC__h1--xs-43.svg');
+      background-size: 352px 60px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/WC__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -338,10 +351,12 @@
     }
 
     &HackerH {
-      background-image: url('../images/portfolio/HackerH__h1--xs.png');
+      background-image: url('../images/portfolio/HackerH__h1--xs-68.svg');
+      background-size: 398px 60px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/HackerH__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -350,10 +365,12 @@
     }
 
     &SumConf {
-      background-image: url('../images/portfolio/SumConf__h1--xs.png');
+      background-image: url('../images/portfolio/SumConf__h1--xs-47.svg');
+      background-size: 372px 60px;
 
       @include mq (small) {
         background-image: url('../images/portfolio/SumConf__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {
@@ -362,15 +379,16 @@
     }
 
     &AR2014 {
-      background-image: url('../images/portfolio/AR2014__h1--xs.png');
-
+      background-image: url('../images/portfolio/AR2014__h1--xs-46.svg');
+      // background-size: 524px 60px;
+      background-size: 400px auto;
       @media (max-width: 470px ) {
-        background-size: contain;
         margin-bottom: -10px;
       }
 
       @include mq (small) {
         background-image: url('../images/portfolio/AR2014__h1--sm.png');
+        background-size: auto;
       }
 
       @include mq (large) {

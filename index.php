@@ -57,7 +57,7 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron__background">
-        <img class="visible-xs-block intro--atomgraphic" src="/images/Home__AtomGraphic--Mobile.png" alt="Graphic of an atom.">
+        <img class="hidden-xs intro--atomgraphic" src="/images/Home__AtomGraphic--Mobile.png" alt="Graphic of an atom.">
         <div class="container">
          <div id="jumbotron" class="cd-fixed-bgtop">
             <img class="hidden-xs home__graphic--atom" src="/images/Home__AtomGraphic.png" alt="Hi, I'm Lindsey. I can help you with">

@@ -84,10 +84,6 @@ a.navbar-brand {
   background-size: cover;
   max-height: 932px;
 
-  @include mq(small) {
-    background-image: url("../images/Background_991px.jpg");
-  }
-
   @include mq(medium) {
       background-image: url("../images/Background_1199px.jpg");
   }
