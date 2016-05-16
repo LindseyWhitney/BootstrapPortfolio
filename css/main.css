@@ -85,10 +85,12 @@ form {
   height: 91px; }
 
 #portfolio h2 {
-  background-image: url("../images/H1__FeaturedWork--XS.jpg"); }
+  background-image: url("../images/H1__FeaturedWork--XS-20.svg");
+  background-size: 349px 57px; }
   @media (min-width: 768px) {
     #portfolio h2 {
-      background-image: url("../images/H1__FeaturedWork--SM.png"); } }
+      background-image: url("../images/H1__FeaturedWork--SM.png");
+      background-size: auto; } }
   @media (min-width: 992px) {
     #portfolio h2 {
       background-image: url("../images/H1__FeaturedWork--L.png"); } }
@@ -116,10 +118,12 @@ form {
       background-image: url("../images/H1__Process--L.png"); } }
 
 #services h2 {
-  background-image: url("../images/H1__Services--XS.png"); }
+  background-image: url("../images/H1__Services--XS-21.svg");
+  background-size: 349px 57px; }
   @media (min-width: 768px) {
     #services h2 {
-      background-image: url("../images/H1__Services--SM.png"); } }
+      background-image: url("../images/H1__Services--SM.png");
+      background-size: auto; } }
   @media (min-width: 992px) {
     #services h2 {
       background-image: url("../images/H1__Services--L.png"); } }
@@ -331,7 +335,17 @@ a.navbar-brand {
   padding: 0; }
 .portfolio li a img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin: 10px 0;
+  -webkit-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.11);
+  border: 1px solid #d9d9d9; }
+  @media (min-width: 768px) {
+    .portfolio li a img {
+      box-shadow: none;
+      border: none;
+      margin: 0; } }
 .portfolio ul {
   padding-bottom: 3.33333em;
   padding-left: 0; }
@@ -349,19 +363,16 @@ a.navbar-brand {
   border: none;
   position: absolute; }
   .slick_carousel button.slick-prev {
-    background-image: url("../images/Carousel__Arrow--Left.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    bottom: -17px;
-    left: 104px; }
-    @media (min-width: 506px) {
-      .slick_carousel button.slick-prev {
-        left: 152px; } }
-    @media (min-width: 611px) {
-      .slick_carousel button.slick-prev {
-        left: 182px; } }
+    display: none;
+    left: 1500px; }
     @media (min-width: 768px) {
       .slick_carousel button.slick-prev {
+        background-image: url("../images/Carousel__Arrow--Left.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: -17px;
+        left: 104px;
+        display: initial;
         left: 239px; } }
     @media (min-width: 992px) {
       .slick_carousel button.slick-prev {
@@ -370,19 +381,17 @@ a.navbar-brand {
       .slick_carousel button.slick-prev {
         left: 448px; } }
   .slick_carousel button.slick-next {
-    background-image: url("../images/Carousel__Arrow--Right.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    bottom: -17px;
-    right: 106px; }
-    @media (min-width: 506px) {
-      .slick_carousel button.slick-next {
-        right: 154px; } }
-    @media (min-width: 611px) {
-      .slick_carousel button.slick-next {
-        right: 184px; } }
+    display: none;
+    left: 1500px; }
     @media (min-width: 768px) {
       .slick_carousel button.slick-next {
+        background-image: url("../images/Carousel__Arrow--Right.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: -17px;
+        right: 106px;
+        left: auto;
+        display: initial;
         right: 241px; } }
     @media (min-width: 992px) {
       .slick_carousel button.slick-next {

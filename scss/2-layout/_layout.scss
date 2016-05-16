@@ -36,11 +36,12 @@
 }
 
 #portfolio h2 {
-  background-image: url("../images/H1__FeaturedWork--XS.jpg");
-  // padding-bottom: 10px;
+  background-image: url("../images/H1__FeaturedWork--XS-20.svg");
+  background-size: 349px 57px;
 
   @include mq(small) {
     background-image: url("../images/H1__FeaturedWork--SM.png");
+    background-size: auto;
   }
 
   @include mq(medium) {
@@ -82,10 +83,12 @@
 }
 
 #services h2 {
-  background-image: url("../images/H1__Services--XS.png");
+  background-image: url("../images/H1__Services--XS-21.svg");
+  background-size: 349px 57px;
 
   @include mq(small) {
     background-image: url("../images/H1__Services--SM.png");
+    background-size: auto;
   }
 
   @include mq(medium) {

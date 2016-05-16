@@ -12,7 +12,7 @@
         <h1 class="text-hide h1__AR2014">Student Affairs Annual Report</h1>
         <h2>Annual Report Design</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--AR2014 text-hide">T</span><span class="introSection__allcaps">he Division of Student Affairs</span> asked me to design an annual report that would be a visual depiction of the achievements and stories from the division, as well as act as a conversation piece between departments and universities. This was the second year I worked on the annual report, and I used feedback from the previous year to create a completely fresh redesign.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--AR2014 text-hide">T</span><span class="introSection__allcaps">he Division of Student Affairs</span> asked me to design an annual report that would be a visual depiction of the achievements and stories from the division, as well as act as a conversation piece between departments and universities. This was the second year I worked on the <a href="https://issuu.com/boisestatevpsa/docs/2014-15_highlights_fc499bd0cb4007">annual report</a>, and I used feedback from the previous year to create a completely fresh redesign.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--AR2014 col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarAR2014">
               <h3>Creative Brief | Overview</h3>

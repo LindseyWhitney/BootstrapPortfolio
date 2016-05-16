@@ -449,7 +449,7 @@
                     <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
                       <h4>Project Wrap-up</h4>
                       <p>
-                        Once the final design has been approved I’ll implement it through the entire project as a visual system. I’ll provide you with all necessary files, explain how and when to use each of them, and answer any questions you may have to ensure you are set up for success and love your new design.
+                        Once the final design has been approved I’ll implement it through the entire project as a visual system. I’ll provide you with all necessary files, explain how and when to use each of them, and answer any questions you may have to ensure you are set up for success and ready to use and love your new design.
                       </p>
                     </div>
                   </li>

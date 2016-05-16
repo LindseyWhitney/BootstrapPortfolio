@@ -224,11 +224,24 @@ a.navbar-brand {
     color: $color-primary;
     list-style: none;
     padding: 0;
+
   }
 
   li a img {
     width: 100%;
     height: auto;
+    margin: 10px 0;
+    -webkit-box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.11);
+    box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.11);
+    border: 1px solid darken( $color-reverse, 15% );
+
+    @include mq(small){
+      box-shadow: none;
+      border: none;
+      margin: 0;
+    }
+
   }
 
   ul {
@@ -255,22 +268,16 @@ a.navbar-brand {
 
 
     &.slick-prev {
-      background-image: url("../images/Carousel__Arrow--Left.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      bottom: -17px;
-      left: 104px;
-
-      @media (min-width: 506px ) {
-        left: 152px;
-      }
-
-      @media (min-width: 611px ) {
-        left: 182px;
-      }
+      display: none;
+      left: 1500px;
 
       @include mq(small) {
-
+        background-image: url("../images/Carousel__Arrow--Left.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: -17px;
+        left: 104px;
+        display: initial;
         left: 239px;
       }
 
@@ -284,22 +291,17 @@ a.navbar-brand {
     }
 
     &.slick-next {
-      background-image: url("../images/Carousel__Arrow--Right.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      bottom: -17px;
-      right: 106px;
-
-      @media (min-width: 506px ) {
-        right: 154px;
-      }
-
-      @media (min-width: 611px ) {
-        right: 184px;
-      }
+      display: none;
+      left: 1500px;
 
       @include mq(small) {
-
+        background-image: url("../images/Carousel__Arrow--Right.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: -17px;
+        right: 106px;
+        left: auto;
+        display: initial;
         right: 241px;
       }
 
