@@ -95,24 +95,14 @@ form {
     #portfolio h2 {
       background-image: url("../images/H1__FeaturedWork--L.png"); } }
 
-#portfolioOverview ul {
-  padding-top: 30px; }
-#portfolioOverview h2 {
-  background-image: url("../images/H1__Portfolio--XS.png");
-  padding-bottom: 10px; }
-  @media (min-width: 768px) {
-    #portfolioOverview h2 {
-      background-image: url("../images/H1__Portfolio--SM.png"); } }
-  @media (min-width: 992px) {
-    #portfolioOverview h2 {
-      background-image: url("../images/H1__Portfolio--L.png"); } }
-
 #process h2 {
-  background-image: url("../images/H1__Process--XS.jpg");
-  padding-bottom: 10px; }
+  background-image: url("../images/H1__Process--XS-22.svg");
+  padding-bottom: 10px;
+  background-size: 349px 57px; }
   @media (min-width: 768px) {
     #process h2 {
-      background-image: url("../images/H1__Process--SM.png"); } }
+      background-image: url("../images/H1__Process--SM.png");
+      background-size: auto; } }
   @media (min-width: 992px) {
     #process h2 {
       background-image: url("../images/H1__Process--L.png"); } }
@@ -129,19 +119,23 @@ form {
       background-image: url("../images/H1__Services--L.png"); } }
 
 #about h2 {
-  background-image: url("../images/H1__About--XS.png"); }
+  background-image: url("../images/H1__About--XS-23.svg");
+  background-size: 349px 57px; }
   @media (min-width: 768px) {
     #about h2 {
-      background-image: url("../images/H1__About--SM.png"); } }
+      background-image: url("../images/H1__About--SM.png");
+      background-size: auto; } }
   @media (min-width: 992px) {
     #about h2 {
       background-image: url("../images/H1__About--L.png"); } }
 
 #contact h2 {
-  background-image: url("../images/H1__Contact--XS.jpg"); }
+  background-image: url("../images/H1__Contact--XS-24.svg");
+  background-size: 349px 57px; }
   @media (min-width: 768px) {
     #contact h2 {
-      background-image: url("../images/H1__Contact--SM.png"); } }
+      background-image: url("../images/H1__Contact--SM.png");
+      background-size: auto; } }
   @media (min-width: 992px) {
     #contact h2 {
       background-image: url("../images/H1__Contact--L.png"); } }

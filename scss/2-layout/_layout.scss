@@ -49,32 +49,15 @@
   }
 }
 
-#portfolioOverview {
-
-  ul {
-    padding-top: 30px;
-  }
-
-  h2 {
-    background-image: url("../images/H1__Portfolio--XS.png");
-    padding-bottom: 10px;
-
-    @include mq(small) {
-      background-image: url("../images/H1__Portfolio--SM.png");
-    }
-
-    @include mq(medium) {
-      background-image: url("../images/H1__Portfolio--L.png");
-    }
-  }
-}
 
 #process h2 {
-  background-image: url("../images/H1__Process--XS.jpg");
+  background-image: url("../images/H1__Process--XS-22.svg");
   padding-bottom: 10px;
+  background-size: 349px 57px;
 
   @include mq(small) {
     background-image: url("../images/H1__Process--SM.png");
+    background-size: auto;
   }
 
   @include mq(medium) {
@@ -97,10 +80,12 @@
 }
 
 #about h2 {
-  background-image: url("../images/H1__About--XS.png");
+  background-image: url("../images/H1__About--XS-23.svg");
+  background-size: 349px 57px;
 
   @include mq(small) {
     background-image: url("../images/H1__About--SM.png");
+    background-size: auto;
   }
 
   @include mq(medium) {
@@ -109,10 +94,12 @@
 }
 
 #contact h2 {
-  background-image: url("../images/H1__Contact--XS.jpg");
+  background-image: url("../images/H1__Contact--XS-24.svg");
+  background-size: 349px 57px;
 
   @include mq(small) {
     background-image: url("../images/H1__Contact--SM.png");
+    background-size: auto;
   }
 
   @include mq(medium) {

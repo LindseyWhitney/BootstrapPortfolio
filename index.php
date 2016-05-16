@@ -61,7 +61,7 @@
         <div class="container">
          <div id="jumbotron" class="cd-fixed-bgtop">
             <img class="hidden-xs home__graphic--atom" src="/images/Home__AtomGraphic.png" alt="Hi, I'm Lindsey. I can help you with">
-            <img class="visible-xs-block intro--graphic" src="/images/Home__IntroGraphic--Mobile.png" alt="Hi, I'm Lindsey.">
+            <img class="visible-xs-block intro--graphic" src="/images/Home__IntroGraphic--Mobile-06.svg" alt="Hi, I'm Lindsey.">
 
             <h1 class="visible-xs-inline intro--mobile">I can help your small<br>business with branding,<br>graphic design, and<br>web design.</h1>
             <section class="myanimation cd-intro">
