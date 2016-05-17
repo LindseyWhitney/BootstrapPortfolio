@@ -248,3 +248,18 @@ $(function() {
     }
   });
 });
+
+
+
+// Replace text on Portfolio Thumbnails for Mobile -------------------------
+// Reference: http://stackoverflow.com/questions/7405213/jquery-if-statement-based-on-screen-size
+
+$(document).ready(function() {
+    // This will fire when document is ready:
+    $(window).resize(function() {
+        // This will fire each time the window is resized:
+        if($(window).width() <= 768) {
+            $('.hoverText').replaceWith('<span>Tap To</br>View</span>');
+        }
+    }).resize(); // This will simulate a resize to trigger the initial run.
+});

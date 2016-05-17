@@ -4,7 +4,7 @@
 
 window.addEventListener("scroll",function() {
 
-   if(window.scrollY > 200) {
+   if(window.scrollY > 50) {
       $('.navbar-fixed-top').slideDown(1000);
       $('.navbar-fixed-top').removeClass('nav-up');
 

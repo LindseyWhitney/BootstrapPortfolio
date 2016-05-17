@@ -31,7 +31,7 @@
 
 
       <!-- Navbar -->
-      <nav class="navbar navbar-fixed-top nav-up" role="navigation">
+      <nav class="navbar navbar-fixed-top nav-up hidden-xs">
         <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -43,7 +43,7 @@
               <a class="navbar-brand" href="#Home">Lindsey Whitney Design, LLC.</a>
             </div> <!--/.navbar-header -->
 
-          <div id="navbar" class="collapse navbar-collapse" id="hideonclick" >
+          <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#services">Services</a></li>
@@ -94,7 +94,7 @@
                     <img src="images/Work__Thumbnail--KPT.jpg" alt="Thumbnail image of Kaleidoscope Physical Therapy project."/>
                     <div>
                       <div>
-                        <span>Kaleidoscope</br>Pediatric Therapy</span>
+                        <span class="hoverText">Kaleidoscope</br>Pediatric Therapy</span>
                         <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
                       </div>
                     </div>
@@ -107,7 +107,7 @@
                     <img src="images/Work__Thumbnail--HackerH.jpg" alt="Thumbnail image of Hacker Hours Boise project."/>
                     <div>
                       <div>
-                        <span>Hacker</br>Hours</span>
+                        <span class="hoverText">Hacker</br>Hours</span>
                         <span class="thumbnail__tags hidden-xs">graphic design &amp; web development</span>
                       </div>
                     </div>
@@ -120,7 +120,7 @@
                     <img src="images/Work__Thumbnail--AR2015.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
                     <div>
                       <div>
-                        <span>Boise State</br>Annual Report 2015</span>
+                        <span class="hoverText">Boise State</br>Annual Report 2015</span>
                         <span class="thumbnail__tags hidden-xs">graphic design</span>
                       </div>
                     </div>
@@ -133,7 +133,7 @@
                     <img src="../images/Work__Thumbnail--CAC.jpg" alt="Thumbnail image of Campus Awards Ceremony project."/>
                     <div>
                       <div>
-                        <span>Campus</br>Awards Ceremony</span>
+                        <span class="hoverText">Campus</br>Awards Ceremony</span>
                         <span class="thumbnail__tags hidden-xs">graphic design</span>
                       </div>
                     </div>
@@ -148,7 +148,7 @@
                     <img src="images/Work__Thumbnail--SumConf.jpg" alt="Thumbnail image of Summer Conferences project."/>
                     <div>
                       <div>
-                        <span>Summer</br>Conferences</span>
+                        <span class="hoverText">Summer</br>Conferences</span>
                         <span class="thumbnail__tags hidden-xs">web design</span>
                       </div>
                     </div>
@@ -161,7 +161,7 @@
                     <img src="../images/Work__Thumbnail--BroncoDay.jpg" alt="Thumbnail image of Bronco Day project."/>
                     <div>
                       <div>
-                        <span>Bronco</br>Day</span>
+                        <span class="hoverText">Bronco</br>Day</span>
                         <span class="thumbnail__tags hidden-xs">event branding &amp; graphic design</span>
                       </div>
                     </div>
@@ -175,7 +175,7 @@
                     <img src="../images/Work__Thumbnail--SPR.jpg" alt="Thumbnail image of Sweet Pepper Ranch project."/>
                     <div>
                       <div>
-                        <span>Sweet</br>Pepper Ranch</span>
+                        <span class="hoverText">Sweet</br>Pepper Ranch</span>
                         <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
                       </div>
                     </div>
@@ -188,7 +188,7 @@
                     <img src="../images/Work__Thumbnail--WC2.jpg" alt="Thumbnail image of Women's Center project."/>
                     <div>
                       <div>
-                        <span>Women&rsquo;s</br>Center</span>
+                        <span class="hoverText">Women&rsquo;s</br>Center</span>
                         <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
                       </div>
                     </div>
@@ -203,7 +203,7 @@
                     <img src="images/Work__Thumbnail--SDI.jpg" alt="Thumbnail image of Student Diversity project."/>
                     <div>
                       <div>
-                        <span>Student Diversity</br>&amp; Inclusion</span>
+                        <span class="hoverText">Student Diversity</br>&amp; Inclusion</span>
                         <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
                       </div>
                     </div>
@@ -216,7 +216,7 @@
                     <img src="../images/Work__Thumbnail--GetIn2.jpg" alt="Thumbnail image of Get Involved project."/>
                     <div>
                       <div>
-                        <span>Get</br>Involved</span>
+                        <span class="hoverText">Get</br>Involved</span>
                         <span class="thumbnail__tags hidden-xs">branding &amp; graphic design</span>
                       </div>
                     </div>
@@ -229,7 +229,7 @@
                     <img src="images/Work__Thumbnail--AR2013.jpg" alt="Thumbnail image of Boise State Annual Report project."/>
                     <div>
                       <div>
-                        <span>Boise State</br>Annual Report 2013</span>
+                        <span class="hoverText">Boise State</br>Annual Report 2013</span>
                         <span class="thumbnail__tags hidden-xs">graphic design</span>
                       </div>
                     </div>
@@ -471,7 +471,7 @@
                 <img class="aboutpic" src="images/AboutMe.png" alt="Photo of Lindsey Whitney.">
               </div>
               <div class="col-md-8">
-                <p>My favorite thing about being a designer is working with other small business owners—like yourself—who are passionate about what they offer and want to work together to craft visual pieces that genuinely represent them and communicate a professional image to their customers and clients. If you like clean, modern design and want to avoid the fuss (and price tag!) that comes with working with a large design agency, we might be a great fit.</p>
+                <p>My favorite thing about being a designer is working with other small business owners—like yourself—who are passionate about what they offer and want to work together to craft visual pieces that genuinely represent them and communicate a professional image to their customers and clients. If you like clean, modern design and would prefer to work with a designer one-on-one (rather than with a large team at an agency), we might be a great fit.</p>
                 <p>I’ve been designing since 2008, and my most recent position (before I struck out on my own) was that of Creative Director at Boise State University in their Student Affairs Marketing department. I have my Bachelor of Fine Arts degree in Graphic Design, and have even won some awards over the years. For more details, please see my <a href="https://www.linkedin.com/in/whitneylindsey">LinkedIn</a> profile.</p>
                 <p>I love trying new recipes, knitting, tennis, and getting lost in a good book. I have the travel bug, and have visited over 20 countries. And last but not least, I’m a huge Game of Thrones fan, so be forewarned.</p>
               </div>
@@ -766,14 +766,14 @@
         $(' #da-thumbs > div > li ').each( function() { $(this).hoverdir(); } );
       });
     </script>
-    <script>
+    <!-- <script>
     // Hide expanded view of Nav on click in mobile devices.
       $(document).ready(function () {
         $(".navbar-nav li a").click(function(event) {
           $(".navbar-collapse").collapse('hide');
         });
       });
-    </script>
+    </script> -->
     <script src="js/my.js"></script>
     <script src="js/navreveal.js"></script>
     <script src="js/dist/js/animsition.min.js"></script>
