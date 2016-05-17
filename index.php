@@ -31,7 +31,7 @@
 
 
       <!-- Navbar -->
-      <nav class="navbar navbar-fixed-top nav-up hidden-xs">
+      <nav class="navbar navbar-fixed-top nav-up" role="navigation">
         <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -43,7 +43,7 @@
               <a class="navbar-brand" href="#Home">Lindsey Whitney Design, LLC.</a>
             </div> <!--/.navbar-header -->
 
-          <div id="navbar" class="collapse navbar-collapse">
+          <div id="navbar" class="collapse navbar-collapse" id="hideonclick" >
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#services">Services</a></li>
@@ -57,7 +57,6 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron__background">
-        <img class="hidden-xs intro--atomgraphic" src="/images/Home__AtomGraphic--Mobile.png" alt="Graphic of an atom.">
         <div class="container">
          <div id="jumbotron" class="cd-fixed-bgtop">
             <img class="hidden-xs home__graphic--atom" src="/images/Home__AtomGraphic.png" alt="Hi, I'm Lindsey. I can help you with">
@@ -767,8 +766,16 @@
         $(' #da-thumbs > div > li ').each( function() { $(this).hoverdir(); } );
       });
     </script>
+    <script>
+    // Hide expanded view of Nav on click in mobile devices.
+      $(document).ready(function () {
+        $(".navbar-nav li a").click(function(event) {
+          $(".navbar-collapse").collapse('hide');
+        });
+      });
+    </script>
     <script src="js/my.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/navreveal.js"></script>
     <script src="js/dist/js/animsition.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>

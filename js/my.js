@@ -174,6 +174,8 @@ $(document).ready(function(){
 });
 
 
+
+
 // JavaScript for Icon Animation on Scroll -------------------------
 // Reference: http://www.sitepoint.com/scroll-based-animations-jquery-css3/#scroll-animation-examples
 

@@ -137,7 +137,7 @@ if ($thisYear > $startYear) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/scroll.js"></script>
+<script src="../js/navreveal.js"></script>
 <script src="../js/dist/js/animsition.min.js"></script>
 <script>
   $(document).ready(function() {
