@@ -484,25 +484,15 @@ a.navbar-brand {
 // Process ==================================
 
 #process {
-  height: 1080px;
-  padding-top: 130px;
-
-  @media (min-width: 552px ) {
-    height: 955px;
-  }
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   @include mq (small) {
-    height: 1025px;
     padding-top: 130px;
   }
 
   @include mq (medium) {
-    height: 865px;
     padding-top: 150px;
-  }
-
-  @include mq (large) {
-    height: 835px;
   }
 }
 
@@ -594,8 +584,8 @@ a.navbar-brand {
 // About ==================================
 
 #about {
-  padding-top: 19%;
-  padding-bottom: 23%;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-image: url("../images/About__Background.jpg");
   background-size: cover;
   background-position: center;

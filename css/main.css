@@ -500,22 +500,14 @@ a.navbar-brand {
       margin-bottom: 0; } }
 
 #process {
-  height: 1080px;
-  padding-top: 130px; }
-  @media (min-width: 552px) {
-    #process {
-      height: 955px; } }
+  padding-top: 120px;
+  padding-bottom: 120px; }
   @media (min-width: 768px) {
     #process {
-      height: 1025px;
       padding-top: 130px; } }
   @media (min-width: 992px) {
     #process {
-      height: 865px;
       padding-top: 150px; } }
-  @media (min-width: 1200px) {
-    #process {
-      height: 835px; } }
 
 @media (min-width: 992px) {
   .process__content {
@@ -571,8 +563,8 @@ a.navbar-brand {
   transform-origin: 35.33px 35px; }
 
 #about {
-  padding-top: 19%;
-  padding-bottom: 23%;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-image: url("../images/About__Background.jpg");
   background-size: cover;
   background-position: center; }
