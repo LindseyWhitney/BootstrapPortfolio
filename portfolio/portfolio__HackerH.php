@@ -37,6 +37,7 @@
       <div class="portfolioDisplay">
           <img alt="Hacker Hours logo and business card mockup." src="../images/portfolio/HackerH__a1.jpg">
           <img alt="Mockup of responsive website design on mobile, tablet, laptop and desktop." src="../images/portfolio/HackerH__1.jpg">
+          <img alt="Hacker Hours website design." src="../images/portfolio/HackerH__5.jpg">
           <img alt="Mockup of website design on a mobile device." src="../images/portfolio/HackerH__4.jpg">
 
       </div> <!-- /.portfolioDisplay -->

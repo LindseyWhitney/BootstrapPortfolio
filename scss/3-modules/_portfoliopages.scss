@@ -246,7 +246,7 @@
     &Kaleidoscope {
       background-image: url('../images/portfolio/Kaleidoscope__h1--xs-51.svg');
       // background-size: 524px 60px;
-      background-size: 400px auto;
+      background-size: 370px auto;
       margin-bottom: -10px;
 
       @include mq (small) {
@@ -291,7 +291,7 @@
     &CAC {
       background-image: url('../images/portfolio/CAC__h1--xs-48.svg');
       // background-size: 460px 60px;
-      background-size: 400px auto;
+      background-size: 370px auto;
 
       @include mq (small) {
         background-image: url('../images/portfolio/CAC__h1--sm.png');
@@ -306,7 +306,7 @@
     &SDI {
       background-image: url('../images/portfolio/SDI__h1--xs-45.svg');
       // background-size: 494px 60px;
-      background-size: 400px auto;
+      background-size: 370px auto;
 
       @media (max-width: 470px ) {
         margin-bottom: -10px;
@@ -381,7 +381,7 @@
     &AR2014 {
       background-image: url('../images/portfolio/AR2014__h1--xs-46.svg');
       // background-size: 524px 60px;
-      background-size: 400px auto;
+      background-size: 370px auto;
       @media (max-width: 470px ) {
         margin-bottom: -10px;
       }
