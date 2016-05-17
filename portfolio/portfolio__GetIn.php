@@ -12,7 +12,7 @@
       <!-- Intro Section -->
       <div class="introSection">
         <h1 class="text-hide h1__GetIn">Get Involved</h1>
-        <h2>Campaign Logo &amp; Brand Development</h2>
+        <h2>Logo &amp; Brand Development</h2>
         <div class="row hidden-xs hidden-sm">
           <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--GetIn text-hide">T</span><span class="introSection__allcaps">he student involvement &amp; leadership center</span> at Boise State helps students build leadership skills. I worked with their director to develop an entire brand identity for their department. As part of the campaign I completed a custom photo shoot featuring real students.  The campaign was robust, including signage, posters, social media imagery, and promotional materials.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--GetIn col-sm-5">
