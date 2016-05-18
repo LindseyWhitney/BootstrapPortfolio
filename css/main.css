@@ -1,5 +1,8 @@
 body, html, .pattern {
-  height: 100%; }
+  height: 100%;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0; }
 
 body {
   font-size: 15px;
@@ -354,8 +357,7 @@ a.navbar-brand {
   border: none;
   position: absolute; }
   .slick_carousel button.slick-prev {
-    display: none;
-    left: 1500px; }
+    display: none !important; }
     @media (min-width: 768px) {
       .slick_carousel button.slick-prev {
         background-image: url("../images/Carousel__Arrow--Left.png");
@@ -372,8 +374,7 @@ a.navbar-brand {
       .slick_carousel button.slick-prev {
         left: 448px; } }
   .slick_carousel button.slick-next {
-    display: none;
-    left: 1500px; }
+    display: none !important; }
     @media (min-width: 768px) {
       .slick_carousel button.slick-next {
         background-image: url("../images/Carousel__Arrow--Right.png");
@@ -426,15 +427,16 @@ a.navbar-brand {
         background-color: #0ab389; }
 
 #services {
-  background-image: url("../images/Services_Background.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #f9f8f8;
   text-align: center;
   color: #939598;
   padding-top: 120px;
   padding-bottom: 120px; }
   @media (min-width: 768px) {
     #services {
+      background-image: url("../images/Services_Background.jpg");
+      background-size: cover;
+      background-position: center;
       padding-top: 150px;
       padding-bottom: 130px; } }
   #services h2, #services p {
@@ -565,11 +567,12 @@ a.navbar-brand {
 #about {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url("../images/About__Background.jpg");
-  background-size: cover;
-  background-position: center; }
+  background-color: #f4ede7; }
   @media (min-width: 992px) {
     #about {
+      background-image: url("../images/About__Background.jpg");
+      background-size: cover;
+      background-position: center;
       padding-top: 10em;
       padding-bottom: 10em; } }
   #about h2 {
@@ -718,7 +721,7 @@ input[type="submit"]:active {
   position: relative;
   bottom: 17px;
   margin: 0 auto;
-  padding-left: 9px; }
+  text-align: center; }
   @media (min-width: 544px) {
     .group {
       float: right;
@@ -1268,7 +1271,7 @@ input[type="submit"]:active {
     background-color: #0ab389; }
 
 .Overview__button {
-  display: block;
+  display: none;
   background: url("../images/portfolio/Overview__Button--Sprite.png") no-repeat;
   height: 44px;
   width: 45px;
@@ -1277,6 +1280,9 @@ input[type="submit"]:active {
     background-position: center center; }
   .Overview__button:active {
     background-position: center bottom; }
+  @media (min-width: 768px) {
+    .Overview__button {
+      display: block; } }
 
 .myanimation {
   height: 13em;

@@ -250,6 +250,8 @@ a.navbar-brand {
   }
 }
 
+
+
 .slick_carousel {
 
   & button {
@@ -264,8 +266,8 @@ a.navbar-brand {
 
 
     &.slick-prev {
-      display: none;
-      left: 1500px;
+      display: none !important;
+      // left: 1500px;
 
       @include mq(small) {
         background-image: url("../images/Carousel__Arrow--Left.png");
@@ -287,8 +289,8 @@ a.navbar-brand {
     }
 
     &.slick-next {
-      display: none;
-      left: 1500px;
+      display: none !important;
+      // left: 1500px;
 
       @include mq(small) {
         background-image: url("../images/Carousel__Arrow--Right.png");
@@ -369,9 +371,7 @@ a.navbar-brand {
 // Services ===============================
 
 #services {
-  background-image: url("../images/Services_Background.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #f9f8f8;
   text-align: center;
   color: $color-light;
   padding-top: 120px;
@@ -379,6 +379,9 @@ a.navbar-brand {
 
 
   @include mq(small) {
+    background-image: url("../images/Services_Background.jpg");
+    background-size: cover;
+    background-position: center;
     padding-top: 150px;
     padding-bottom: 130px;
   }
@@ -586,11 +589,12 @@ a.navbar-brand {
 #about {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url("../images/About__Background.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #f4ede7;
 
   @include mq(medium) {
+    background-image: url("../images/About__Background.jpg");
+    background-size: cover;
+    background-position: center;
     padding-top: em(150px);
     padding-bottom: em(150px);
   }
@@ -790,7 +794,7 @@ input[type="submit"]:active {
   position: relative;
   bottom: 17px;
   margin: 0 auto;
-  padding-left: 9px;
+  text-align: center;
 
   @media (min-width: 544px ) {
     float: right;

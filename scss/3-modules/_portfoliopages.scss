@@ -762,7 +762,7 @@
 }
 
 .Overview__button {
-  display: block;
+  display: none;
   background: url("../images/portfolio/Overview__Button--Sprite.png") no-repeat;
   height: 44px;
   width: 45px;
@@ -774,5 +774,9 @@
 
   &:active {
          background-position: center bottom;
+  }
+
+  @include mq(small){
+    display: block;
   }
 }
