@@ -14,7 +14,7 @@ if ($thisYear > $startYear) {
   <div class="group">
 
     <!-- Behance -->
-    <div class="size">
+    <!-- <div class="size">
       <a href="https://www.behance.net/LindseyWhitney">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 47.17 46.17" style="enable-background:new 0 0 47.17 46.17;" xml:space="preserve">
@@ -37,7 +37,7 @@ if ($thisYear > $startYear) {
           </g>
         </svg>
       </a>
-    </div> <!--/.size -->
+    </div> -->
 
     <!-- Linked In -->
     <div class="size">
@@ -112,7 +112,7 @@ if ($thisYear > $startYear) {
     </div> <!--/.size -->
 
     <!-- Twitter -->
-    <div class="size">
+    <!-- <div class="size">
       <a href="https://twitter.com/LindseyDWhitney">
          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 47.17 46.17" style="enable-background:new 0 0 47.17 46.17;" xml:space="preserve">
@@ -127,15 +127,15 @@ if ($thisYear > $startYear) {
           </g>
         </svg>
       </a>
-    </div> <!--/.size -->
+    </div> -->
 
   </div> <!--/.row -->
 </footer>
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/navreveal.js"></script>
 <script src="../js/dist/js/animsition.min.js"></script>
