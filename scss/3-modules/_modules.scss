@@ -266,17 +266,15 @@ a.navbar-brand {
 
 
     &.slick-prev {
-      display: none !important;
-      // left: 1500px;
+      background-image: url("../images/Carousel__Arrow--Left.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: -17px;
+      left: 104px;
+      display: initial;
+      left: 239px;
 
       @include mq(small) {
-        background-image: url("../images/Carousel__Arrow--Left.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        bottom: -17px;
-        left: 104px;
-        display: initial;
-        left: 239px;
       }
 
       @include mq(medium) {
@@ -289,8 +287,14 @@ a.navbar-brand {
     }
 
     &.slick-next {
-      display: none !important;
-      // left: 1500px;
+      background-image: url("../images/Carousel__Arrow--Right.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: -17px;
+      right: 106px;
+      left: auto;
+      display: initial;
+      right: 241px;
 
       @include mq(small) {
         background-image: url("../images/Carousel__Arrow--Right.png");
@@ -329,6 +333,7 @@ a.navbar-brand {
     padding: 0;
     text-align: center;
 
+
   .slick-active {
     & button {
       background-color: $color-primary;
@@ -354,6 +359,11 @@ a.navbar-brand {
       padding: 0;
       outline: none;
       margin: 50px 20px;
+      display: none;
+
+      @include mq(small) {
+        display: initial;
+      }
 
       &:hover {
         background-color: $color-light;

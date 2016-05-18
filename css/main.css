@@ -357,16 +357,13 @@ a.navbar-brand {
   border: none;
   position: absolute; }
   .slick_carousel button.slick-prev {
-    display: none !important; }
-    @media (min-width: 768px) {
-      .slick_carousel button.slick-prev {
-        background-image: url("../images/Carousel__Arrow--Left.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        bottom: -17px;
-        left: 104px;
-        display: initial;
-        left: 239px; } }
+    background-image: url("../images/Carousel__Arrow--Left.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -17px;
+    left: 104px;
+    display: initial;
+    left: 239px; }
     @media (min-width: 992px) {
       .slick_carousel button.slick-prev {
         left: 351px; } }
@@ -374,7 +371,14 @@ a.navbar-brand {
       .slick_carousel button.slick-prev {
         left: 448px; } }
   .slick_carousel button.slick-next {
-    display: none !important; }
+    background-image: url("../images/Carousel__Arrow--Right.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -17px;
+    right: 106px;
+    left: auto;
+    display: initial;
+    right: 241px; }
     @media (min-width: 768px) {
       .slick_carousel button.slick-next {
         background-image: url("../images/Carousel__Arrow--Right.png");
@@ -420,7 +424,11 @@ a.navbar-brand {
       border: none;
       padding: 0;
       outline: none;
-      margin: 50px 20px; }
+      margin: 50px 20px;
+      display: none; }
+      @media (min-width: 768px) {
+        .slick-dots li button {
+          display: initial; } }
       .slick-dots li button:hover {
         background-color: #939598; }
       .slick-dots li button:active, .slick-dots li button:focus {
