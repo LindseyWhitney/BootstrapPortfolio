@@ -14,11 +14,7 @@ body {
 nav {
   background-color: white;
   height: 51.7px;
-  -webkit-transition: top 0.2s ease-in-out;
-  -moz-transition: top 0.2s ease-in-out;
-  -o-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
-  z-index: 1000; }
+  transition: top 0.2s ease-in-out; }
 
 h2 {
   margin-bottom: 0.33333em;
@@ -1551,46 +1547,5 @@ input[type="submit"]:active {
     .glyphicon {
       top: 38%;
       font-size: 1.26667em; } }
-
-.process svg {
-  -webkit-transform-origin: 35.33px 35px;
-  -ms-transform-origin: 35.33px 35px;
-  transform-origin: 35.33px 35px; }
-
-.process .inactive .outer {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8); }
-
-.process .inactive .inner {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0); }
-
-.process .inactive:hover .outer {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-
-.process .inactive:hover .inner {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-
-.process .inactive:hover path {
-  -webkit-transition: fill;
-  -moz-transition: fill;
-  -o-transition: fill;
-  transition: fill; }
-
-.process path {
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  -webkit-transform-origin: 35.33px 35px;
-  -ms-transform-origin: 35.33px 35px;
-  transform-origin: 50% 50%;
-  transform-origin: 35.33px 35px; }
 
 /*# sourceMappingURL=main.css.map */
