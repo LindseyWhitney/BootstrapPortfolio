@@ -49,7 +49,7 @@
       <a href="../portfolio/portfolio__WC.php" class="text-hide Previous__button animsition-link">Previous Project</a>
 
       <!-- Back to Overview -->
-      <a href="../index.php#portfolio" class="text-hide Overview__button animsition-link">Back to Portfolio Overview</a>
+      <a href="../index.php" class="text-hide Overview__button animsition-link">Back to Portfolio Home Page</a>
 
       <!-- Next -->
       <a href="../portfolio/portfolio__GetIn.php" class="text-hide Next__button animsition-link">Next Project</a>

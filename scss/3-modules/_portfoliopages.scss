@@ -762,21 +762,32 @@
 }
 
 .Overview__button {
-  display: none;
-  background: url("../images/portfolio/Overview__Button--Sprite.png") no-repeat;
-  height: 44px;
-  width: 45px;
+  background-image: url("../images/portfolio/Home__Button.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 31px;
+  width: 32px;
+  position: absolute;
+  left: 46%;
+  top: 3px;
   margin: 0 auto;
+  background-color: darken( $color-reverse, 15% );
 
   &:hover {
-         background-position: center center;
+    background-color: $color-light;
   }
 
   &:active {
-         background-position: center bottom;
+    background-color: $color-primary;
   }
 
-  @include mq(small){
-    display: block;
+  @include mq(small) {
+    left: 48.5%;
   }
+
+  @include mq(medium) {
+    left: 49%;
+  }
+
+
 }

@@ -1271,18 +1271,26 @@ input[type="submit"]:active {
     background-color: #0ab389; }
 
 .Overview__button {
-  display: none;
-  background: url("../images/portfolio/Overview__Button--Sprite.png") no-repeat;
-  height: 44px;
-  width: 45px;
-  margin: 0 auto; }
+  background-image: url("../images/portfolio/Home__Button.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 31px;
+  width: 32px;
+  position: absolute;
+  left: 46%;
+  top: 3px;
+  margin: 0 auto;
+  background-color: #d9d9d9; }
   .Overview__button:hover {
-    background-position: center center; }
+    background-color: #939598; }
   .Overview__button:active {
-    background-position: center bottom; }
+    background-color: #0ab389; }
   @media (min-width: 768px) {
     .Overview__button {
-      display: block; } }
+      left: 48.5%; } }
+  @media (min-width: 992px) {
+    .Overview__button {
+      left: 49%; } }
 
 .myanimation {
   height: 13em;

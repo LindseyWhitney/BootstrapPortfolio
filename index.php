@@ -31,7 +31,7 @@
 
 
       <!-- Navbar -->
-      <nav class="navbar navbar-fixed-top hidden-xs">
+      <nav class="navbar navbar-fixed-top nav-up hidden-xs">
         <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
