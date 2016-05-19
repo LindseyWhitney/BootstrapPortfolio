@@ -26,7 +26,11 @@ body {
 nav {
   background-color: white;
   height: 51.7px;
+  -webkit-transition: top 0.2s ease-in-out;
+  -moz-transition: top 0.2s ease-in-out;
+  -o-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
+  z-index: 1000;
 }
 
 h2 {

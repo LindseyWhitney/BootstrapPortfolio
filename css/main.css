@@ -14,7 +14,11 @@ body {
 nav {
   background-color: white;
   height: 51.7px;
-  transition: top 0.2s ease-in-out; }
+  -webkit-transition: top 0.2s ease-in-out;
+  -moz-transition: top 0.2s ease-in-out;
+  -o-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  z-index: 1000; }
 
 h2 {
   margin-bottom: 0.33333em;
@@ -1548,50 +1552,45 @@ input[type="submit"]:active {
       top: 38%;
       font-size: 1.26667em; } }
 
-nav {
-  -webkit-transition: top 0.2s ease-in-out;
-  -moz-transition: top 0.2s ease-in-out;
-  -o-transition: top 0.2s ease-in-out; }
-
 .process svg {
-  transform-origin: 35.33px 35px;
   -webkit-transform-origin: 35.33px 35px;
-  -ms-transform-origin: 35.33px 35px; }
+  -ms-transform-origin: 35.33px 35px;
+  transform-origin: 35.33px 35px; }
 
 .process .inactive .outer {
-  transform: scale(0.8);
   -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8); }
+  -ms-transform: scale(0.8);
+  transform: scale(0.8); }
 
 .process .inactive .inner {
-  transform: scale(0);
   -webkit-transform: scale(0);
-  -ms-transform: scale(0); }
+  -ms-transform: scale(0);
+  transform: scale(0); }
 
 .process .inactive:hover .outer {
-  transform: scale(1);
   -webkit-transform: scale(1);
-  -ms-transform: scale(1); }
+  -ms-transform: scale(1);
+  transform: scale(1); }
 
 .process .inactive:hover .inner {
-  transform: scale(1);
   -webkit-transform: scale(1);
-  -ms-transform: scale(1); }
+  -ms-transform: scale(1);
+  transform: scale(1); }
 
 .process .inactive:hover path {
-  transition: fill;
   -webkit-transition: fill;
   -moz-transition: fill;
-  -o-transition: fill; }
+  -o-transition: fill;
+  transition: fill; }
 
 .process path {
-  transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
-  transform-origin: 50% 50%;
-  transform-origin: 35.33px 35px;
+  transition: .3s ease-in-out;
   -webkit-transform-origin: 35.33px 35px;
-  -ms-transform-origin: 35.33px 35px; }
+  -ms-transform-origin: 35.33px 35px;
+  transform-origin: 50% 50%;
+  transform-origin: 35.33px 35px; }
 
 /*# sourceMappingURL=main.css.map */
