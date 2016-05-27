@@ -12,7 +12,7 @@
         <h1 class="text-hide h1__SumConf">Summer Conferences</h1>
         <h2>Landing Page Web Design</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--SumConf text-hide">S</span><span class="introSection__allcaps">ummer Conferences</span> allow outside groups to reserve and use the facilities at Boise State for various events, camps, and workshops. I worked with their staff and the web development team to create a custom home page redesign. I also assisted in the UX design for the entire site, and coordinated with the copywriter to produce content that worked hand-in-hand with the design.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--SumConf text-hide">S</span><span class="introSection__allcaps">ummer Conferences</span> allow outside groups to reserve and use the facilities at Boise State for various events, camps, and workshops. I worked with their staff and the web development team to create a custom <a href="https://housing.boisestate.edu/guest/" target="_blank">home page</a> redesign. I also assisted in the UX design for the entire site, and coordinated with the copywriter to produce content that worked hand-in-hand with the design.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--SumConf col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarSumConf">
               <h3>Creative Brief | Overview</h3>

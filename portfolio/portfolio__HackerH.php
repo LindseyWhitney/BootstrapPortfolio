@@ -14,7 +14,7 @@
         <h1 class="text-hide h1__HackerH">Hacker Hours Boise</h1>
         <h2>Branding &amp; Web Development</h2>
         <div class="row hidden-xs hidden-sm">
-          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--HackerH text-hide">H</span><span class="introSection__allcaps">acker Hours Boise</span> is a local group of beginning and experienced developers. I worked directly with them to develop a custom logo. From there, I did a complete redesign of their existing <a href="http://hackerhoursboise.github.io/">website</a>, focusing on creating an inviting design that worked on mobile phones as well as desktop computers.  I used HTML5, CSS3, Sass, and JavaScript to complete the website development.</p>
+          <p class="col-sm-5 col-sm-offset-1"><span class="introSection__dropcap introSection__dropcap--HackerH text-hide">H</span><span class="introSection__allcaps">acker Hours Boise</span> is a local group of beginning and experienced developers. I worked directly with them to develop a custom logo. From there, I did a complete redesign of their existing <a href="http://hackerhoursboise.github.io/" target="_blank">website</a>, focusing on creating an inviting design that worked on mobile phones as well as desktop computers.  I used HTML5, CSS3, Sass, and JavaScript to complete the website development.</p>
           <section class="introSection__CreativeBrief introSection__CreativeBrief--HackerH col-sm-5">
             <div class="introSection__CreativeBrief--titlebar introSection__CreativeBrief--titlebarHackerH">
               <h3>Creative Brief | Overview</h3>
